@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-04T19:30:08.976636+00:00",
+  "generated_at_utc": "2026-11-04T19:40:19.057851+00:00",
   "opencv_version": "5.0.0",
   "numpy_version": "2.5.4",
   "input_directory": "images",
@@ -53,19 +53,19 @@
       },
       "image_count": 9,
       "corner_count_per_image": 63,
-      "rms_reprojection_error_px": 0.3189961432546925,
+      "rms_reprojection_error_px": 0.3189961432546957,
       "mean_individual_reprojection_error_px": 0.31714950336350334,
       "max_individual_reprojection_error_px": 0.3707316219806671,
       "camera_matrix": [
         [
-          1250.0509193223847,
+          1250.0509193231328,
           0.0,
-          754.4639758401186
+          754.463975840529
         ],
         [
           0.0,
-          1248.7865215922232,
-          560.7975923899587
+          1248.7865215929257,
+          560.7975923981087
         ],
         [
           0.0,
@@ -74,11 +74,11 @@
         ]
       ],
       "distortion_coefficients": [
-        0.19434471946636253,
-        -0.9565686020740598,
-        0.0009569021072327716,
-        -0.0010728131535904712,
-        1.1591364421672499
+        0.19434471944836282,
+        -0.9565686019356575,
+        0.000956902109809828,
+        -0.0010728131535503195,
+        1.1591364418912133
       ],
       "parameters_file": "parameters\\camera_parameters_1500x1125.npz",
       "undistortion_comparison_file": "parameters\\undistortion_comparison_1500x1125.jpg",
@@ -173,19 +173,19 @@
       },
       "image_count": 15,
       "corner_count_per_image": 63,
-      "rms_reprojection_error_px": 1.52798772650428,
+      "rms_reprojection_error_px": 1.5279877265042798,
       "mean_individual_reprojection_error_px": 0.8676764150460561,
       "max_individual_reprojection_error_px": 5.566934585571289,
       "camera_matrix": [
         [
-          1661.3358318823518,
+          1661.3358320745683,
           0.0,
-          745.2319409883119
+          745.2319413397515
         ],
         [
           0.0,
-          1663.92105927388,
-          997.0567242403727
+          1663.9210594400897,
+          997.0567248013948
         ],
         [
           0.0,
@@ -194,11 +194,11 @@
         ]
       ],
       "distortion_coefficients": [
-        0.1844895610421064,
-        -0.8691019243083878,
-        0.0011322439236731993,
-        -0.0013373921029646862,
-        0.939805805355891
+        0.18448956118397408,
+        -0.8691019237305078,
+        0.0011322440174304784,
+        -0.0013373920289404565,
+        0.9398058017833815
       ],
       "parameters_file": "parameters\\camera_parameters_1500x2000.npz",
       "undistortion_comparison_file": "parameters\\undistortion_comparison_1500x2000.jpg",

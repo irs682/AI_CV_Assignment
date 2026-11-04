@@ -1,0 +1,275 @@
+{
+  "opencv_version": "5.0.0",
+  "original_saved_rms_px": 1.5279877265042798,
+  "reproduced_baseline_rms_px": 1.5279877265042805,
+  "updated_rms_px": 0.5018058114169508,
+  "original_model_rms_on_same_14_images_px": 0.5365541168276432,
+  "rms_reduction_percent": 67.1590417440735,
+  "original_image_count": 15,
+  "updated_image_count": 14,
+  "excluded_images": [
+    "checkerboard_002.jpg"
+  ],
+  "camera_matrix": [
+    [
+      1673.579131384159,
+      0.0,
+      745.1876254990397
+    ],
+    [
+      0.0,
+      1674.195793537129,
+      1005.7309434905005
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion_coefficients_order": [
+    "k1",
+    "k2",
+    "p1",
+    "p2",
+    "k3"
+  ],
+  "distortion_coefficients": [
+    0.182010301961619,
+    -0.798348660863332,
+    0.000966982428293061,
+    -0.0015951895150998004,
+    0.6787843636457906
+  ],
+  "viewing_diversity": {
+    "tilt_deg": [
+      4.181650612711863,
+      42.8739717718675
+    ],
+    "normal_x_angle_deg": [
+      -42.40692884638054,
+      38.64395712547409
+    ],
+    "normal_y_angle_deg": [
+      -31.448452216524505,
+      36.848035195134756
+    ],
+    "centroid_x_px": [
+      407.82904052734375,
+      926.4241333007812
+    ],
+    "centroid_y_px": [
+      570.954345703125,
+      1273.754150390625
+    ],
+    "corner_hull_image_fraction": [
+      0.1185681970014389,
+      0.3356163425141602
+    ],
+    "max_pairwise_normal_angle_deg": 83.56804697599911,
+    "note": "Pose estimates depend on the fitted intrinsics. Angular diversity and spatial coverage are diagnostics, not an accuracy certificate."
+  },
+  "per_image_results": [
+    {
+      "image": "checkerboard_002.jpg",
+      "retained": false,
+      "detector": "classic",
+      "original_error_px": 5.566934585571289,
+      "updated_error_px": 5.670298099517822,
+      "tilt_deg": 29.467897808809155,
+      "normal_x_angle_deg": -19.88508186671559,
+      "normal_y_angle_deg": 23.465257461814296,
+      "centroid_x_px": 749.5048828125,
+      "centroid_y_px": 657.513916015625,
+      "corner_hull_image_fraction": 0.19513679173387619
+    },
+    {
+      "image": "checkerboard_003.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5996449589729309,
+      "updated_error_px": 0.5770153999328613,
+      "tilt_deg": 15.158694207409823,
+      "normal_x_angle_deg": 0.8325938593063791,
+      "normal_y_angle_deg": -15.137871907314675,
+      "centroid_x_px": 709.0418701171875,
+      "centroid_y_px": 1003.9713134765625,
+      "corner_hull_image_fraction": 0.28717303846548325
+    },
+    {
+      "image": "checkerboard_004.jpg",
+      "retained": true,
+      "detector": "classic",
+      "original_error_px": 0.6379384398460388,
+      "updated_error_px": 0.646047055721283,
+      "tilt_deg": 31.449998521431286,
+      "normal_x_angle_deg": 0.3858721504408821,
+      "normal_y_angle_deg": -31.448452216524505,
+      "centroid_x_px": 748.9713745117188,
+      "centroid_y_px": 1087.6651611328125,
+      "corner_hull_image_fraction": 0.33063180021498334
+    },
+    {
+      "image": "checkerboard_005.jpg",
+      "retained": true,
+      "detector": "classic",
+      "original_error_px": 0.46611452102661133,
+      "updated_error_px": 0.4672446548938751,
+      "tilt_deg": 29.92468300620685,
+      "normal_x_angle_deg": 0.05224991274721582,
+      "normal_y_angle_deg": -29.924651916352673,
+      "centroid_x_px": 733.679443359375,
+      "centroid_y_px": 1025.951904296875,
+      "corner_hull_image_fraction": 0.22773930537504145
+    },
+    {
+      "image": "checkerboard_006.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5363855361938477,
+      "updated_error_px": 0.4673987030982971,
+      "tilt_deg": 29.71047017412336,
+      "normal_x_angle_deg": 28.726628891519585,
+      "normal_y_angle_deg": -9.023735665419848,
+      "centroid_x_px": 407.82904052734375,
+      "centroid_y_px": 1128.4359130859375,
+      "corner_hull_image_fraction": 0.17574325307928615
+    },
+    {
+      "image": "checkerboard_007.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.636963427066803,
+      "updated_error_px": 0.4431847929954529,
+      "tilt_deg": 42.8739717718675,
+      "normal_x_angle_deg": -42.40692884638054,
+      "normal_y_angle_deg": -9.456675160290692,
+      "centroid_x_px": 926.4241333007812,
+      "centroid_y_px": 980.2291870117188,
+      "corner_hull_image_fraction": 0.181668096270686
+    },
+    {
+      "image": "checkerboard_008.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5799000859260559,
+      "updated_error_px": 0.5644769072532654,
+      "tilt_deg": 30.253317772400727,
+      "normal_x_angle_deg": -2.5516709423371013,
+      "normal_y_angle_deg": -30.180372207822607,
+      "centroid_x_px": 733.5889282226562,
+      "centroid_y_px": 945.479248046875,
+      "corner_hull_image_fraction": 0.2928604175371133
+    },
+    {
+      "image": "checkerboard_010.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.49381858110427856,
+      "updated_error_px": 0.49880316853523254,
+      "tilt_deg": 17.681181973568105,
+      "normal_x_angle_deg": -1.6516515796878453,
+      "normal_y_angle_deg": -17.61318983408901,
+      "centroid_x_px": 709.0390014648438,
+      "centroid_y_px": 1155.1431884765625,
+      "corner_hull_image_fraction": 0.22391888449270822
+    },
+    {
+      "image": "checkerboard_012.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.48075607419013977,
+      "updated_error_px": 0.4824504256248474,
+      "tilt_deg": 13.389767986492249,
+      "normal_x_angle_deg": 3.9608630267923175,
+      "normal_y_angle_deg": -12.830394096798909,
+      "centroid_x_px": 580.2548828125,
+      "centroid_y_px": 1051.5113525390625,
+      "corner_hull_image_fraction": 0.26575708702067347
+    },
+    {
+      "image": "checkerboard_013.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.46932899951934814,
+      "updated_error_px": 0.315458208322525,
+      "tilt_deg": 10.654081503280294,
+      "normal_x_angle_deg": -9.330751269839523,
+      "normal_y_angle_deg": 5.2344360340374845,
+      "centroid_x_px": 739.71826171875,
+      "centroid_y_px": 1015.3762817382812,
+      "corner_hull_image_fraction": 0.13488431437991838
+    },
+    {
+      "image": "checkerboard_015.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5908324122428894,
+      "updated_error_px": 0.6020492315292358,
+      "tilt_deg": 30.61108971414003,
+      "normal_x_angle_deg": -3.8025664863651167,
+      "normal_y_angle_deg": -30.45189041567781,
+      "centroid_x_px": 707.5228271484375,
+      "centroid_y_px": 1011.155029296875,
+      "corner_hull_image_fraction": 0.3356163425141602
+    },
+    {
+      "image": "checkerboard_018.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5259534120559692,
+      "updated_error_px": 0.436203271150589,
+      "tilt_deg": 4.181650612711863,
+      "normal_x_angle_deg": 3.435071208415674,
+      "normal_y_angle_deg": -2.390355785179952,
+      "centroid_x_px": 669.2860717773438,
+      "centroid_y_px": 1273.754150390625,
+      "corner_hull_image_fraction": 0.17141194680636843
+    },
+    {
+      "image": "checkerboard_019.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.4857267439365387,
+      "updated_error_px": 0.35054323077201843,
+      "tilt_deg": 41.668400241669076,
+      "normal_x_angle_deg": 38.64395712547409,
+      "normal_y_angle_deg": 21.34956044380393,
+      "centroid_x_px": 735.7824096679688,
+      "centroid_y_px": 1209.122802734375,
+      "corner_hull_image_fraction": 0.1185681970014389
+    },
+    {
+      "image": "checkerboard_020.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5551395416259766,
+      "updated_error_px": 0.6528364419937134,
+      "tilt_deg": 38.37642400187359,
+      "normal_x_angle_deg": -14.3588899856581,
+      "normal_y_angle_deg": 36.848035195134756,
+      "centroid_x_px": 741.5547485351562,
+      "centroid_y_px": 570.954345703125,
+      "corner_hull_image_fraction": 0.1560610570846966
+    },
+    {
+      "image": "checkerboard_021.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.38970890641212463,
+      "updated_error_px": 0.37457475066185,
+      "tilt_deg": 9.684558124743406,
+      "normal_x_angle_deg": 1.5685506224234935,
+      "normal_y_angle_deg": -9.5614024210057,
+      "centroid_x_px": 792.9317016601562,
+      "centroid_y_px": 793.2132568359375,
+      "corner_hull_image_fraction": 0.2046894909778914
+    }
+  ],
+  "original_files_unchanged": true,
+  "caveats": [
+    "Excluded-image error uses pose fitted with fixed updated intrinsics; it is not independent validation.",
+    "Lower training RMS does not prove calibration accuracy or metric measurement accuracy.",
+    "No other images excluded; 1500x1125 model not recalibrated or written."
+  ]
+}
