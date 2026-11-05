@@ -1,0 +1,3063 @@
+[
+  {
+    "name": "notebook_001",
+    "filename": "notebook_001.jpg",
+    "mask_filename": "notebook_001.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (147352) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 60.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1460,
+        111
+      ],
+      [
+        243,
+        385
+      ],
+      [
+        108,
+        1701
+      ],
+      [
+        943,
+        1720
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_002",
+    "filename": "notebook_002.jpg",
+    "mask_filename": "notebook_002.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (120654) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 58.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1496,
+        222
+      ],
+      [
+        154,
+        256
+      ],
+      [
+        194,
+        1535
+      ],
+      [
+        1164,
+        1396
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_003",
+    "filename": "notebook_003.jpg",
+    "mask_filename": "notebook_003.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "CRITICAL",
+    "status": "automatically_proposed",
+    "initial_issues": [
+      "AXIS_ALIGNED_BBOX: Draft mask is a naive bounding box, incorporating background.",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (89694) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 48.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        284,
+        289
+      ],
+      [
+        284,
+        894
+      ],
+      [
+        1497,
+        894
+      ],
+      [
+        1497,
+        289
+      ]
+    ],
+    "exclusion_polygons": [
+      [
+        [
+          768,
+          886
+        ],
+        [
+          864,
+          950
+        ],
+        [
+          905,
+          926
+        ],
+        [
+          888,
+          962
+        ],
+        [
+          1074,
+          991
+        ],
+        [
+          1055,
+          965
+        ],
+        [
+          956,
+          964
+        ],
+        [
+          987,
+          939
+        ],
+        [
+          937,
+          889
+        ],
+        [
+          931,
+          926
+        ],
+        [
+          914,
+          889
+        ],
+        [
+          902,
+          910
+        ]
+      ]
+    ],
+    "reviewer_notes": "Automated proposal: 4-corner perspective quad fitting replacing naive axis-aligned rectangle. Mouse exclusion cutout proposed on notebook border.",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_004",
+    "filename": "notebook_004.jpg",
+    "mask_filename": "notebook_004.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (224298) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 64.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        166,
+        259
+      ],
+      [
+        130,
+        1864
+      ],
+      [
+        1324,
+        1892
+      ],
+      [
+        1364,
+        290
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_005",
+    "filename": "notebook_005.jpg",
+    "mask_filename": "notebook_005.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (259611) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 71.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        188,
+        170
+      ],
+      [
+        50,
+        1815
+      ],
+      [
+        1327,
+        1923
+      ],
+      [
+        1466,
+        277
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_006",
+    "filename": "notebook_006.jpg",
+    "mask_filename": "notebook_006.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (193004) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 67.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        332,
+        167
+      ],
+      [
+        332,
+        1701
+      ],
+      [
+        1499,
+        1701
+      ],
+      [
+        1499,
+        167
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_007",
+    "filename": "notebook_007.jpg",
+    "mask_filename": "notebook_007.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (307241) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 57.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1275,
+        121
+      ],
+      [
+        68,
+        247
+      ],
+      [
+        240,
+        1901
+      ],
+      [
+        1447,
+        1775
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_008",
+    "filename": "notebook_008.jpg",
+    "mask_filename": "notebook_008.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top, bottom, left, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (142158) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 67.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top",
+      "bottom",
+      "left",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        12,
+        0
+      ],
+      [
+        0,
+        786
+      ],
+      [
+        1403,
+        1124
+      ],
+      [
+        1499,
+        321
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_009",
+    "filename": "notebook_009.jpg",
+    "mask_filename": "notebook_009.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (310445) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 72.9% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        74,
+        68
+      ],
+      [
+        286,
+        1516
+      ],
+      [
+        1499,
+        1338
+      ],
+      [
+        1306,
+        0
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_010",
+    "filename": "notebook_010.jpg",
+    "mask_filename": "notebook_010.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (141786) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 67.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        227,
+        81
+      ],
+      [
+        51,
+        1018
+      ],
+      [
+        1472,
+        1124
+      ],
+      [
+        1499,
+        321
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_011",
+    "filename": "notebook_011.jpg",
+    "mask_filename": "notebook_011.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (45817) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 45.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1176,
+        160
+      ],
+      [
+        474,
+        358
+      ],
+      [
+        605,
+        820
+      ],
+      [
+        1308,
+        622
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_012",
+    "filename": "notebook_012.jpg",
+    "mask_filename": "notebook_012.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (57228) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 72.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        157,
+        188
+      ],
+      [
+        286,
+        1126
+      ],
+      [
+        1499,
+        1227
+      ],
+      [
+        1066,
+        305
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_013",
+    "filename": "notebook_013.jpg",
+    "mask_filename": "notebook_013.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "orientation": "portrait",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top, left, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (235051) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 70.2% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top",
+      "left",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        320,
+        0
+      ],
+      [
+        0,
+        302
+      ],
+      [
+        0,
+        664
+      ],
+      [
+        952,
+        1673
+      ],
+      [
+        1499,
+        1153
+      ],
+      [
+        1499,
+        964
+      ],
+      [
+        590,
+        0
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_014",
+    "filename": "notebook_014.jpg",
+    "mask_filename": "notebook_014.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (59772) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 72.2% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1398,
+        77
+      ],
+      [
+        0,
+        185
+      ],
+      [
+        24,
+        859
+      ],
+      [
+        1449,
+        751
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_015",
+    "filename": "notebook_015.jpg",
+    "mask_filename": "notebook_015.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (62407) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 45.5% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        360,
+        51
+      ],
+      [
+        305,
+        1032
+      ],
+      [
+        941,
+        1037
+      ],
+      [
+        1010,
+        291
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_016",
+    "filename": "notebook_016.jpg",
+    "mask_filename": "notebook_016.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (65027) inside mask."
+    ],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1400,
+        0
+      ],
+      [
+        185,
+        190
+      ],
+      [
+        282,
+        781
+      ],
+      [
+        1495,
+        585
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_017",
+    "filename": "notebook_017.jpg",
+    "mask_filename": "notebook_017.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (51662) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 43.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        927,
+        63
+      ],
+      [
+        483,
+        111
+      ],
+      [
+        679,
+        1074
+      ],
+      [
+        1276,
+        903
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_018",
+    "filename": "notebook_018.jpg",
+    "mask_filename": "notebook_018.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (35304) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        554,
+        169
+      ],
+      [
+        540,
+        746
+      ],
+      [
+        1386,
+        765
+      ],
+      [
+        1400,
+        187
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_019",
+    "filename": "notebook_019.jpg",
+    "mask_filename": "notebook_019.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (100619) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 43.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        354,
+        49
+      ],
+      [
+        349,
+        963
+      ],
+      [
+        1123,
+        965
+      ],
+      [
+        1126,
+        51
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_020",
+    "filename": "notebook_020.jpg",
+    "mask_filename": "notebook_020.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (60254) inside mask."
+    ],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        418,
+        0
+      ],
+      [
+        35,
+        790
+      ],
+      [
+        576,
+        1051
+      ],
+      [
+        966,
+        240
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_021",
+    "filename": "notebook_021.jpg",
+    "mask_filename": "notebook_021.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (74470) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 69.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        946,
+        137
+      ],
+      [
+        335,
+        160
+      ],
+      [
+        372,
+        1095
+      ],
+      [
+        983,
+        1069
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_022",
+    "filename": "notebook_022.jpg",
+    "mask_filename": "notebook_022.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (113109) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 43.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        434,
+        77
+      ],
+      [
+        395,
+        1014
+      ],
+      [
+        1059,
+        1039
+      ],
+      [
+        1096,
+        102
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_023",
+    "filename": "notebook_023.jpg",
+    "mask_filename": "notebook_023.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (75793) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 41.6% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1195,
+        243
+      ],
+      [
+        307,
+        323
+      ],
+      [
+        363,
+        947
+      ],
+      [
+        1253,
+        866
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_024",
+    "filename": "notebook_024.jpg",
+    "mask_filename": "notebook_024.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (97452) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1273,
+        293
+      ],
+      [
+        296,
+        346
+      ],
+      [
+        335,
+        1060
+      ],
+      [
+        1313,
+        1007
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_025",
+    "filename": "notebook_025.jpg",
+    "mask_filename": "notebook_025.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (88255) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 40.4% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1209,
+        220
+      ],
+      [
+        250,
+        275
+      ],
+      [
+        291,
+        959
+      ],
+      [
+        1250,
+        903
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_026",
+    "filename": "notebook_026.jpg",
+    "mask_filename": "notebook_026.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (33492) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        227,
+        74
+      ],
+      [
+        164,
+        673
+      ],
+      [
+        1195,
+        703
+      ],
+      [
+        1188,
+        118
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_027",
+    "filename": "notebook_027.jpg",
+    "mask_filename": "notebook_027.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (76781) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 43.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1306,
+        199
+      ],
+      [
+        134,
+        236
+      ],
+      [
+        95,
+        1002
+      ],
+      [
+        955,
+        956
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_028",
+    "filename": "notebook_028.jpg",
+    "mask_filename": "notebook_028.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (174514) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 51.9% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1317,
+        109
+      ],
+      [
+        0,
+        134
+      ],
+      [
+        0,
+        1032
+      ],
+      [
+        1333,
+        1009
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_029",
+    "filename": "notebook_029.jpg",
+    "mask_filename": "notebook_029.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (59843) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1109,
+        83
+      ],
+      [
+        517,
+        104
+      ],
+      [
+        547,
+        1007
+      ],
+      [
+        1139,
+        986
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_030",
+    "filename": "notebook_030.jpg",
+    "mask_filename": "notebook_030.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (68309) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        573,
+        95
+      ],
+      [
+        134,
+        467
+      ],
+      [
+        681,
+        1118
+      ],
+      [
+        800,
+        1124
+      ],
+      [
+        1176,
+        807
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_031",
+    "filename": "notebook_031.jpg",
+    "mask_filename": "notebook_031.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top, bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (106528) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 45.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top",
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        483,
+        0
+      ],
+      [
+        40,
+        583
+      ],
+      [
+        773,
+        1124
+      ],
+      [
+        1223,
+        528
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_032",
+    "filename": "notebook_032.jpg",
+    "mask_filename": "notebook_032.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (49879) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        469,
+        83
+      ],
+      [
+        134,
+        908
+      ],
+      [
+        687,
+        1101
+      ],
+      [
+        1043,
+        323
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_033",
+    "filename": "notebook_033.jpg",
+    "mask_filename": "notebook_033.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (45114) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 41.4% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1135,
+        381
+      ],
+      [
+        755,
+        74
+      ],
+      [
+        0,
+        580
+      ],
+      [
+        295,
+        1030
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_034",
+    "filename": "notebook_034.jpg",
+    "mask_filename": "notebook_034.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (76158) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 40.6% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1363,
+        111
+      ],
+      [
+        204,
+        194
+      ],
+      [
+        252,
+        873
+      ],
+      [
+        1414,
+        790
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_035",
+    "filename": "notebook_035.jpg",
+    "mask_filename": "notebook_035.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (43248) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.5% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        508,
+        120
+      ],
+      [
+        118,
+        839
+      ],
+      [
+        574,
+        1085
+      ],
+      [
+        964,
+        365
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_036",
+    "filename": "notebook_036.jpg",
+    "mask_filename": "notebook_036.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (56348) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        324,
+        56
+      ],
+      [
+        0,
+        745
+      ],
+      [
+        0,
+        896
+      ],
+      [
+        456,
+        1111
+      ],
+      [
+        839,
+        298
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_037",
+    "filename": "notebook_037.jpg",
+    "mask_filename": "notebook_037.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (57667) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 53.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        976,
+        217
+      ],
+      [
+        0,
+        452
+      ],
+      [
+        70,
+        956
+      ],
+      [
+        1093,
+        710
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_038",
+    "filename": "notebook_038.jpg",
+    "mask_filename": "notebook_038.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (97413) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 49.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        250,
+        279
+      ],
+      [
+        238,
+        972
+      ],
+      [
+        1151,
+        986
+      ],
+      [
+        1163,
+        293
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_039",
+    "filename": "notebook_039.jpg",
+    "mask_filename": "notebook_039.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (62762) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 48.2% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        204,
+        406
+      ],
+      [
+        54,
+        857
+      ],
+      [
+        989,
+        1124
+      ],
+      [
+        1086,
+        524
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_040",
+    "filename": "notebook_040.jpg",
+    "mask_filename": "notebook_040.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (left).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (46288) inside mask."
+    ],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        526,
+        102
+      ],
+      [
+        0,
+        711
+      ],
+      [
+        402,
+        1053
+      ],
+      [
+        978,
+        334
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_041",
+    "filename": "notebook_041.jpg",
+    "mask_filename": "notebook_041.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (43644) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 52.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        483,
+        233
+      ],
+      [
+        123,
+        972
+      ],
+      [
+        434,
+        1124
+      ],
+      [
+        611,
+        1124
+      ],
+      [
+        936,
+        455
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_042",
+    "filename": "notebook_042.jpg",
+    "mask_filename": "notebook_042.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (41831) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        499,
+        74
+      ],
+      [
+        90,
+        781
+      ],
+      [
+        537,
+        1039
+      ],
+      [
+        946,
+        332
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_043",
+    "filename": "notebook_043.jpg",
+    "mask_filename": "notebook_043.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (41483) inside mask."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        344,
+        335
+      ],
+      [
+        185,
+        733
+      ],
+      [
+        1073,
+        1016
+      ],
+      [
+        1158,
+        482
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_044",
+    "filename": "notebook_044.jpg",
+    "mask_filename": "notebook_044.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (81995) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 52.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        372,
+        196
+      ],
+      [
+        114,
+        896
+      ],
+      [
+        734,
+        1124
+      ],
+      [
+        1013,
+        1124
+      ],
+      [
+        1239,
+        515
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_045",
+    "filename": "notebook_045.jpg",
+    "mask_filename": "notebook_045.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (106537) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 47.4% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1156,
+        176
+      ],
+      [
+        268,
+        436
+      ],
+      [
+        457,
+        1085
+      ],
+      [
+        1347,
+        825
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_046",
+    "filename": "notebook_046.jpg",
+    "mask_filename": "notebook_046.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (74324) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 53.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        333,
+        169
+      ],
+      [
+        171,
+        848
+      ],
+      [
+        1098,
+        1069
+      ],
+      [
+        1259,
+        388
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_047",
+    "filename": "notebook_047.jpg",
+    "mask_filename": "notebook_047.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (101134) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        936,
+        137
+      ],
+      [
+        208,
+        240
+      ],
+      [
+        335,
+        1124
+      ],
+      [
+        1068,
+        1055
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_048",
+    "filename": "notebook_048.jpg",
+    "mask_filename": "notebook_048.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (97863) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 50.2% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        950,
+        93
+      ],
+      [
+        146,
+        143
+      ],
+      [
+        208,
+        1124
+      ],
+      [
+        1015,
+        1088
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_049",
+    "filename": "notebook_049.jpg",
+    "mask_filename": "notebook_049.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (94270) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        833,
+        63
+      ],
+      [
+        132,
+        196
+      ],
+      [
+        312,
+        1124
+      ],
+      [
+        1017,
+        1016
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_050",
+    "filename": "notebook_050.jpg",
+    "mask_filename": "notebook_050.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (105491) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 42.3% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1347,
+        83
+      ],
+      [
+        238,
+        224
+      ],
+      [
+        330,
+        947
+      ],
+      [
+        1439,
+        806
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_051",
+    "filename": "notebook_051.jpg",
+    "mask_filename": "notebook_051.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom, left, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (120216) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 40.5% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom",
+      "left",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1373,
+        102
+      ],
+      [
+        0,
+        505
+      ],
+      [
+        171,
+        1124
+      ],
+      [
+        1499,
+        740
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_052",
+    "filename": "notebook_052.jpg",
+    "mask_filename": "notebook_052.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (89297) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 54.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1137,
+        268
+      ],
+      [
+        162,
+        344
+      ],
+      [
+        208,
+        938
+      ],
+      [
+        1183,
+        862
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_053",
+    "filename": "notebook_053.jpg",
+    "mask_filename": "notebook_053.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (66565) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 40.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1467,
+        226
+      ],
+      [
+        418,
+        293
+      ],
+      [
+        596,
+        1124
+      ],
+      [
+        1075,
+        1046
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_054",
+    "filename": "notebook_054.jpg",
+    "mask_filename": "notebook_054.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (92110) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 47.4% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1091,
+        298
+      ],
+      [
+        116,
+        420
+      ],
+      [
+        192,
+        1016
+      ],
+      [
+        1165,
+        894
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_055",
+    "filename": "notebook_055.jpg",
+    "mask_filename": "notebook_055.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (64412) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 52.6% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1001,
+        330
+      ],
+      [
+        81,
+        418
+      ],
+      [
+        137,
+        993
+      ],
+      [
+        1054,
+        905
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_056",
+    "filename": "notebook_056.jpg",
+    "mask_filename": "notebook_056.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (109509) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 40.4% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1495,
+        224
+      ],
+      [
+        144,
+        273
+      ],
+      [
+        169,
+        975
+      ],
+      [
+        1499,
+        924
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_057",
+    "filename": "notebook_057.jpg",
+    "mask_filename": "notebook_057.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (122486) inside mask."
+    ],
+    "truncated_borders": [
+      "bottom",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1403,
+        90
+      ],
+      [
+        14,
+        540
+      ],
+      [
+        206,
+        1124
+      ],
+      [
+        1499,
+        746
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_058",
+    "filename": "notebook_058.jpg",
+    "mask_filename": "notebook_058.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "NORMAL",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (24308) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 49.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1003,
+        148
+      ],
+      [
+        390,
+        160
+      ],
+      [
+        409,
+        1037
+      ],
+      [
+        1022,
+        1023
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_059",
+    "filename": "notebook_059.jpg",
+    "mask_filename": "notebook_059.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (49778) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 44.9% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1059,
+        399
+      ],
+      [
+        192,
+        492
+      ],
+      [
+        217,
+        1044
+      ],
+      [
+        1084,
+        963
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_060",
+    "filename": "notebook_060.jpg",
+    "mask_filename": "notebook_060.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (40181) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1022,
+        328
+      ],
+      [
+        287,
+        388
+      ],
+      [
+        395,
+        1124
+      ],
+      [
+        955,
+        1124
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_061",
+    "filename": "notebook_061.jpg",
+    "mask_filename": "notebook_061.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (bottom, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (86252) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 51.9% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "bottom",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1490,
+        185
+      ],
+      [
+        333,
+        282
+      ],
+      [
+        404,
+        1124
+      ],
+      [
+        1499,
+        1081
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_062",
+    "filename": "notebook_062.jpg",
+    "mask_filename": "notebook_062.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (64315) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 51.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1017,
+        337
+      ],
+      [
+        107,
+        427
+      ],
+      [
+        164,
+        1002
+      ],
+      [
+        1075,
+        912
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_063",
+    "filename": "notebook_063.jpg",
+    "mask_filename": "notebook_063.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top, right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (111273) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 57.0% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top",
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1368,
+        0
+      ],
+      [
+        797,
+        0
+      ],
+      [
+        354,
+        213
+      ],
+      [
+        637,
+        804
+      ],
+      [
+        1499,
+        391
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_064",
+    "filename": "notebook_064.jpg",
+    "mask_filename": "notebook_064.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (126119) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 51.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        229,
+        243
+      ],
+      [
+        554,
+        857
+      ],
+      [
+        1497,
+        357
+      ],
+      [
+        1306,
+        0
+      ],
+      [
+        690,
+        0
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_065",
+    "filename": "notebook_065.jpg",
+    "mask_filename": "notebook_065.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (top).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (68027) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 56.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1294,
+        0
+      ],
+      [
+        732,
+        0
+      ],
+      [
+        240,
+        256
+      ],
+      [
+        531,
+        818
+      ],
+      [
+        1469,
+        329
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_066",
+    "filename": "notebook_066.jpg",
+    "mask_filename": "notebook_066.png",
+    "split": "val",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "BORDER_TRUNCATION: Object clipped at borders (right).",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (36000) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 49.9% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1499,
+        229
+      ],
+      [
+        714,
+        215
+      ],
+      [
+        224,
+        633
+      ],
+      [
+        484,
+        1018
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_067",
+    "filename": "notebook_067.jpg",
+    "mask_filename": "notebook_067.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "MEDIUM",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (99770) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 49.7% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        1056,
+        208
+      ],
+      [
+        162,
+        252
+      ],
+      [
+        192,
+        829
+      ],
+      [
+        1084,
+        786
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_068",
+    "filename": "notebook_068.jpg",
+    "mask_filename": "notebook_068.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (95367) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 51.1% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        254,
+        192
+      ],
+      [
+        222,
+        700
+      ],
+      [
+        1082,
+        737
+      ],
+      [
+        1167,
+        233
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_069",
+    "filename": "notebook_069.jpg",
+    "mask_filename": "notebook_069.png",
+    "split": "test",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "HIGH",
+    "status": "unresolved",
+    "initial_issues": [
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (84333) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 54.5% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        319,
+        254
+      ],
+      [
+        284,
+        728
+      ],
+      [
+        1123,
+        744
+      ],
+      [
+        1040,
+        277
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "",
+    "verified_at": null,
+    "verified_by": null
+  },
+  {
+    "name": "notebook_070",
+    "filename": "notebook_070.jpg",
+    "mask_filename": "notebook_070.png",
+    "split": "train",
+    "dimensions": [
+      1500,
+      1125
+    ],
+    "orientation": "landscape",
+    "priority": "CRITICAL",
+    "status": "automatically_proposed",
+    "initial_issues": [
+      "AXIS_ALIGNED_BBOX: Draft mask is a naive bounding box, incorporating background.",
+      "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (99718) inside mask.",
+      "BOUNDARY_MISALIGNMENT: 46.8% of perimeter lacks image edge gradients."
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "polygon_vertices": [
+      [
+        194,
+        231
+      ],
+      [
+        194,
+        848
+      ],
+      [
+        1061,
+        848
+      ],
+      [
+        1061,
+        231
+      ]
+    ],
+    "exclusion_polygons": [],
+    "reviewer_notes": "Automated proposal: 4-corner perspective quad fitting replacing naive axis-aligned rectangle. Pending human inspection and corner verification.",
+    "verified_at": null,
+    "verified_by": null
+  }
+]

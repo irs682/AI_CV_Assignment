@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Measure It — Stage 3 Ground-Truth Refinement Tool</title>
+  <style>
+    :root {
+      --bg: #1e1e24;
+      --panel-bg: #282830;
+      --accent: #2d7ff9;
+      --accent-hover: #1b68dd;
+      --text: #e0e0e0;
+      --text-dim: #9e9ea8;
+      --border: #3c3c46;
+      --green: #2ecc71;
+      --amber: #f39c12;
+      --red: #e74c3c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+    /* Header */
+    header {
+      background: var(--panel-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      height: 54px;
+    }
+    .header-title {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge-critical { background: #962d22; color: #fff; }
+    .badge-high { background: #b03a2e; color: #fff; }
+    .badge-medium { background: #af601a; color: #fff; }
+    .badge-normal { background: #273746; color: #abb2b9; }
+    .badge-verified { background: #196f3d; color: #fff; }
+    .badge-proposed { background: #b7950b; color: #fff; }
+    .badge-unresolved { background: #7b241c; color: #fff; }
+
+    /* Top Controls */
+    .top-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    select, button, input[type="text"], textarea {
+      background: #1a1a20;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    select { cursor: pointer; }
+    button {
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    button:hover { background: #32323e; border-color: #555562; }
+    button.btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    button.btn-primary:hover { background: var(--accent-hover); }
+    button.btn-success {
+      background: #27ae60;
+      border-color: #27ae60;
+      color: #fff;
+    }
+    button.btn-success:hover { background: #229954; }
+
+    /* Main Container */
+    .main-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 54px);
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 320px;
+      background: var(--panel-bg);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 16px;
+      gap: 16px;
+    }
+    .sidebar-section {
+      background: #202028;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sidebar-section h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+    }
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+    .meta-label { color: var(--text-dim); }
+    .meta-val { font-weight: 600; }
+    
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .checkbox-label {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    /* Canvas Work Area */
+    .viewport {
+      flex: 1;
+      position: relative;
+      background: #141418;
+      overflow: hidden;
+      cursor: grab;
+    }
+    .viewport.grabbing { cursor: grabbing; }
+    .viewport.drawing { cursor: crosshair; }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+    }
+
+    /* Floating Toolbar */
+    .floating-toolbar {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(40, 40, 48, 0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      z-index: 10;
+    }
+    .toolbar-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toolbar-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--border);
+    }
+    .slider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .slider-wrap input { width: 90px; }
+
+    /* Status Notifications */
+    #toast {
+      position: fixed;
+      top: 65px;
+      right: 20px;
+      padding: 10px 18px;
+      background: #27ae60;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 13px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+      z-index: 100;
+    }
+    #toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-title">
+      <span>Measure It: Stage 3 Annotation Refinement</span>
+      <span id="current-badge" class="badge badge-normal">UNRESOLVED</span>
+      <span id="priority-badge" class="badge badge-normal">PRIORITY</span>
+    </div>
+
+    <div class="top-controls">
+      <select id="filter-select">
+        <option value="all">Filter: All Images (70)</option>
+        <option value="priority">Filter: High / Critical Priority</option>
+        <option value="test">Filter: Held-Out Test Set (7)</option>
+        <option value="unresolved">Filter: Unresolved</option>
+        <option value="proposed">Filter: Automatically Proposed</option>
+        <option value="verified">Filter: Manually Verified</option>
+      </select>
+
+      <button id="btn-prev" title="Previous Image [">&larr; Prev</button>
+      <select id="image-select"></select>
+      <button id="btn-next" title="Next Image ]">Next &rarr;</button>
+
+      <button id="btn-save" class="btn-success" title="Save Verified Mask (Ctrl+S)">Save & Verify Mask</button>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <h3>Image Metadata</h3>
+        <div class="meta-row"><span class="meta-label">Identifier:</span><span id="meta-name" class="meta-val">-</span></div>
+        <div class="meta-row"><span class="meta-label">Resolution:</span><span id="meta-res" class="meta-val">-</span></div>
+        <div class="meta-row"><span class="meta-label">Dataset Split:</span><span id="meta-split" class="meta-val">-</span></div>
+        <div class="meta-row"><span class="meta-label">Orientation:</span><span id="meta-orient" class="meta-val">-</span></div>
+        <div class="meta-row"><span class="meta-label">Draft Issues:</span><span id="meta-issues" class="meta-val" style="font-size:11px; text-align:right;">-</span></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Boundary & Occlusion Tools</h3>
+        <button id="btn-mode-edit" class="btn-primary" style="width:100%;">Mode: Drag / Edit Vertices</button>
+        <button id="btn-mode-redraw" style="width:100%;">Redraw Notebook Boundary</button>
+        <button id="btn-add-exclusion" style="width:100%; border-color:#e74c3c; color:#ff7675;">+ Add Mouse Occlusion Cutout</button>
+        <button id="btn-clear-exclusions" style="width:100%; font-size:11px; color:#aaa;">Clear Mouse Cutouts</button>
+        <button id="btn-reset-draft" style="width:100%; font-size:11px;">Reset to Draft Polygon</button>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Frame Truncation</h3>
+        <p style="font-size:11px; color:var(--text-dim);">Check borders where notebook extends beyond frame:</p>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" id="trunc-top"> Top</label>
+          <label class="checkbox-label"><input type="checkbox" id="trunc-bottom"> Bottom</label>
+          <label class="checkbox-label"><input type="checkbox" id="trunc-left"> Left</label>
+          <label class="checkbox-label"><input type="checkbox" id="trunc-right"> Right</label>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Verification & Status</h3>
+        <label style="font-size:12px; color:var(--text-dim);">Verification Status:</label>
+        <select id="status-select">
+          <option value="unresolved">Unresolved (Draft)</option>
+          <option value="automatically_proposed">Automatically Proposed</option>
+          <option value="manually_verified">Manually Verified (Human Approved)</option>
+        </select>
+        <label class="checkbox-label" style="margin-top:6px;">
+          <input type="checkbox" id="chk-mouse-present"> Mouse occludes / touches notebook
+        </label>
+        <label style="font-size:12px; color:var(--text-dim); margin-top:6px;">Reviewer Notes:</label>
+        <textarea id="reviewer-notes" rows="3" placeholder="Notes on boundary adjustments, mouse cutouts, or perspective corners..."></textarea>
+      </div>
+
+      <div style="font-size:11px; color:var(--text-dim); line-height:1.4;">
+        <strong>Keyboard Shortcuts:</strong><br>
+        &bull; <strong>Drag Vertex:</strong> Left-click and drag point<br>
+        &bull; <strong>Add Vertex:</strong> Click along any edge segment<br>
+        &bull; <strong>Delete Vertex:</strong> Alt+Click or Right-Click point<br>
+        &bull; <strong>Pan / Zoom:</strong> Middle-drag or Wheel; Space+Drag<br>
+        &bull; <strong>Next / Prev:</strong> [ and ] keys<br>
+        &bull; <strong>Save Mask:</strong> Ctrl + S
+      </div>
+    </div>
+
+    <!-- Canvas Viewport -->
+    <div id="viewport" class="viewport">
+      <canvas id="canvas"></canvas>
+
+      <div class="floating-toolbar">
+        <div class="toolbar-group">
+          <button id="btn-zoom-fit">Fit</button>
+          <button id="btn-zoom-100">100%</button>
+          <span id="zoom-label" style="font-size:12px; min-width:42px;">100%</span>
+        </div>
+        <div class="toolbar-divider"></div>
+        <div class="slider-wrap">
+          <span>Mask Opacity:</span>
+          <input type="range" id="opacity-slider" min="0" max="100" value="40">
+          <span id="opacity-val">40%</span>
+        </div>
+        <div class="toolbar-divider"></div>
+        <div class="toolbar-group">
+          <label class="checkbox-label" style="font-size:12px;">
+            <input type="checkbox" id="chk-edge-guidance"> Edge Snapping Guide (Canny)
+          </label>
+          <label class="checkbox-label" style="font-size:12px;">
+            <input type="checkbox" id="chk-show-draft" checked> Show Draft Ref
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast">Mask Saved Successfully!</div>
+
+  <script>
+    // State variables
+    let imagesList = [];
+    let currentImageIndex = 0;
+    let currentRecord = null;
+    let baseImage = new Image();
+    let edgeImage = null;
+
+    let zoom = 1.0;
+    let panX = 0;
+    let panY = 0;
+    let isPanning = false;
+    let startPanX = 0, startPanY = 0;
+
+    let polygon = []; // Main notebook boundary: [[x, y], ...]
+    let exclusions = []; // Mouse exclusion boundaries: [[[x, y], ...], ...]
+    let draftPolygon = [];
+
+    let activeMode = 'edit'; // 'edit', 'redraw', 'add_exclusion'
+    let activeExclusionIndex = -1;
+    let draggingVertex = null; // { type: 'poly' | 'exc', excIdx: int, vertIdx: int }
+    let hoverVertex = null;
+    let hoverEdge = null; // { type, excIdx, edgeIdx, pt }
+
+    let drawingPts = [];
+
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const viewport = document.getElementById('viewport');
+
+    // Init
+    async function init() {
+      setupEventListeners();
+      await fetchImages();
+    }
+
+    async function fetchImages() {
+      try {
+        const res = await fetch('/api/images');
+        imagesList = await res.json();
+        populateImageSelector();
+        if (imagesList.length > 0) {
+          selectImage(0);
+        }
+      } catch (err) {
+        showToast('Error loading image list: ' + err.message, '#c0392b');
+      }
+    }
+
+    function populateImageSelector() {
+      const select = document.getElementById('image-select');
+      const filter = document.getElementById('filter-select').value;
+      select.innerHTML = '';
+
+      imagesList.forEach((img, idx) => {
+        let include = true;
+        if (filter === 'priority' && img.priority !== 'CRITICAL' && img.priority !== 'HIGH') include = false;
+        if (filter === 'test' && img.split !== 'test') include = false;
+        if (filter === 'unresolved' && img.status !== 'unresolved') include = false;
+        if (filter === 'proposed' && img.status !== 'automatically_proposed') include = false;
+        if (filter === 'verified' && img.status !== 'manually_verified') include = false;
+
+        if (include) {
+          const opt = document.createElement('option');
+          opt.value = idx;
+          const statusIcon = img.status === 'manually_verified' ? '✓ ' : (img.status === 'automatically_proposed' ? '⚙ ' : '✗ ');
+          const prioTag = img.priority === 'CRITICAL' ? ' [CRITICAL]' : (img.priority === 'HIGH' ? ' [HIGH]' : '');
+          opt.textContent = `${statusIcon}${img.name} (${img.split.toUpperCase()})${prioTag}`;
+          select.appendChild(opt);
+        }
+      });
+    }
+
+    async function selectImage(index) {
+      if (index < 0 || index >= imagesList.length) return;
+      currentImageIndex = index;
+      currentRecord = imagesList[index];
+
+      document.getElementById('image-select').value = index;
+      updateSidebarMeta();
+
+      // Reset state
+      polygon = currentRecord.polygon_vertices ? JSON.parse(JSON.stringify(currentRecord.polygon_vertices)) : [];
+      exclusions = currentRecord.exclusion_polygons ? JSON.parse(JSON.stringify(currentRecord.exclusion_polygons)) : [];
+      draftPolygon = JSON.parse(JSON.stringify(polygon));
+      drawingPts = [];
+      activeMode = 'edit';
+      updateModeButtons();
+
+      // Load base photograph
+      baseImage = new Image();
+      baseImage.onload = () => {
+        canvas.width = baseImage.naturalWidth;
+        canvas.height = baseImage.naturalHeight;
+        fitToScreen();
+        generateEdgeGuide();
+        redraw();
+      };
+      baseImage.src = `/dataset/images/${currentRecord.name}.jpg`;
+    }
+
+    function updateSidebarMeta() {
+      document.getElementById('meta-name').textContent = currentRecord.name;
+      document.getElementById('meta-res').textContent = `${currentRecord.dimensions[0]} × ${currentRecord.dimensions[1]}`;
+      document.getElementById('meta-split').textContent = currentRecord.split.toUpperCase();
+      document.getElementById('meta-orient').textContent = currentRecord.orientation;
+      document.getElementById('meta-issues').textContent = currentRecord.initial_issues.join(', ') || 'None';
+
+      // Status Badge
+      const statusBadge = document.getElementById('current-badge');
+      statusBadge.textContent = currentRecord.status.toUpperCase();
+      statusBadge.className = 'badge ' + (
+        currentRecord.status === 'manually_verified' ? 'badge-verified' : 
+        (currentRecord.status === 'automatically_proposed' ? 'badge-proposed' : 'badge-unresolved')
+      );
+
+      // Priority Badge
+      const prioBadge = document.getElementById('priority-badge');
+      prioBadge.textContent = currentRecord.priority;
+      prioBadge.className = 'badge ' + (
+        currentRecord.priority === 'CRITICAL' ? 'badge-critical' :
+        (currentRecord.priority === 'HIGH' ? 'badge-high' : 
+        (currentRecord.priority === 'MEDIUM' ? 'badge-medium' : 'badge-normal'))
+      );
+
+      // Status selector
+      document.getElementById('status-select').value = currentRecord.status;
+      document.getElementById('reviewer-notes').value = currentRecord.reviewer_notes || '';
+      document.getElementById('chk-mouse-present').checked = !!currentRecord.mouse_occlusion;
+
+      // Truncation checkboxes
+      const truncs = currentRecord.truncated_borders || [];
+      document.getElementById('trunc-top').checked = truncs.includes('top');
+      document.getElementById('trunc-bottom').checked = truncs.includes('bottom');
+      document.getElementById('trunc-left').checked = truncs.includes('left');
+      document.getElementById('trunc-right').checked = truncs.includes('right');
+    }
+
+    function generateEdgeGuide() {
+      // Offscreen edge detector for visual snapping reference
+      const offCanvas = document.createElement('canvas');
+      offCanvas.width = canvas.width;
+      offCanvas.height = canvas.height;
+      const offCtx = offCanvas.getContext('2d');
+      offCtx.drawImage(baseImage, 0, 0);
+      const imgData = offCtx.getImageData(0, 0, offCanvas.width, offCanvas.height);
+      const data = imgData.data;
+
+      // Simple Sobel gradient magnitude for edges
+      const w = offCanvas.width;
+      const h = offCanvas.height;
+      const gray = new Uint8Array(w * h);
+      for (let i = 0; i < data.length; i += 4) {
+        gray[i / 4] = (data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114);
+      }
+
+      const edgeData = offCtx.createImageData(w, h);
+      const edgeBytes = edgeData.data;
+      for (let y = 1; y < h - 1; y++) {
+        for (let x = 1; x < w - 1; x++) {
+          const idx = y * w + x;
+          const gx = -gray[idx - w - 1] + gray[idx - w + 1]
+                     - 2 * gray[idx - 1] + 2 * gray[idx + 1]
+                     - gray[idx + w - 1] + gray[idx + w + 1];
+          const gy = -gray[idx - w - 1] - 2 * gray[idx - w] - gray[idx - w + 1]
+                     + gray[idx + w - 1] + 2 * gray[idx + w] + gray[idx + w + 1];
+          const mag = Math.min(255, Math.hypot(gx, gy));
+          const pIdx = idx * 4;
+          if (mag > 50) {
+            edgeBytes[pIdx] = 0;
+            edgeBytes[pIdx + 1] = 255;
+            edgeBytes[pIdx + 2] = 255;
+            edgeBytes[pIdx + 3] = 160;
+          } else {
+            edgeBytes[pIdx + 3] = 0;
+          }
+        }
+      }
+      offCtx.putImageData(edgeData, 0, 0);
+      edgeImage = offCanvas;
+    }
+
+    function redraw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (!baseImage.complete) return;
+
+      // 1. Draw base photo
+      ctx.drawImage(baseImage, 0, 0);
+
+      // 2. Edge Guidance Overlay
+      if (document.getElementById('chk-edge-guidance').checked && edgeImage) {
+        ctx.drawImage(edgeImage, 0, 0);
+      }
+
+      // 3. Draft Reference Contour
+      if (document.getElementById('chk-show-draft').checked && draftPolygon.length > 2) {
+        ctx.strokeStyle = 'rgba(231, 76, 60, 0.7)';
+        ctx.lineWidth = 3 / zoom;
+        ctx.setLineDash([8 / zoom, 6 / zoom]);
+        drawPolyOutline(draftPolygon, ctx);
+        ctx.setLineDash([]);
+      }
+
+      // 4. Notebook Mask Overlay
+      const opacity = parseFloat(document.getElementById('opacity-slider').value) / 100;
+      if (opacity > 0 && polygon.length > 2) {
+        ctx.save();
+        ctx.fillStyle = `rgba(46, 204, 113, ${opacity})`;
+        ctx.beginPath();
+        polygon.forEach((pt, i) => {
+          if (i === 0) ctx.moveTo(pt[0], pt[1]);
+          else ctx.lineTo(pt[0], pt[1]);
+        });
+        ctx.closePath();
+        ctx.fill();
+
+        // Cut out exclusions (Mouse occlusions)
+        if (exclusions.length > 0) {
+          ctx.globalCompositeOperation = 'destination-out';
+          exclusions.forEach(exc => {
+            if (exc.length > 2) {
+              ctx.beginPath();
+              exc.forEach((pt, i) => {
+                if (i === 0) ctx.moveTo(pt[0], pt[1]);
+                else ctx.lineTo(pt[0], pt[1]);
+              });
+              ctx.closePath();
+              ctx.fill();
+            }
+          });
+          ctx.globalCompositeOperation = 'source-over';
+        }
+        ctx.restore();
+      }
+
+      // 5. Main Polygon Boundary
+      if (polygon.length > 1) {
+        ctx.strokeStyle = '#2ecc71';
+        ctx.lineWidth = 4 / zoom;
+        drawPolyOutline(polygon, ctx);
+
+        // Draw handles
+        const r = 7 / zoom;
+        polygon.forEach((pt, idx) => {
+          ctx.beginPath();
+          ctx.arc(pt[0], pt[1], r, 0, Math.PI * 2);
+          ctx.fillStyle = (hoverVertex && hoverVertex.type === 'poly' && hoverVertex.vertIdx === idx) ? '#f1c40f' : '#2ecc71';
+          ctx.fill();
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2 / zoom;
+          ctx.stroke();
+        });
+      }
+
+      // 6. Exclusion Polygons Boundaries (Mouse Occlusion)
+      exclusions.forEach((exc, excIdx) => {
+        if (exc.length > 1) {
+          ctx.strokeStyle = '#e74c3c';
+          ctx.lineWidth = 3 / zoom;
+          ctx.setLineDash([6 / zoom, 4 / zoom]);
+          drawPolyOutline(exc, ctx);
+          ctx.setLineDash([]);
+
+          // Handles for exclusions
+          const r = 6 / zoom;
+          exc.forEach((pt, idx) => {
+            ctx.beginPath();
+            ctx.arc(pt[0], pt[1], r, 0, Math.PI * 2);
+            ctx.fillStyle = (hoverVertex && hoverVertex.type === 'exc' && hoverVertex.excIdx === excIdx && hoverVertex.vertIdx === idx) ? '#f39c12' : '#e74c3c';
+            ctx.fill();
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 1.5 / zoom;
+            ctx.stroke();
+          });
+        }
+      });
+
+      // 7. Active Drawing Preview (Redraw / Add Exclusion)
+      if (drawingPts.length > 0) {
+        ctx.strokeStyle = activeMode === 'add_exclusion' ? '#e74c3c' : '#3498db';
+        ctx.lineWidth = 3 / zoom;
+        ctx.beginPath();
+        drawingPts.forEach((pt, i) => {
+          if (i === 0) ctx.moveTo(pt[0], pt[1]);
+          else ctx.lineTo(pt[0], pt[1]);
+        });
+        ctx.stroke();
+
+        drawingPts.forEach(pt => {
+          ctx.beginPath();
+          ctx.arc(pt[0], pt[1], 5 / zoom, 0, Math.PI * 2);
+          ctx.fillStyle = '#ffffff';
+          ctx.fill();
+        });
+      }
+
+      // 8. Hover Edge Insertion Indicator
+      if (hoverEdge && activeMode === 'edit') {
+        ctx.beginPath();
+        ctx.arc(hoverEdge.pt[0], hoverEdge.pt[1], 6 / zoom, 0, Math.PI * 2);
+        ctx.fillStyle = '#f39c12';
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.stroke();
+      }
+    }
+
+    function drawPolyOutline(pts, context) {
+      context.beginPath();
+      pts.forEach((pt, i) => {
+        if (i === 0) context.moveTo(pt[0], pt[1]);
+        else context.lineTo(pt[0], pt[1]);
+      });
+      context.closePath();
+      context.stroke();
+    }
+
+    // Viewport transform
+    function updateTransform() {
+      canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+      document.getElementById('zoom-label').textContent = Math.round(zoom * 100) + '%';
+    }
+
+    function fitToScreen() {
+      const vw = viewport.clientWidth;
+      const vh = viewport.clientHeight;
+      const scaleX = vw / canvas.width;
+      const scaleY = vh / canvas.height;
+      zoom = Math.min(scaleX, scaleY) * 0.95;
+      panX = (vw - canvas.width * zoom) / 2;
+      panY = (vh - canvas.height * zoom) / 2;
+      updateTransform();
+    }
+
+    function screenToCanvas(sx, sy) {
+      const rect = viewport.getBoundingClientRect();
+      const vx = sx - rect.left - panX;
+      const vy = sy - rect.top - panY;
+      return [vx / zoom, vy / zoom];
+    }
+
+    // Geometry Helpers
+    function dist(p1, p2) {
+      return Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
+    }
+
+    function distToSegment(p, v, w) {
+      const l2 = (w[0] - v[0]) ** 2 + (w[1] - v[1]) ** 2;
+      if (l2 === 0) return { d: dist(p, v), pt: v };
+      let t = ((p[0] - v[0]) * (w[0] - v[0]) + (p[1] - v[1]) * (w[1] - v[1])) / l2;
+      t = Math.max(0, Math.min(1, t));
+      const proj = [v[0] + t * (w[0] - v[0]), v[1] + t * (w[1] - v[1])];
+      return { d: dist(p, proj), pt: proj };
+    }
+
+    function findHover(cPt) {
+      const threshold = 14 / zoom;
+
+      // 1. Check main polygon vertices
+      for (let i = 0; i < polygon.length; i++) {
+        if (dist(cPt, polygon[i]) < threshold) {
+          return { vertex: { type: 'poly', vertIdx: i } };
+        }
+      }
+
+      // 2. Check exclusion vertices
+      for (let e = 0; e < exclusions.length; e++) {
+        for (let i = 0; i < exclusions[e].length; i++) {
+          if (dist(cPt, exclusions[e][i]) < threshold) {
+            return { vertex: { type: 'exc', excIdx: e, vertIdx: i } };
+          }
+        }
+      }
+
+      // 3. Check edges to allow vertex insertion
+      let closestEdge = null;
+      let minD = threshold;
+
+      for (let i = 0; i < polygon.length; i++) {
+        const p1 = polygon[i];
+        const p2 = polygon[(i + 1) % polygon.length];
+        const res = distToSegment(cPt, p1, p2);
+        if (res.d < minD) {
+          minD = res.d;
+          closestEdge = { type: 'poly', edgeIdx: i, pt: res.pt };
+        }
+      }
+
+      return { edge: closestEdge };
+    }
+
+    // Event Listeners
+    function setupEventListeners() {
+      // Pan & Zoom
+      viewport.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const factor = e.deltaY < 0 ? 1.15 : 0.87;
+        const rect = viewport.getBoundingClientRect();
+        const mx = e.clientX - rect.left;
+        const my = e.clientY - rect.top;
+
+        const newZoom = Math.max(0.08, Math.min(15.0, zoom * factor));
+        panX = mx - (mx - panX) * (newZoom / zoom);
+        panY = my - (my - panY) * (newZoom / zoom);
+        zoom = newZoom;
+        updateTransform();
+        redraw();
+      });
+
+      viewport.addEventListener('mousedown', (e) => {
+        // Space+Click or Middle click -> Pan
+        if (e.button === 1 || (e.button === 0 && e.spaceKey) || (e.button === 0 && e.shiftKey)) {
+          isPanning = true;
+          startPanX = e.clientX - panX;
+          startPanY = e.clientY - panY;
+          viewport.classList.add('grabbing');
+          return;
+        }
+
+        const cPt = screenToCanvas(e.clientX, e.clientY);
+
+        // Drawing modes
+        if (activeMode === 'redraw' || activeMode === 'add_exclusion') {
+          if (e.button === 0) {
+            // Check if clicking near first point to close
+            if (drawingPts.length > 2 && dist(cPt, drawingPts[0]) < 18 / zoom) {
+              finishDrawing();
+            } else {
+              drawingPts.push(cPt);
+              redraw();
+            }
+          }
+          return;
+        }
+
+        // Edit mode
+        if (activeMode === 'edit') {
+          const hover = findHover(cPt);
+
+          // Right click or Alt+Click -> Delete Vertex
+          if ((e.button === 2 || (e.button === 0 && e.altKey)) && hover.vertex) {
+            e.preventDefault();
+            deleteVertex(hover.vertex);
+            redraw();
+            return;
+          }
+
+          if (e.button === 0) {
+            if (hover.vertex) {
+              draggingVertex = hover.vertex;
+            } else if (hover.edge) {
+              // Insert vertex on edge
+              insertVertexOnEdge(hover.edge);
+              redraw();
+            } else {
+              // Pan if clicked in empty canvas
+              isPanning = true;
+              startPanX = e.clientX - panX;
+              startPanY = e.clientY - panY;
+              viewport.classList.add('grabbing');
+            }
+          }
+        }
+      });
+
+      viewport.addEventListener('mousemove', (e) => {
+        if (isPanning) {
+          panX = e.clientX - startPanX;
+          panY = e.clientY - startPanY;
+          updateTransform();
+          return;
+        }
+
+        const cPt = screenToCanvas(e.clientX, e.clientY);
+
+        if (draggingVertex) {
+          // Constrain within image boundaries
+          const clamped = [
+            Math.max(0, Math.min(canvas.width, Math.round(cPt[0]))),
+            Math.max(0, Math.min(canvas.height, Math.round(cPt[1])))
+          ];
+          if (draggingVertex.type === 'poly') {
+            polygon[draggingVertex.vertIdx] = clamped;
+          } else if (draggingVertex.type === 'exc') {
+            exclusions[draggingVertex.excIdx][draggingVertex.vertIdx] = clamped;
+          }
+          redraw();
+          return;
+        }
+
+        if (activeMode === 'edit') {
+          const hover = findHover(cPt);
+          hoverVertex = hover.vertex || null;
+          hoverEdge = hover.edge || null;
+          redraw();
+        }
+      });
+
+      window.addEventListener('mouseup', () => {
+        isPanning = false;
+        draggingVertex = null;
+        viewport.classList.remove('grabbing');
+      });
+
+      viewport.addEventListener('contextmenu', (e) => e.preventDefault());
+
+      // Toolbar Controls
+      document.getElementById('btn-zoom-fit').addEventListener('click', fitToScreen);
+      document.getElementById('btn-zoom-100').addEventListener('click', () => {
+        zoom = 1.0;
+        updateTransform();
+        redraw();
+      });
+
+      const opacitySlider = document.getElementById('opacity-slider');
+      opacitySlider.addEventListener('input', () => {
+        document.getElementById('opacity-val').textContent = opacitySlider.value + '%';
+        redraw();
+      });
+
+      document.getElementById('chk-edge-guidance').addEventListener('change', redraw);
+      document.getElementById('chk-show-draft').addEventListener('change', redraw);
+
+      // Mode switching
+      document.getElementById('btn-mode-edit').addEventListener('click', () => {
+        activeMode = 'edit';
+        drawingPts = [];
+        updateModeButtons();
+        redraw();
+      });
+
+      document.getElementById('btn-mode-redraw').addEventListener('click', () => {
+        activeMode = 'redraw';
+        drawingPts = [];
+        updateModeButtons();
+        redraw();
+      });
+
+      document.getElementById('btn-add-exclusion').addEventListener('click', () => {
+        activeMode = 'add_exclusion';
+        drawingPts = [];
+        updateModeButtons();
+        redraw();
+      });
+
+      document.getElementById('btn-clear-exclusions').addEventListener('click', () => {
+        if (confirm('Clear all mouse occlusion cutouts for this image?')) {
+          exclusions = [];
+          redraw();
+        }
+      });
+
+      document.getElementById('btn-reset-draft').addEventListener('click', () => {
+        if (confirm('Reset notebook polygon back to initial draft mask?')) {
+          polygon = JSON.parse(JSON.stringify(draftPolygon));
+          exclusions = [];
+          redraw();
+        }
+      });
+
+      // Filter and Select
+      document.getElementById('filter-select').addEventListener('change', populateImageSelector);
+      document.getElementById('image-select').addEventListener('change', (e) => selectImage(parseInt(e.target.value)));
+      document.getElementById('btn-prev').addEventListener('click', () => {
+        const sel = document.getElementById('image-select');
+        if (sel.selectedIndex > 0) {
+          sel.selectedIndex--;
+          selectImage(parseInt(sel.value));
+        }
+      });
+      document.getElementById('btn-next').addEventListener('click', () => {
+        const sel = document.getElementById('image-select');
+        if (sel.selectedIndex < sel.options.length - 1) {
+          sel.selectedIndex++;
+          selectImage(parseInt(sel.value));
+        }
+      });
+
+      // Save Action
+      document.getElementById('btn-save').addEventListener('click', saveVerifiedMask);
+
+      // Keyboard navigation
+      window.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.key === '[' || e.key === 'a') document.getElementById('btn-prev').click();
+        if (e.key === ']' || e.key === 'd') document.getElementById('btn-next').click();
+        if (e.key === 'f') fitToScreen();
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+          e.preventDefault();
+          saveVerifiedMask();
+        }
+        if (e.key === 'Enter' && (activeMode === 'redraw' || activeMode === 'add_exclusion')) {
+          finishDrawing();
+        }
+        if (e.key === 'Escape') {
+          activeMode = 'edit';
+          drawingPts = [];
+          updateModeButtons();
+          redraw();
+        }
+      });
+    }
+
+    function updateModeButtons() {
+      document.getElementById('btn-mode-edit').className = activeMode === 'edit' ? 'btn-primary' : '';
+      document.getElementById('btn-mode-redraw').className = activeMode === 'redraw' ? 'btn-primary' : '';
+      document.getElementById('btn-add-exclusion').className = activeMode === 'add_exclusion' ? 'btn-primary' : '';
+      viewport.className = 'viewport' + (activeMode !== 'edit' ? ' drawing' : '');
+    }
+
+    function finishDrawing() {
+      if (drawingPts.length < 3) {
+        showToast('At least 3 points required to close boundary', '#e74c3c');
+        drawingPts = [];
+        redraw();
+        return;
+      }
+      if (activeMode === 'redraw') {
+        polygon = drawingPts;
+        document.getElementById('status-select').value = 'manually_verified';
+      } else if (activeMode === 'add_exclusion') {
+        exclusions.push(drawingPts);
+        document.getElementById('chk-mouse-present').checked = true;
+      }
+      drawingPts = [];
+      activeMode = 'edit';
+      updateModeButtons();
+      redraw();
+    }
+
+    function insertVertexOnEdge(edge) {
+      if (edge.type === 'poly') {
+        polygon.splice(edge.edgeIdx + 1, 0, [Math.round(edge.pt[0]), Math.round(edge.pt[1])]);
+      }
+    }
+
+    function deleteVertex(vertex) {
+      if (vertex.type === 'poly') {
+        if (polygon.length > 3) {
+          polygon.splice(vertex.vertIdx, 1);
+        } else {
+          showToast('Cannot delete vertex: minimum 3 points required.', '#e74c3c');
+        }
+      } else if (vertex.type === 'exc') {
+        exclusions[vertex.excIdx].splice(vertex.vertIdx, 1);
+        if (exclusions[vertex.excIdx].length < 3) {
+          exclusions.splice(vertex.excIdx, 1);
+        }
+      }
+    }
+
+    async function saveVerifiedMask() {
+      if (!currentRecord) return;
+      if (polygon.length < 3) {
+        showToast('Error: Notebook boundary has fewer than 3 vertices!', '#e74c3c');
+        return;
+      }
+
+      const truncBorders = [];
+      if (document.getElementById('trunc-top').checked) truncBorders.push('top');
+      if (document.getElementById('trunc-bottom').checked) truncBorders.push('bottom');
+      if (document.getElementById('trunc-left').checked) truncBorders.push('left');
+      if (document.getElementById('trunc-right').checked) truncBorders.push('right');
+
+      const payload = {
+        name: currentRecord.name,
+        polygon: polygon,
+        exclusions: exclusions,
+        status: document.getElementById('status-select').value,
+        truncated_borders: truncBorders,
+        mouse_occlusion: document.getElementById('chk-mouse-present').checked,
+        reviewer_notes: document.getElementById('reviewer-notes').value,
+        verified_by: "manual_reviewer"
+      };
+
+      try {
+        const res = await fetch('/api/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(`Saved verified mask for ${currentRecord.name}!`, '#27ae60');
+          currentRecord.status = payload.status;
+          currentRecord.truncated_borders = truncBorders;
+          currentRecord.mouse_occlusion = payload.mouse_occlusion;
+          currentRecord.reviewer_notes = payload.reviewer_notes;
+          currentRecord.polygon_vertices = polygon;
+          currentRecord.exclusion_polygons = exclusions;
+          updateSidebarMeta();
+          populateImageSelector();
+        } else {
+          showToast('Error: ' + data.error, '#e74c3c');
+        }
+      } catch (err) {
+        showToast('Save failed: ' + err.message, '#e74c3c');
+      }
+    }
+
+    function showToast(msg, bg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.style.background = bg || '#27ae60';
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
