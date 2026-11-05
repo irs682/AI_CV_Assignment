@@ -376,8 +376,15 @@
         const res = await fetch('/api/images');
         imagesList = await res.json();
         populateImageSelector();
+        const urlParams = new URLSearchParams(window.location.search);
+        const reqImage = urlParams.get('image');
+        let initialIdx = 0;
+        if (reqImage) {
+          const found = imagesList.findIndex(img => img.name === reqImage);
+          if (found !== -1) initialIdx = found;
+        }
         if (imagesList.length > 0) {
-          selectImage(0);
+          selectImage(initialIdx);
         }
       } catch (err) {
         showToast('Error loading image list: ' + err.message, '#c0392b');
@@ -1047,3 +1054,4 @@
   </script>
 </body>
 </html>
+
