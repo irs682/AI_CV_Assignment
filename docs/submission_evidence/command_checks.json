@@ -1,0 +1,98 @@
+{
+  "checked_at_utc": "2026-11-05T08:54:44.842880+00:00",
+  "checks": [
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "dataset/audit_dataset.py"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"images\": 70,\n  \"draft_structural_pass\": 70,\n  \"proposal_structural_pass\": 70,\n  \"split_checks\": {\n    \"train\": {\n      \"count\": 49,\n      \"sha256\": \"fc5a1b5675e80aba28be736f3e492201a35d7d864cf5978bae80eabcfb9e1673\",\n      \"matches_committed_content\": true,\n      \"overlaps\": []\n    },\n    \"val\": {\n      \"count\": 14,\n      \"sha256\": \"4ee18be8ead0cdb4035b9543b71c5463df3dd838fefff517f576162ccb6b7c1a\",\n      \"matches_committed_content\": true,\n      \"overlaps\": []\n    },\n    \"test\": {\n      \"count\": 7,\n      \"sha256\": \"2af9e37feaa6c762fd3fb7fe97dc462c158d8dd5a24afa33071c59e819101502\",\n      \"matches_committed_content\": true,\n      \"overlaps\": []\n    }\n  },\n  \"exact_duplicate_groups\": [],\n  \"near_duplicate_note\": \"Existing committed grouping preserved; this audit does not independently validate visual near-duplicate separation.\",\n  \"errors\": [],\n  \"protected_files_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "dataset/audit_stage3.py"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"images\": 70,\n  \"verified_png_files\": 1,\n  \"complete_manual_approval_records\": 1,\n  \"manually_verified_with_file\": 1,\n  \"structurally_valid_verified_masks\": 1,\n  \"unverified_or_problematic\": 69,\n  \"review_status_counts\": {\n    \"unresolved\": 68,\n    \"manually_verified\": 1,\n    \"automatically_proposed\": 1\n  },\n  \"split_checks\": {\n    \"train\": {\n      \"count\": 49,\n      \"matches_committed_content\": true\n    },\n    \"val\": {\n      \"count\": 14,\n      \"matches_committed_content\": true\n    },\n    \"test\": {\n      \"count\": 7,\n      \"matches_committed_content\": true\n    }\n  },\n  \"split_issues\": [],\n  \"ready_for_training\": false,\n  \"protected_files_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "annotation_tool/refine_cli.py",
+        "qc"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "Found 1 verified masks in dataset/masks_verified/\nGenerated QC Contact sheet for 1 verified masks: dataset/masks_verified/qc_contact_sheet.jpg\nAll verified masks passed 100% binary {0, 255} and dimension integrity checks.\nQC Check Summary: {'total_verified': 1, 'valid': True, 'errors': []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_api_rejects_implicit_approval_without_writing (test_stage3_safety.Stage3Safety.test_api_rejects_implicit_approval_without_writing) ... ok\ntest_approval_write_and_readback_use_mock_storage_only (test_stage3_safety.Stage3Safety.test_approval_write_and_readback_use_mock_storage_only) ... ok\ntest_existing_human_work_is_not_replaced (test_stage3_safety.Stage3Safety.test_existing_human_work_is_not_replaced) ... ok\ntest_existing_verified_mask_cannot_be_overwritten (test_stage3_safety.Stage3Safety.test_existing_verified_mask_cannot_be_overwritten) ... ok\ntest_letterbox_keeps_binary_mask_and_aspect_ratio (test_stage3_safety.Stage3Safety.test_letterbox_keeps_binary_mask_and_aspect_ratio) ... ok\ntest_png_write_failure_never_records_approval (test_stage3_safety.Stage3Safety.test_png_write_failure_never_records_approval) ... ok\ntest_polygon_qc_detects_crossing (test_stage3_safety.Stage3Safety.test_polygon_qc_detects_crossing) ... ok\ntest_training_refuses_current_unapproved_dataset (test_stage3_safety.Stage3Safety.test_training_refuses_current_unapproved_dataset) ... ok\ntest_work_backup_never_records_inspection_or_approval (test_stage3_safety.Stage3Safety.test_work_backup_never_records_inspection_or_approval) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.047s\n\nOK\n"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "models/training_pipeline.py",
+        "--check-only"
+      ],
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Training blocked before model initialization:\nnotebook_001: human approval and verified mask required\nnotebook_004: human approval and verified mask required\nnotebook_006: human approval and verified mask required\nnotebook_007: human approval and verified mask required\nnotebook_009: human approval and verified mask required\nnotebook_010: human approval and verified mask required\nnotebook_011: human approval and verified mask required\nnotebook_013: human approval and verified mask required\nnotebook_014: human approval and verified mask required\nnotebook_015: human approval and verified mask required\nnotebook_017: human approval and verified mask required\nnotebook_019: human approval and verified mask required\nnotebook_020: human approval and verified mask required\nnotebook_021: human approval and verified mask required\nnotebook_023: human approval and verified mask required\nnotebook_024: human approval and verified mask required\nnotebook_027: human approval and verified mask required\nnotebook_028: human approval and verified mask required\nnotebook_029: human approval and verified mask required\nnotebook_031: human approval and verified mask required\nnotebook_033: human approval and verified mask required\nnotebook_035: human approval and verified mask required\nnotebook_037: human approval and verified mask required\nnotebook_038: human approval and verified mask required\nnotebook_039: human approval and verified mask required\nnotebook_040: human approval and verified mask required\nnotebook_041: human approval and verified mask required\nnotebook_042: human approval and verified mask required\nnotebook_045: human approval and verified mask required\nnotebook_046: human approval and verified mask required\nnotebook_047: human approval and verified mask required\nnotebook_048: human approval and verified mask required\nnotebook_049: human approval and verified mask required\nnotebook_050: human approval and verified mask required\nnotebook_051: human approval and verified mask required\nnotebook_053: human approval and verified mask required\nnotebook_054: human approval and verified mask required\nnotebook_055: human approval and verified mask required\nnotebook_056: human approval and verified mask required\nnotebook_057: human approval and verified mask required\nnotebook_059: human approval and verified mask required\nnotebook_060: human approval and verified mask required\nnotebook_061: human approval and verified mask required\nnotebook_062: human approval and verified mask required\nnotebook_064: human approval and verified mask required\nnotebook_065: human approval and verified mask required\nnotebook_067: human approval and verified mask required\nnotebook_070: human approval and verified mask required\nnotebook_005: human approval and verified mask required\nnotebook_012: human approval and verified mask required\nnotebook_016: human approval and verified mask required\nnotebook_022: human approval and verified mask required\nnotebook_025: human approval and verified mask required\nnotebook_026: human approval and verified mask required\nnotebook_030: human approval and verified mask required\nnotebook_032: human approval and verified mask required\nnotebook_034: human approval and verified mask required\nnotebook_036: human approval and verified mask required\nnotebook_044: human approval and verified mask required\nnotebook_058: human approval and verified mask required\nnotebook_063: human approval and verified mask required\nnotebook_066: human approval and verified mask required\nnotebook_002: human approval and verified mask required\nnotebook_008: human approval and verified mask required\nnotebook_018: human approval and verified mask required\nnotebook_043: human approval and verified mask required\nnotebook_052: human approval and verified mask required\nnotebook_068: human approval and verified mask required\nnotebook_069: human approval and verified mask required\n"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/test_review_ui.cjs"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: next-unapproved, autosave separation, checkbox reset, success/error navigation, reviewer persistence\n",
+      "stderr": ""
+    }
+  ],
+  "annotation_http": {
+    "reachable": true,
+    "records": 70,
+    "approved": 1,
+    "review_controls_present": true
+  },
+  "note": "Expected preflight exit 2 means training was blocked; no training command was run. HTTP checks do not exercise all browser interactions."
+}

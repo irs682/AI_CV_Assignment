@@ -1,0 +1,7751 @@
+[
+  {
+    "name": "notebook_001",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.003546,
+    "polygon_vertices": [
+      [
+        260,
+        368
+      ],
+      [
+        243,
+        385
+      ],
+      [
+        213,
+        714
+      ],
+      [
+        200,
+        720
+      ],
+      [
+        190,
+        939
+      ],
+      [
+        125,
+        1273
+      ],
+      [
+        98,
+        1598
+      ],
+      [
+        125,
+        1617
+      ],
+      [
+        103,
+        1648
+      ],
+      [
+        103,
+        1697
+      ],
+      [
+        265,
+        1722
+      ],
+      [
+        672,
+        1712
+      ],
+      [
+        683,
+        1724
+      ],
+      [
+        909,
+        1724
+      ],
+      [
+        967,
+        1587
+      ],
+      [
+        984,
+        1472
+      ],
+      [
+        954,
+        1434
+      ],
+      [
+        944,
+        1378
+      ],
+      [
+        982,
+        1334
+      ],
+      [
+        984,
+        1308
+      ],
+      [
+        999,
+        1317
+      ],
+      [
+        1029,
+        1159
+      ],
+      [
+        1009,
+        380
+      ],
+      [
+        767,
+        365
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1126769,
+    "draft_area_pixels": 1460270,
+    "area_ratio_to_draft": 0.7716168927664062,
+    "boundary_edge_support": 0.9186476492340201,
+    "dark_foreground_fraction": 0.017404571682201508,
+    "changed_pixels": 373553,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_002",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.007619333333333333,
+    "polygon_vertices": [
+      [
+        907,
+        240
+      ],
+      [
+        155,
+        250
+      ],
+      [
+        158,
+        574
+      ],
+      [
+        277,
+        542
+      ],
+      [
+        304,
+        594
+      ],
+      [
+        299,
+        559
+      ],
+      [
+        342,
+        589
+      ],
+      [
+        348,
+        637
+      ],
+      [
+        405,
+        673
+      ],
+      [
+        355,
+        685
+      ],
+      [
+        382,
+        733
+      ],
+      [
+        332,
+        703
+      ],
+      [
+        318,
+        725
+      ],
+      [
+        319,
+        673
+      ],
+      [
+        294,
+        663
+      ],
+      [
+        263,
+        683
+      ],
+      [
+        262,
+        718
+      ],
+      [
+        198,
+        695
+      ],
+      [
+        160,
+        728
+      ],
+      [
+        160,
+        1389
+      ],
+      [
+        190,
+        1534
+      ],
+      [
+        927,
+        1464
+      ],
+      [
+        957,
+        1349
+      ],
+      [
+        982,
+        940
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 968490,
+    "draft_area_pixels": 1408242,
+    "area_ratio_to_draft": 0.6877298078029203,
+    "boundary_edge_support": 0.8445367880713762,
+    "dark_foreground_fraction": 0.016651618728234233,
+    "changed_pixels": 499314,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_003",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 4,
+    "simplification_changed_fraction": 0.0,
+    "polygon_vertices": [
+      [
+        533,
+        342
+      ],
+      [
+        500,
+        879
+      ],
+      [
+        1425,
+        904
+      ],
+      [
+        1371,
+        367
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 474523,
+    "draft_area_pixels": 735684,
+    "area_ratio_to_draft": 0.6450092702845244,
+    "boundary_edge_support": 0.8494962216624685,
+    "dark_foreground_fraction": 0.020361437748682952,
+    "changed_pixels": 264861,
+    "uncertain": true,
+    "flags": [
+      "image_guided_corner_seed_requires_review",
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_004",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 21,
+    "simplification_changed_fraction": 0.0028046666666666667,
+    "polygon_vertices": [
+      [
+        1072,
+        281
+      ],
+      [
+        243,
+        327
+      ],
+      [
+        220,
+        348
+      ],
+      [
+        230,
+        429
+      ],
+      [
+        242,
+        417
+      ],
+      [
+        288,
+        438
+      ],
+      [
+        235,
+        443
+      ],
+      [
+        230,
+        466
+      ],
+      [
+        276,
+        780
+      ],
+      [
+        288,
+        770
+      ],
+      [
+        281,
+        799
+      ],
+      [
+        400,
+        1709
+      ],
+      [
+        448,
+        1841
+      ],
+      [
+        689,
+        1792
+      ],
+      [
+        1175,
+        1672
+      ],
+      [
+        1202,
+        1552
+      ],
+      [
+        1202,
+        1435
+      ],
+      [
+        1164,
+        1389
+      ],
+      [
+        1159,
+        1353
+      ],
+      [
+        1198,
+        1280
+      ],
+      [
+        1204,
+        1122
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1240907,
+    "draft_area_pixels": 1922318,
+    "area_ratio_to_draft": 0.6455263905347607,
+    "boundary_edge_support": 0.9580304806565064,
+    "dark_foreground_fraction": 0.021494437533679488,
+    "changed_pixels": 681465,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_005",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 19,
+    "simplification_changed_fraction": 0.004630666666666667,
+    "polygon_vertices": [
+      [
+        355,
+        200
+      ],
+      [
+        343,
+        277
+      ],
+      [
+        403,
+        314
+      ],
+      [
+        340,
+        303
+      ],
+      [
+        345,
+        654
+      ],
+      [
+        320,
+        1652
+      ],
+      [
+        333,
+        1724
+      ],
+      [
+        348,
+        1735
+      ],
+      [
+        340,
+        1767
+      ],
+      [
+        370,
+        1782
+      ],
+      [
+        507,
+        1787
+      ],
+      [
+        1144,
+        1724
+      ],
+      [
+        1194,
+        1602
+      ],
+      [
+        1209,
+        1497
+      ],
+      [
+        1169,
+        1408
+      ],
+      [
+        1237,
+        1297
+      ],
+      [
+        1254,
+        1169
+      ],
+      [
+        1232,
+        268
+      ],
+      [
+        899,
+        228
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1367662,
+    "draft_area_pixels": 2119830,
+    "area_ratio_to_draft": 0.6451753206625059,
+    "boundary_edge_support": 0.8569737153682216,
+    "dark_foreground_fraction": 0.020797345836417975,
+    "changed_pixels": 752322,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_006",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.004367666666666666,
+    "polygon_vertices": [
+      [
+        395,
+        195
+      ],
+      [
+        375,
+        213
+      ],
+      [
+        365,
+        572
+      ],
+      [
+        378,
+        577
+      ],
+      [
+        363,
+        603
+      ],
+      [
+        360,
+        835
+      ],
+      [
+        373,
+        852
+      ],
+      [
+        355,
+        923
+      ],
+      [
+        353,
+        1272
+      ],
+      [
+        333,
+        1483
+      ],
+      [
+        360,
+        1692
+      ],
+      [
+        697,
+        1689
+      ],
+      [
+        700,
+        1649
+      ],
+      [
+        728,
+        1692
+      ],
+      [
+        958,
+        1662
+      ],
+      [
+        1004,
+        1674
+      ],
+      [
+        1207,
+        1659
+      ],
+      [
+        1257,
+        1499
+      ],
+      [
+        1267,
+        1188
+      ],
+      [
+        1282,
+        1184
+      ],
+      [
+        1292,
+        1079
+      ],
+      [
+        1219,
+        230
+      ],
+      [
+        1062,
+        208
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1326040,
+    "draft_area_pixels": 1792880,
+    "area_ratio_to_draft": 0.7396144750345812,
+    "boundary_edge_support": 0.9179196450579246,
+    "dark_foreground_fraction": 0.023330458266759047,
+    "changed_pixels": 466840,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_007",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.015520666666666667,
+    "polygon_vertices": [
+      [
+        1053,
+        172
+      ],
+      [
+        126,
+        253
+      ],
+      [
+        162,
+        565
+      ],
+      [
+        213,
+        633
+      ],
+      [
+        171,
+        672
+      ],
+      [
+        299,
+        1343
+      ],
+      [
+        374,
+        1317
+      ],
+      [
+        375,
+        990
+      ],
+      [
+        620,
+        965
+      ],
+      [
+        663,
+        988
+      ],
+      [
+        685,
+        1089
+      ],
+      [
+        750,
+        1073
+      ],
+      [
+        760,
+        1154
+      ],
+      [
+        691,
+        1127
+      ],
+      [
+        716,
+        1303
+      ],
+      [
+        780,
+        1337
+      ],
+      [
+        728,
+        1318
+      ],
+      [
+        697,
+        1526
+      ],
+      [
+        574,
+        1568
+      ],
+      [
+        440,
+        1533
+      ],
+      [
+        433,
+        1582
+      ],
+      [
+        375,
+        1602
+      ],
+      [
+        484,
+        1802
+      ],
+      [
+        1262,
+        1646
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1198219,
+    "draft_area_pixels": 2021398,
+    "area_ratio_to_draft": 0.5927674807237368,
+    "boundary_edge_support": 0.7838926174496644,
+    "dark_foreground_fraction": 0.028310302195652514,
+    "changed_pixels": 823179,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_008",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.005856592592592593,
+    "polygon_vertices": [
+      [
+        1499,
+        688
+      ],
+      [
+        1422,
+        366
+      ],
+      [
+        1385,
+        305
+      ],
+      [
+        412,
+        350
+      ],
+      [
+        109,
+        725
+      ],
+      [
+        90,
+        768
+      ],
+      [
+        308,
+        783
+      ],
+      [
+        353,
+        759
+      ],
+      [
+        391,
+        759
+      ],
+      [
+        390,
+        794
+      ],
+      [
+        374,
+        800
+      ],
+      [
+        396,
+        836
+      ],
+      [
+        524,
+        847
+      ],
+      [
+        1058,
+        794
+      ],
+      [
+        1065,
+        764
+      ],
+      [
+        1136,
+        727
+      ],
+      [
+        1161,
+        695
+      ],
+      [
+        1159,
+        710
+      ],
+      [
+        1263,
+        729
+      ],
+      [
+        1272,
+        781
+      ],
+      [
+        1355,
+        774
+      ],
+      [
+        1496,
+        736
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "right"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 565421,
+    "draft_area_pixels": 1214242,
+    "area_ratio_to_draft": 0.46565758720255107,
+    "boundary_edge_support": 0.8401816118047674,
+    "dark_foreground_fraction": 0.018503780342220454,
+    "changed_pixels": 648821,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_009",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 21,
+    "simplification_changed_fraction": 0.004951333333333334,
+    "polygon_vertices": [
+      [
+        142,
+        69
+      ],
+      [
+        125,
+        197
+      ],
+      [
+        158,
+        242
+      ],
+      [
+        112,
+        248
+      ],
+      [
+        103,
+        453
+      ],
+      [
+        135,
+        435
+      ],
+      [
+        108,
+        535
+      ],
+      [
+        115,
+        729
+      ],
+      [
+        198,
+        818
+      ],
+      [
+        148,
+        895
+      ],
+      [
+        165,
+        915
+      ],
+      [
+        150,
+        928
+      ],
+      [
+        161,
+        1022
+      ],
+      [
+        251,
+        1171
+      ],
+      [
+        949,
+        1167
+      ],
+      [
+        1270,
+        1142
+      ],
+      [
+        1262,
+        1075
+      ],
+      [
+        1029,
+        484
+      ],
+      [
+        1037,
+        463
+      ],
+      [
+        973,
+        353
+      ],
+      [
+        899,
+        144
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 1005163,
+    "draft_area_pixels": 1757990,
+    "area_ratio_to_draft": 0.571768326327226,
+    "boundary_edge_support": 0.803941908713693,
+    "dark_foreground_fraction": 0.01236141596662169,
+    "changed_pixels": 802265,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_010",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.005447703703703704,
+    "polygon_vertices": [
+      [
+        289,
+        165
+      ],
+      [
+        66,
+        945
+      ],
+      [
+        75,
+        1003
+      ],
+      [
+        457,
+        1038
+      ],
+      [
+        507,
+        999
+      ],
+      [
+        565,
+        1004
+      ],
+      [
+        567,
+        1051
+      ],
+      [
+        628,
+        1046
+      ],
+      [
+        632,
+        1078
+      ],
+      [
+        1094,
+        1079
+      ],
+      [
+        1116,
+        1053
+      ],
+      [
+        1173,
+        1057
+      ],
+      [
+        1256,
+        1031
+      ],
+      [
+        1288,
+        1001
+      ],
+      [
+        1274,
+        961
+      ],
+      [
+        1287,
+        937
+      ],
+      [
+        1339,
+        984
+      ],
+      [
+        1368,
+        969
+      ],
+      [
+        1373,
+        993
+      ],
+      [
+        1456,
+        965
+      ],
+      [
+        1430,
+        926
+      ],
+      [
+        1464,
+        924
+      ],
+      [
+        1449,
+        756
+      ],
+      [
+        1363,
+        439
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 938694,
+    "draft_area_pixels": 1245438,
+    "area_ratio_to_draft": 0.753705925144407,
+    "boundary_edge_support": 0.8938876233864844,
+    "dark_foreground_fraction": 0.024382751890796438,
+    "changed_pixels": 306744,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_011",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 19,
+    "simplification_changed_fraction": 0.0014625185185185186,
+    "polygon_vertices": [
+      [
+        1134,
+        210
+      ],
+      [
+        1052,
+        220
+      ],
+      [
+        902,
+        254
+      ],
+      [
+        600,
+        370
+      ],
+      [
+        535,
+        402
+      ],
+      [
+        520,
+        428
+      ],
+      [
+        540,
+        575
+      ],
+      [
+        574,
+        714
+      ],
+      [
+        595,
+        761
+      ],
+      [
+        620,
+        763
+      ],
+      [
+        1175,
+        613
+      ],
+      [
+        1239,
+        592
+      ],
+      [
+        1251,
+        579
+      ],
+      [
+        1282,
+        584
+      ],
+      [
+        1295,
+        577
+      ],
+      [
+        1289,
+        550
+      ],
+      [
+        1276,
+        536
+      ],
+      [
+        1233,
+        442
+      ],
+      [
+        1166,
+        272
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 278676,
+    "draft_area_pixels": 352228,
+    "area_ratio_to_draft": 0.7911807124930442,
+    "boundary_edge_support": 0.9273174157303371,
+    "dark_foreground_fraction": 0.020009083568833266,
+    "changed_pixels": 73638,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_012",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0049366666666666665,
+    "polygon_vertices": [
+      [
+        158,
+        185
+      ],
+      [
+        145,
+        289
+      ],
+      [
+        178,
+        327
+      ],
+      [
+        140,
+        333
+      ],
+      [
+        133,
+        377
+      ],
+      [
+        170,
+        390
+      ],
+      [
+        160,
+        484
+      ],
+      [
+        235,
+        807
+      ],
+      [
+        280,
+        798
+      ],
+      [
+        295,
+        852
+      ],
+      [
+        270,
+        877
+      ],
+      [
+        333,
+        915
+      ],
+      [
+        318,
+        967
+      ],
+      [
+        348,
+        983
+      ],
+      [
+        318,
+        998
+      ],
+      [
+        310,
+        1099
+      ],
+      [
+        452,
+        1099
+      ],
+      [
+        485,
+        1049
+      ],
+      [
+        552,
+        1062
+      ],
+      [
+        538,
+        1097
+      ],
+      [
+        1024,
+        1072
+      ],
+      [
+        1372,
+        1004
+      ],
+      [
+        904,
+        220
+      ],
+      [
+        667,
+        190
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 817472,
+    "draft_area_pixels": 957754,
+    "area_ratio_to_draft": 0.8535302384537157,
+    "boundary_edge_support": 0.7384574326127569,
+    "dark_foreground_fraction": 0.004748577720682694,
+    "changed_pixels": 235600,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_013",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.003454333333333333,
+    "polygon_vertices": [
+      [
+        0,
+        296
+      ],
+      [
+        0,
+        452
+      ],
+      [
+        35,
+        510
+      ],
+      [
+        30,
+        544
+      ],
+      [
+        93,
+        550
+      ],
+      [
+        123,
+        605
+      ],
+      [
+        95,
+        649
+      ],
+      [
+        138,
+        630
+      ],
+      [
+        113,
+        677
+      ],
+      [
+        139,
+        677
+      ],
+      [
+        154,
+        642
+      ],
+      [
+        190,
+        807
+      ],
+      [
+        253,
+        845
+      ],
+      [
+        318,
+        952
+      ],
+      [
+        339,
+        932
+      ],
+      [
+        368,
+        958
+      ],
+      [
+        390,
+        1032
+      ],
+      [
+        520,
+        1177
+      ],
+      [
+        694,
+        1285
+      ],
+      [
+        1089,
+        1147
+      ],
+      [
+        1437,
+        999
+      ],
+      [
+        1472,
+        969
+      ],
+      [
+        661,
+        245
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 869346,
+    "draft_area_pixels": 1399013,
+    "area_ratio_to_draft": 0.6213995152296655,
+    "boundary_edge_support": 0.8400293973542381,
+    "dark_foreground_fraction": 0.013778876701694866,
+    "changed_pixels": 529739,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_014",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 20,
+    "simplification_changed_fraction": 0.0028705185185185183,
+    "polygon_vertices": [
+      [
+        1352,
+        604
+      ],
+      [
+        1263,
+        419
+      ],
+      [
+        1210,
+        400
+      ],
+      [
+        409,
+        476
+      ],
+      [
+        110,
+        757
+      ],
+      [
+        257,
+        751
+      ],
+      [
+        285,
+        787
+      ],
+      [
+        396,
+        800
+      ],
+      [
+        530,
+        793
+      ],
+      [
+        719,
+        757
+      ],
+      [
+        760,
+        738
+      ],
+      [
+        817,
+        738
+      ],
+      [
+        852,
+        719
+      ],
+      [
+        959,
+        712
+      ],
+      [
+        987,
+        682
+      ],
+      [
+        1050,
+        659
+      ],
+      [
+        1106,
+        661
+      ],
+      [
+        1149,
+        676
+      ],
+      [
+        1244,
+        658
+      ],
+      [
+        1348,
+        624
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 307278,
+    "draft_area_pixels": 962195,
+    "area_ratio_to_draft": 0.31935106709139,
+    "boundary_edge_support": 0.89098061253161,
+    "dark_foreground_fraction": 0.01168961888639795,
+    "changed_pixels": 654917,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_015",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0044574814814814815,
+    "polygon_vertices": [
+      [
+        357,
+        61
+      ],
+      [
+        328,
+        613
+      ],
+      [
+        361,
+        626
+      ],
+      [
+        357,
+        611
+      ],
+      [
+        403,
+        598
+      ],
+      [
+        400,
+        633
+      ],
+      [
+        427,
+        639
+      ],
+      [
+        461,
+        622
+      ],
+      [
+        469,
+        697
+      ],
+      [
+        433,
+        726
+      ],
+      [
+        428,
+        705
+      ],
+      [
+        417,
+        744
+      ],
+      [
+        378,
+        741
+      ],
+      [
+        404,
+        704
+      ],
+      [
+        374,
+        745
+      ],
+      [
+        323,
+        720
+      ],
+      [
+        304,
+        1042
+      ],
+      [
+        971,
+        1009
+      ],
+      [
+        982,
+        957
+      ],
+      [
+        928,
+        377
+      ],
+      [
+        860,
+        240
+      ],
+      [
+        839,
+        243
+      ],
+      [
+        838,
+        187
+      ],
+      [
+        547,
+        59
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 541930,
+    "draft_area_pixels": 564306,
+    "area_ratio_to_draft": 0.9603477545870502,
+    "boundary_edge_support": 0.8825519574673756,
+    "dark_foreground_fraction": 0.02023143883865444,
+    "changed_pixels": 75254,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_016",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 14,
+    "simplification_changed_fraction": 0.0027407407407407406,
+    "polygon_vertices": [
+      [
+        1153,
+        68
+      ],
+      [
+        1137,
+        60
+      ],
+      [
+        869,
+        81
+      ],
+      [
+        853,
+        94
+      ],
+      [
+        829,
+        85
+      ],
+      [
+        467,
+        165
+      ],
+      [
+        461,
+        175
+      ],
+      [
+        424,
+        175
+      ],
+      [
+        252,
+        214
+      ],
+      [
+        263,
+        626
+      ],
+      [
+        282,
+        706
+      ],
+      [
+        410,
+        703
+      ],
+      [
+        1282,
+        581
+      ],
+      [
+        1211,
+        267
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 519252,
+    "draft_area_pixels": 736717,
+    "area_ratio_to_draft": 0.7048188110224143,
+    "boundary_edge_support": 0.8553982792117679,
+    "dark_foreground_fraction": 0.01509242331911436,
+    "changed_pixels": 217533,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_017",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 17,
+    "simplification_changed_fraction": 0.003626074074074074,
+    "polygon_vertices": [
+      [
+        884,
+        77
+      ],
+      [
+        627,
+        92
+      ],
+      [
+        486,
+        117
+      ],
+      [
+        495,
+        236
+      ],
+      [
+        677,
+        1072
+      ],
+      [
+        1265,
+        918
+      ],
+      [
+        1274,
+        907
+      ],
+      [
+        1273,
+        870
+      ],
+      [
+        1220,
+        717
+      ],
+      [
+        1173,
+        661
+      ],
+      [
+        1173,
+        651
+      ],
+      [
+        1194,
+        640
+      ],
+      [
+        1168,
+        559
+      ],
+      [
+        1094,
+        431
+      ],
+      [
+        1093,
+        411
+      ],
+      [
+        973,
+        175
+      ],
+      [
+        928,
+        105
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 518973,
+    "draft_area_pixels": 500508,
+    "area_ratio_to_draft": 1.0368925172025223,
+    "boundary_edge_support": 0.9196567862714509,
+    "dark_foreground_fraction": 0.02161012356384132,
+    "changed_pixels": 25397,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_018",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 20,
+    "simplification_changed_fraction": 0.001502814814814815,
+    "polygon_vertices": [
+      [
+        1312,
+        330
+      ],
+      [
+        1286,
+        319
+      ],
+      [
+        1041,
+        312
+      ],
+      [
+        732,
+        353
+      ],
+      [
+        736,
+        360
+      ],
+      [
+        718,
+        364
+      ],
+      [
+        685,
+        360
+      ],
+      [
+        585,
+        420
+      ],
+      [
+        589,
+        434
+      ],
+      [
+        582,
+        435
+      ],
+      [
+        557,
+        550
+      ],
+      [
+        546,
+        692
+      ],
+      [
+        550,
+        736
+      ],
+      [
+        608,
+        748
+      ],
+      [
+        1153,
+        755
+      ],
+      [
+        1157,
+        761
+      ],
+      [
+        1295,
+        763
+      ],
+      [
+        1338,
+        753
+      ],
+      [
+        1345,
+        761
+      ],
+      [
+        1389,
+        763
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 329167,
+    "draft_area_pixels": 490403,
+    "area_ratio_to_draft": 0.6712173457340188,
+    "boundary_edge_support": 0.9263345195729538,
+    "dark_foreground_fraction": 0.019499797099592063,
+    "changed_pixels": 161504,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_019",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0030275555555555555,
+    "polygon_vertices": [
+      [
+        364,
+        59
+      ],
+      [
+        355,
+        89
+      ],
+      [
+        357,
+        577
+      ],
+      [
+        380,
+        581
+      ],
+      [
+        421,
+        562
+      ],
+      [
+        424,
+        588
+      ],
+      [
+        439,
+        598
+      ],
+      [
+        476,
+        584
+      ],
+      [
+        486,
+        650
+      ],
+      [
+        454,
+        675
+      ],
+      [
+        456,
+        653
+      ],
+      [
+        439,
+        672
+      ],
+      [
+        441,
+        691
+      ],
+      [
+        416,
+        698
+      ],
+      [
+        406,
+        690
+      ],
+      [
+        425,
+        649
+      ],
+      [
+        403,
+        692
+      ],
+      [
+        357,
+        672
+      ],
+      [
+        355,
+        950
+      ],
+      [
+        933,
+        911
+      ],
+      [
+        896,
+        364
+      ],
+      [
+        813,
+        169
+      ],
+      [
+        753,
+        124
+      ],
+      [
+        545,
+        53
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 442622,
+    "draft_area_pixels": 708450,
+    "area_ratio_to_draft": 0.624775213494248,
+    "boundary_edge_support": 0.9271989174560217,
+    "dark_foreground_fraction": 0.020700497860075117,
+    "changed_pixels": 265828,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_020",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0037866666666666665,
+    "polygon_vertices": [
+      [
+        477,
+        29
+      ],
+      [
+        229,
+        458
+      ],
+      [
+        244,
+        487
+      ],
+      [
+        246,
+        474
+      ],
+      [
+        285,
+        480
+      ],
+      [
+        287,
+        523
+      ],
+      [
+        323,
+        520
+      ],
+      [
+        297,
+        584
+      ],
+      [
+        261,
+        576
+      ],
+      [
+        238,
+        600
+      ],
+      [
+        216,
+        597
+      ],
+      [
+        179,
+        550
+      ],
+      [
+        42,
+        791
+      ],
+      [
+        575,
+        1042
+      ],
+      [
+        671,
+        853
+      ],
+      [
+        667,
+        835
+      ],
+      [
+        808,
+        517
+      ],
+      [
+        834,
+        419
+      ],
+      [
+        826,
+        389
+      ],
+      [
+        853,
+        344
+      ],
+      [
+        869,
+        265
+      ],
+      [
+        813,
+        199
+      ],
+      [
+        673,
+        107
+      ],
+      [
+        547,
+        45
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 460930,
+    "draft_area_pixels": 538620,
+    "area_ratio_to_draft": 0.8557610189001522,
+    "boundary_edge_support": 0.9427906976744186,
+    "dark_foreground_fraction": 0.021554584353476878,
+    "changed_pixels": 77694,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_021",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.0027034074074074074,
+    "polygon_vertices": [
+      [
+        377,
+        167
+      ],
+      [
+        377,
+        193
+      ],
+      [
+        368,
+        197
+      ],
+      [
+        375,
+        1091
+      ],
+      [
+        973,
+        1038
+      ],
+      [
+        967,
+        872
+      ],
+      [
+        959,
+        827
+      ],
+      [
+        933,
+        802
+      ],
+      [
+        929,
+        781
+      ],
+      [
+        952,
+        766
+      ],
+      [
+        946,
+        685
+      ],
+      [
+        851,
+        332
+      ],
+      [
+        832,
+        329
+      ],
+      [
+        824,
+        299
+      ],
+      [
+        834,
+        290
+      ],
+      [
+        832,
+        267
+      ],
+      [
+        808,
+        201
+      ],
+      [
+        774,
+        180
+      ],
+      [
+        747,
+        184
+      ],
+      [
+        598,
+        162
+      ],
+      [
+        581,
+        169
+      ],
+      [
+        547,
+        160
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 483610,
+    "draft_area_pixels": 572588,
+    "area_ratio_to_draft": 0.8446037988920481,
+    "boundary_edge_support": 0.9210526315789473,
+    "dark_foreground_fraction": 0.021385594698290895,
+    "changed_pixels": 88978,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_022",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.01277688888888889,
+    "polygon_vertices": [
+      [
+        464,
+        86
+      ],
+      [
+        438,
+        620
+      ],
+      [
+        548,
+        639
+      ],
+      [
+        562,
+        421
+      ],
+      [
+        600,
+        422
+      ],
+      [
+        600,
+        568
+      ],
+      [
+        644,
+        545
+      ],
+      [
+        642,
+        353
+      ],
+      [
+        745,
+        305
+      ],
+      [
+        824,
+        355
+      ],
+      [
+        844,
+        573
+      ],
+      [
+        736,
+        681
+      ],
+      [
+        613,
+        681
+      ],
+      [
+        584,
+        605
+      ],
+      [
+        520,
+        743
+      ],
+      [
+        434,
+        719
+      ],
+      [
+        421,
+        1013
+      ],
+      [
+        1026,
+        992
+      ],
+      [
+        998,
+        423
+      ],
+      [
+        931,
+        281
+      ],
+      [
+        939,
+        171
+      ],
+      [
+        860,
+        120
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 403791,
+    "draft_area_pixels": 623532,
+    "area_ratio_to_draft": 0.6475866515271068,
+    "boundary_edge_support": 0.8633413684405711,
+    "dark_foreground_fraction": 0.024679643429208163,
+    "changed_pixels": 219741,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_023",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 17,
+    "simplification_changed_fraction": 0.002159407407407407,
+    "polygon_vertices": [
+      [
+        1168,
+        342
+      ],
+      [
+        1161,
+        335
+      ],
+      [
+        1002,
+        347
+      ],
+      [
+        973,
+        368
+      ],
+      [
+        959,
+        368
+      ],
+      [
+        952,
+        347
+      ],
+      [
+        859,
+        353
+      ],
+      [
+        578,
+        400
+      ],
+      [
+        545,
+        426
+      ],
+      [
+        522,
+        428
+      ],
+      [
+        496,
+        413
+      ],
+      [
+        439,
+        420
+      ],
+      [
+        362,
+        454
+      ],
+      [
+        361,
+        882
+      ],
+      [
+        370,
+        905
+      ],
+      [
+        429,
+        909
+      ],
+      [
+        1247,
+        831
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 422804,
+    "draft_area_pixels": 560329,
+    "area_ratio_to_draft": 0.7545638366031385,
+    "boundary_edge_support": 0.8983103879849812,
+    "dark_foreground_fraction": 0.018343662909196787,
+    "changed_pixels": 137525,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_024",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.004035555555555555,
+    "polygon_vertices": [
+      [
+        1244,
+        432
+      ],
+      [
+        1077,
+        422
+      ],
+      [
+        1044,
+        445
+      ],
+      [
+        1015,
+        445
+      ],
+      [
+        1009,
+        421
+      ],
+      [
+        705,
+        430
+      ],
+      [
+        612,
+        447
+      ],
+      [
+        553,
+        490
+      ],
+      [
+        498,
+        465
+      ],
+      [
+        358,
+        506
+      ],
+      [
+        334,
+        964
+      ],
+      [
+        346,
+        1021
+      ],
+      [
+        945,
+        990
+      ],
+      [
+        958,
+        960
+      ],
+      [
+        944,
+        963
+      ],
+      [
+        929,
+        923
+      ],
+      [
+        967,
+        903
+      ],
+      [
+        952,
+        867
+      ],
+      [
+        1017,
+        854
+      ],
+      [
+        1043,
+        885
+      ],
+      [
+        1028,
+        892
+      ],
+      [
+        1064,
+        906
+      ],
+      [
+        1045,
+        986
+      ],
+      [
+        1309,
+        975
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 504257,
+    "draft_area_pixels": 701409,
+    "area_ratio_to_draft": 0.7189200594802747,
+    "boundary_edge_support": 0.929757343550447,
+    "dark_foreground_fraction": 0.019410300566830976,
+    "changed_pixels": 197152,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_025",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 21,
+    "simplification_changed_fraction": 0.002386962962962963,
+    "polygon_vertices": [
+      [
+        1189,
+        341
+      ],
+      [
+        1183,
+        334
+      ],
+      [
+        1027,
+        334
+      ],
+      [
+        1002,
+        342
+      ],
+      [
+        995,
+        355
+      ],
+      [
+        966,
+        357
+      ],
+      [
+        961,
+        336
+      ],
+      [
+        846,
+        334
+      ],
+      [
+        553,
+        363
+      ],
+      [
+        513,
+        396
+      ],
+      [
+        490,
+        396
+      ],
+      [
+        447,
+        375
+      ],
+      [
+        383,
+        385
+      ],
+      [
+        302,
+        417
+      ],
+      [
+        299,
+        541
+      ],
+      [
+        308,
+        581
+      ],
+      [
+        300,
+        594
+      ],
+      [
+        289,
+        835
+      ],
+      [
+        297,
+        913
+      ],
+      [
+        344,
+        924
+      ],
+      [
+        1246,
+        869
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 501442,
+    "draft_area_pixels": 659575,
+    "area_ratio_to_draft": 0.7602501610885798,
+    "boundary_edge_support": 0.9482456140350877,
+    "dark_foreground_fraction": 0.019622556823361923,
+    "changed_pixels": 158133,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_026",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.005485037037037037,
+    "polygon_vertices": [
+      [
+        225,
+        74
+      ],
+      [
+        158,
+        665
+      ],
+      [
+        836,
+        681
+      ],
+      [
+        944,
+        663
+      ],
+      [
+        1002,
+        611
+      ],
+      [
+        1064,
+        642
+      ],
+      [
+        1213,
+        598
+      ],
+      [
+        1175,
+        114
+      ],
+      [
+        647,
+        96
+      ],
+      [
+        639,
+        124
+      ],
+      [
+        608,
+        111
+      ],
+      [
+        617,
+        149
+      ],
+      [
+        580,
+        167
+      ],
+      [
+        625,
+        209
+      ],
+      [
+        621,
+        235
+      ],
+      [
+        605,
+        210
+      ],
+      [
+        587,
+        229
+      ],
+      [
+        520,
+        207
+      ],
+      [
+        508,
+        165
+      ],
+      [
+        479,
+        163
+      ],
+      [
+        509,
+        89
+      ],
+      [
+        302,
+        79
+      ],
+      [
+        295,
+        111
+      ],
+      [
+        284,
+        75
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 554614,
+    "draft_area_pixels": 591722,
+    "area_ratio_to_draft": 0.9372881184069546,
+    "boundary_edge_support": 0.8928060981419723,
+    "dark_foreground_fraction": 0.008999987323961515,
+    "changed_pixels": 49292,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_027",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.017258074074074075,
+    "polygon_vertices": [
+      [
+        1293,
+        203
+      ],
+      [
+        629,
+        218
+      ],
+      [
+        597,
+        328
+      ],
+      [
+        639,
+        392
+      ],
+      [
+        522,
+        374
+      ],
+      [
+        575,
+        334
+      ],
+      [
+        446,
+        279
+      ],
+      [
+        474,
+        227
+      ],
+      [
+        221,
+        272
+      ],
+      [
+        130,
+        235
+      ],
+      [
+        92,
+        993
+      ],
+      [
+        928,
+        956
+      ],
+      [
+        976,
+        917
+      ],
+      [
+        926,
+        705
+      ],
+      [
+        1014,
+        681
+      ],
+      [
+        967,
+        633
+      ],
+      [
+        1003,
+        585
+      ],
+      [
+        942,
+        599
+      ],
+      [
+        918,
+        529
+      ],
+      [
+        1030,
+        421
+      ],
+      [
+        1098,
+        494
+      ],
+      [
+        1132,
+        302
+      ],
+      [
+        1271,
+        269
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 664907,
+    "draft_area_pixels": 767579,
+    "area_ratio_to_draft": 0.8662391753812962,
+    "boundary_edge_support": 0.6507734303912648,
+    "dark_foreground_fraction": 0.01756018633573215,
+    "changed_pixels": 109274,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_028",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.02904,
+    "polygon_vertices": [
+      [
+        1254,
+        122
+      ],
+      [
+        531,
+        158
+      ],
+      [
+        509,
+        264
+      ],
+      [
+        753,
+        272
+      ],
+      [
+        844,
+        357
+      ],
+      [
+        835,
+        716
+      ],
+      [
+        712,
+        791
+      ],
+      [
+        613,
+        769
+      ],
+      [
+        571,
+        660
+      ],
+      [
+        400,
+        610
+      ],
+      [
+        471,
+        561
+      ],
+      [
+        456,
+        344
+      ],
+      [
+        580,
+        315
+      ],
+      [
+        371,
+        234
+      ],
+      [
+        403,
+        133
+      ],
+      [
+        30,
+        133
+      ],
+      [
+        12,
+        918
+      ],
+      [
+        307,
+        920
+      ],
+      [
+        366,
+        834
+      ],
+      [
+        402,
+        912
+      ],
+      [
+        864,
+        880
+      ],
+      [
+        1168,
+        734
+      ],
+      [
+        1171,
+        795
+      ],
+      [
+        1316,
+        737
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 743169,
+    "draft_area_pixels": 1194057,
+    "area_ratio_to_draft": 0.6223898859099691,
+    "boundary_edge_support": 0.7090909090909091,
+    "dark_foreground_fraction": 0.012213574421001863,
+    "changed_pixels": 450948,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_029",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.002126814814814815,
+    "polygon_vertices": [
+      [
+        530,
+        108
+      ],
+      [
+        520,
+        147
+      ],
+      [
+        544,
+        683
+      ],
+      [
+        542,
+        834
+      ],
+      [
+        544,
+        894
+      ],
+      [
+        555,
+        904
+      ],
+      [
+        546,
+        921
+      ],
+      [
+        546,
+        969
+      ],
+      [
+        575,
+        972
+      ],
+      [
+        1106,
+        925
+      ],
+      [
+        1108,
+        880
+      ],
+      [
+        1077,
+        672
+      ],
+      [
+        1072,
+        665
+      ],
+      [
+        1070,
+        586
+      ],
+      [
+        982,
+        309
+      ],
+      [
+        974,
+        315
+      ],
+      [
+        931,
+        311
+      ],
+      [
+        951,
+        299
+      ],
+      [
+        984,
+        305
+      ],
+      [
+        923,
+        146
+      ],
+      [
+        897,
+        126
+      ],
+      [
+        763,
+        111
+      ],
+      [
+        715,
+        117
+      ],
+      [
+        646,
+        105
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 418946,
+    "draft_area_pixels": 536568,
+    "area_ratio_to_draft": 0.7807882691476197,
+    "boundary_edge_support": 0.9313935681470138,
+    "dark_foreground_fraction": 0.01638504864311316,
+    "changed_pixels": 117656,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_030",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.003490962962962963,
+    "polygon_vertices": [
+      [
+        434,
+        242
+      ],
+      [
+        166,
+        439
+      ],
+      [
+        143,
+        481
+      ],
+      [
+        483,
+        837
+      ],
+      [
+        520,
+        783
+      ],
+      [
+        556,
+        798
+      ],
+      [
+        570,
+        766
+      ],
+      [
+        623,
+        805
+      ],
+      [
+        617,
+        841
+      ],
+      [
+        602,
+        833
+      ],
+      [
+        606,
+        881
+      ],
+      [
+        585,
+        846
+      ],
+      [
+        593,
+        888
+      ],
+      [
+        548,
+        904
+      ],
+      [
+        727,
+        1097
+      ],
+      [
+        1084,
+        697
+      ],
+      [
+        954,
+        577
+      ],
+      [
+        908,
+        561
+      ],
+      [
+        916,
+        540
+      ],
+      [
+        860,
+        486
+      ],
+      [
+        632,
+        338
+      ],
+      [
+        589,
+        362
+      ],
+      [
+        607,
+        316
+      ],
+      [
+        483,
+        240
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 385699,
+    "draft_area_pixels": 535468,
+    "area_ratio_to_draft": 0.7203026137883123,
+    "boundary_edge_support": 0.9487179487179487,
+    "dark_foreground_fraction": 0.019834469683158933,
+    "changed_pixels": 149903,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_031",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.003991111111111111,
+    "polygon_vertices": [
+      [
+        302,
+        285
+      ],
+      [
+        87,
+        525
+      ],
+      [
+        57,
+        592
+      ],
+      [
+        480,
+        890
+      ],
+      [
+        509,
+        873
+      ],
+      [
+        510,
+        828
+      ],
+      [
+        556,
+        830
+      ],
+      [
+        547,
+        749
+      ],
+      [
+        567,
+        808
+      ],
+      [
+        621,
+        827
+      ],
+      [
+        606,
+        866
+      ],
+      [
+        629,
+        885
+      ],
+      [
+        613,
+        917
+      ],
+      [
+        561,
+        944
+      ],
+      [
+        789,
+        1102
+      ],
+      [
+        1044,
+        682
+      ],
+      [
+        1068,
+        614
+      ],
+      [
+        939,
+        525
+      ],
+      [
+        874,
+        524
+      ],
+      [
+        864,
+        486
+      ],
+      [
+        778,
+        437
+      ],
+      [
+        485,
+        315
+      ],
+      [
+        471,
+        329
+      ],
+      [
+        365,
+        270
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 432813,
+    "draft_area_pixels": 686837,
+    "area_ratio_to_draft": 0.6301538793046968,
+    "boundary_edge_support": 0.9034001351047062,
+    "dark_foreground_fraction": 0.02117807618258475,
+    "changed_pixels": 254024,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_032",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.003922962962962963,
+    "polygon_vertices": [
+      [
+        464,
+        90
+      ],
+      [
+        274,
+        557
+      ],
+      [
+        295,
+        583
+      ],
+      [
+        297,
+        569
+      ],
+      [
+        335,
+        569
+      ],
+      [
+        342,
+        611
+      ],
+      [
+        374,
+        606
+      ],
+      [
+        359,
+        671
+      ],
+      [
+        323,
+        685
+      ],
+      [
+        323,
+        668
+      ],
+      [
+        303,
+        696
+      ],
+      [
+        276,
+        694
+      ],
+      [
+        239,
+        651
+      ],
+      [
+        134,
+        909
+      ],
+      [
+        693,
+        1096
+      ],
+      [
+        731,
+        1006
+      ],
+      [
+        853,
+        560
+      ],
+      [
+        871,
+        426
+      ],
+      [
+        847,
+        366
+      ],
+      [
+        883,
+        335
+      ],
+      [
+        888,
+        276
+      ],
+      [
+        823,
+        197
+      ],
+      [
+        562,
+        107
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 469852,
+    "draft_area_pixels": 527422,
+    "area_ratio_to_draft": 0.890846418996553,
+    "boundary_edge_support": 0.9291507633587787,
+    "dark_foreground_fraction": 0.02173750374139479,
+    "changed_pixels": 76070,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_033",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.005168592592592593,
+    "polygon_vertices": [
+      [
+        757,
+        74
+      ],
+      [
+        336,
+        330
+      ],
+      [
+        344,
+        361
+      ],
+      [
+        315,
+        371
+      ],
+      [
+        344,
+        392
+      ],
+      [
+        323,
+        431
+      ],
+      [
+        351,
+        446
+      ],
+      [
+        298,
+        488
+      ],
+      [
+        262,
+        478
+      ],
+      [
+        283,
+        467
+      ],
+      [
+        242,
+        475
+      ],
+      [
+        224,
+        457
+      ],
+      [
+        222,
+        403
+      ],
+      [
+        0,
+        534
+      ],
+      [
+        0,
+        564
+      ],
+      [
+        268,
+        1023
+      ],
+      [
+        367,
+        975
+      ],
+      [
+        776,
+        688
+      ],
+      [
+        866,
+        598
+      ],
+      [
+        847,
+        591
+      ],
+      [
+        915,
+        552
+      ],
+      [
+        1003,
+        441
+      ],
+      [
+        1003,
+        404
+      ],
+      [
+        875,
+        256
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 477425,
+    "draft_area_pixels": 497758,
+    "area_ratio_to_draft": 0.9591508323321775,
+    "boundary_edge_support": 0.9587105321262972,
+    "dark_foreground_fraction": 0.022414491366297265,
+    "changed_pixels": 69615,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_034",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.005324444444444444,
+    "polygon_vertices": [
+      [
+        1290,
+        118
+      ],
+      [
+        696,
+        164
+      ],
+      [
+        674,
+        188
+      ],
+      [
+        687,
+        226
+      ],
+      [
+        645,
+        254
+      ],
+      [
+        700,
+        303
+      ],
+      [
+        591,
+        302
+      ],
+      [
+        560,
+        268
+      ],
+      [
+        581,
+        261
+      ],
+      [
+        542,
+        255
+      ],
+      [
+        566,
+        173
+      ],
+      [
+        347,
+        188
+      ],
+      [
+        350,
+        220
+      ],
+      [
+        331,
+        190
+      ],
+      [
+        272,
+        190
+      ],
+      [
+        248,
+        827
+      ],
+      [
+        973,
+        774
+      ],
+      [
+        1104,
+        736
+      ],
+      [
+        1157,
+        680
+      ],
+      [
+        1234,
+        701
+      ],
+      [
+        1393,
+        642
+      ],
+      [
+        1361,
+        409
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 655946,
+    "draft_area_pixels": 794390,
+    "area_ratio_to_draft": 0.8257228817079771,
+    "boundary_edge_support": 0.9101271372205173,
+    "dark_foreground_fraction": 0.011261430271324892,
+    "changed_pixels": 138452,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_035",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.004300444444444444,
+    "polygon_vertices": [
+      [
+        524,
+        169
+      ],
+      [
+        293,
+        548
+      ],
+      [
+        341,
+        568
+      ],
+      [
+        338,
+        603
+      ],
+      [
+        362,
+        608
+      ],
+      [
+        347,
+        659
+      ],
+      [
+        315,
+        666
+      ],
+      [
+        315,
+        653
+      ],
+      [
+        298,
+        675
+      ],
+      [
+        278,
+        672
+      ],
+      [
+        246,
+        630
+      ],
+      [
+        124,
+        838
+      ],
+      [
+        573,
+        1078
+      ],
+      [
+        665,
+        913
+      ],
+      [
+        648,
+        899
+      ],
+      [
+        650,
+        854
+      ],
+      [
+        684,
+        858
+      ],
+      [
+        678,
+        839
+      ],
+      [
+        708,
+        813
+      ],
+      [
+        804,
+        598
+      ],
+      [
+        811,
+        456
+      ],
+      [
+        830,
+        438
+      ],
+      [
+        845,
+        336
+      ],
+      [
+        817,
+        302
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 356776,
+    "draft_area_pixels": 424900,
+    "area_ratio_to_draft": 0.8396705107084019,
+    "boundary_edge_support": 0.916688567674113,
+    "dark_foreground_fraction": 0.020522571873337406,
+    "changed_pixels": 68124,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_036",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.0062506666666666665,
+    "polygon_vertices": [
+      [
+        359,
+        107
+      ],
+      [
+        120,
+        544
+      ],
+      [
+        178,
+        554
+      ],
+      [
+        180,
+        598
+      ],
+      [
+        250,
+        575
+      ],
+      [
+        203,
+        602
+      ],
+      [
+        189,
+        657
+      ],
+      [
+        154,
+        666
+      ],
+      [
+        156,
+        649
+      ],
+      [
+        136,
+        674
+      ],
+      [
+        77,
+        627
+      ],
+      [
+        0,
+        775
+      ],
+      [
+        0,
+        883
+      ],
+      [
+        463,
+        1089
+      ],
+      [
+        511,
+        951
+      ],
+      [
+        547,
+        920
+      ],
+      [
+        532,
+        844
+      ],
+      [
+        571,
+        847
+      ],
+      [
+        562,
+        829
+      ],
+      [
+        596,
+        798
+      ],
+      [
+        688,
+        566
+      ],
+      [
+        736,
+        250
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "left"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 427821,
+    "draft_area_pixels": 507464,
+    "area_ratio_to_draft": 0.8430568473822774,
+    "boundary_edge_support": 0.9198416625432954,
+    "dark_foreground_fraction": 0.02132658593891198,
+    "changed_pixels": 79649,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_037",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0034856296296296298,
+    "polygon_vertices": [
+      [
+        779,
+        267
+      ],
+      [
+        338,
+        377
+      ],
+      [
+        344,
+        401
+      ],
+      [
+        319,
+        398
+      ],
+      [
+        336,
+        427
+      ],
+      [
+        306,
+        453
+      ],
+      [
+        315,
+        468
+      ],
+      [
+        346,
+        468
+      ],
+      [
+        359,
+        494
+      ],
+      [
+        287,
+        484
+      ],
+      [
+        265,
+        495
+      ],
+      [
+        243,
+        478
+      ],
+      [
+        256,
+        469
+      ],
+      [
+        227,
+        469
+      ],
+      [
+        219,
+        445
+      ],
+      [
+        234,
+        403
+      ],
+      [
+        9,
+        457
+      ],
+      [
+        65,
+        950
+      ],
+      [
+        613,
+        798
+      ],
+      [
+        708,
+        751
+      ],
+      [
+        696,
+        738
+      ],
+      [
+        775,
+        719
+      ],
+      [
+        881,
+        654
+      ],
+      [
+        888,
+        624
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 381517,
+    "draft_area_pixels": 529013,
+    "area_ratio_to_draft": 0.7211864358720863,
+    "boundary_edge_support": 0.9605924358635282,
+    "dark_foreground_fraction": 0.015295591920978917,
+    "changed_pixels": 147590,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_038",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 15,
+    "simplification_changed_fraction": 0.0022601481481481483,
+    "polygon_vertices": [
+      [
+        1115,
+        433
+      ],
+      [
+        1106,
+        424
+      ],
+      [
+        803,
+        424
+      ],
+      [
+        517,
+        449
+      ],
+      [
+        463,
+        477
+      ],
+      [
+        427,
+        460
+      ],
+      [
+        360,
+        465
+      ],
+      [
+        295,
+        492
+      ],
+      [
+        278,
+        593
+      ],
+      [
+        284,
+        644
+      ],
+      [
+        272,
+        670
+      ],
+      [
+        245,
+        900
+      ],
+      [
+        252,
+        935
+      ],
+      [
+        289,
+        945
+      ],
+      [
+        1150,
+        945
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 436354,
+    "draft_area_pixels": 634470,
+    "area_ratio_to_draft": 0.6877456774946018,
+    "boundary_edge_support": 0.9395017793594306,
+    "dark_foreground_fraction": 0.020118810604289755,
+    "changed_pixels": 198116,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_039",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 19,
+    "simplification_changed_fraction": 0.002866962962962963,
+    "polygon_vertices": [
+      [
+        203,
+        404
+      ],
+      [
+        169,
+        501
+      ],
+      [
+        162,
+        564
+      ],
+      [
+        150,
+        569
+      ],
+      [
+        64,
+        812
+      ],
+      [
+        62,
+        858
+      ],
+      [
+        70,
+        866
+      ],
+      [
+        989,
+        1100
+      ],
+      [
+        1046,
+        817
+      ],
+      [
+        1049,
+        758
+      ],
+      [
+        1078,
+        652
+      ],
+      [
+        1093,
+        549
+      ],
+      [
+        1085,
+        525
+      ],
+      [
+        566,
+        407
+      ],
+      [
+        449,
+        400
+      ],
+      [
+        446,
+        409
+      ],
+      [
+        390,
+        426
+      ],
+      [
+        352,
+        392
+      ],
+      [
+        267,
+        390
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 519045,
+    "draft_area_pixels": 503300,
+    "area_ratio_to_draft": 1.0312835287105107,
+    "boundary_edge_support": 0.9398675496688742,
+    "dark_foreground_fraction": 0.020348443384723764,
+    "changed_pixels": 36439,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_040",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.004292148148148148,
+    "polygon_vertices": [
+      [
+        526,
+        107
+      ],
+      [
+        214,
+        467
+      ],
+      [
+        261,
+        495
+      ],
+      [
+        252,
+        530
+      ],
+      [
+        278,
+        550
+      ],
+      [
+        252,
+        592
+      ],
+      [
+        182,
+        591
+      ],
+      [
+        156,
+        540
+      ],
+      [
+        0,
+        722
+      ],
+      [
+        42,
+        772
+      ],
+      [
+        402,
+        1051
+      ],
+      [
+        436,
+        1031
+      ],
+      [
+        485,
+        938
+      ],
+      [
+        524,
+        913
+      ],
+      [
+        526,
+        844
+      ],
+      [
+        562,
+        851
+      ],
+      [
+        562,
+        829
+      ],
+      [
+        596,
+        809
+      ],
+      [
+        729,
+        613
+      ],
+      [
+        778,
+        513
+      ],
+      [
+        759,
+        515
+      ],
+      [
+        830,
+        404
+      ],
+      [
+        838,
+        319
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 395082,
+    "draft_area_pixels": 442982,
+    "area_ratio_to_draft": 0.8918691955880825,
+    "boundary_edge_support": 0.94389118290017,
+    "dark_foreground_fraction": 0.024720140952855543,
+    "changed_pixels": 59442,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_041",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.004113777777777778,
+    "polygon_vertices": [
+      [
+        480,
+        284
+      ],
+      [
+        274,
+        677
+      ],
+      [
+        291,
+        693
+      ],
+      [
+        327,
+        685
+      ],
+      [
+        323,
+        716
+      ],
+      [
+        351,
+        730
+      ],
+      [
+        336,
+        776
+      ],
+      [
+        269,
+        790
+      ],
+      [
+        239,
+        750
+      ],
+      [
+        132,
+        963
+      ],
+      [
+        497,
+        1123
+      ],
+      [
+        611,
+        1124
+      ],
+      [
+        656,
+        1018
+      ],
+      [
+        641,
+        955
+      ],
+      [
+        618,
+        944
+      ],
+      [
+        637,
+        931
+      ],
+      [
+        676,
+        948
+      ],
+      [
+        669,
+        929
+      ],
+      [
+        697,
+        903
+      ],
+      [
+        776,
+        682
+      ],
+      [
+        802,
+        432
+      ],
+      [
+        738,
+        375
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 337736,
+    "draft_area_pixels": 409981,
+    "area_ratio_to_draft": 0.8237845168434634,
+    "boundary_edge_support": 0.8653516295025729,
+    "dark_foreground_fraction": 0.02235154493212293,
+    "changed_pixels": 72255,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_042",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 21,
+    "simplification_changed_fraction": 0.0038743703703703705,
+    "polygon_vertices": [
+      [
+        512,
+        124
+      ],
+      [
+        270,
+        501
+      ],
+      [
+        320,
+        519
+      ],
+      [
+        315,
+        553
+      ],
+      [
+        350,
+        554
+      ],
+      [
+        353,
+        569
+      ],
+      [
+        334,
+        578
+      ],
+      [
+        322,
+        612
+      ],
+      [
+        291,
+        617
+      ],
+      [
+        289,
+        604
+      ],
+      [
+        273,
+        625
+      ],
+      [
+        252,
+        619
+      ],
+      [
+        224,
+        576
+      ],
+      [
+        96,
+        781
+      ],
+      [
+        539,
+        1031
+      ],
+      [
+        781,
+        562
+      ],
+      [
+        794,
+        420
+      ],
+      [
+        813,
+        401
+      ],
+      [
+        830,
+        302
+      ],
+      [
+        802,
+        265
+      ],
+      [
+        718,
+        216
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 355785,
+    "draft_area_pixels": 422313,
+    "area_ratio_to_draft": 0.8424675536864837,
+    "boundary_edge_support": 0.9533298374410069,
+    "dark_foreground_fraction": 0.020504965660358712,
+    "changed_pixels": 66528,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_043",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.0041285925925925926,
+    "polygon_vertices": [
+      [
+        336,
+        377
+      ],
+      [
+        205,
+        674
+      ],
+      [
+        199,
+        742
+      ],
+      [
+        700,
+        899
+      ],
+      [
+        706,
+        833
+      ],
+      [
+        748,
+        824
+      ],
+      [
+        718,
+        753
+      ],
+      [
+        750,
+        798
+      ],
+      [
+        806,
+        802
+      ],
+      [
+        822,
+        838
+      ],
+      [
+        803,
+        838
+      ],
+      [
+        831,
+        855
+      ],
+      [
+        790,
+        928
+      ],
+      [
+        1044,
+        1006
+      ],
+      [
+        1138,
+        635
+      ],
+      [
+        1156,
+        482
+      ],
+      [
+        997,
+        437
+      ],
+      [
+        951,
+        447
+      ],
+      [
+        939,
+        422
+      ],
+      [
+        823,
+        394
+      ],
+      [
+        530,
+        360
+      ],
+      [
+        507,
+        374
+      ],
+      [
+        395,
+        347
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": false,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 415969,
+    "draft_area_pixels": 423886,
+    "area_ratio_to_draft": 0.9813228084909622,
+    "boundary_edge_support": 0.9139757820383451,
+    "dark_foreground_fraction": 0.018266499864755207,
+    "changed_pixels": 32507,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_044",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.002810074074074074,
+    "polygon_vertices": [
+      [
+        300,
+        479
+      ],
+      [
+        135,
+        858
+      ],
+      [
+        137,
+        902
+      ],
+      [
+        638,
+        1083
+      ],
+      [
+        658,
+        1059
+      ],
+      [
+        644,
+        1057
+      ],
+      [
+        646,
+        1015
+      ],
+      [
+        682,
+        1014
+      ],
+      [
+        700,
+        973
+      ],
+      [
+        754,
+        987
+      ],
+      [
+        765,
+        1021
+      ],
+      [
+        747,
+        1013
+      ],
+      [
+        750,
+        1029
+      ],
+      [
+        775,
+        1041
+      ],
+      [
+        773,
+        1070
+      ],
+      [
+        728,
+        1112
+      ],
+      [
+        743,
+        1124
+      ],
+      [
+        1010,
+        1124
+      ],
+      [
+        1131,
+        658
+      ],
+      [
+        815,
+        555
+      ],
+      [
+        539,
+        496
+      ],
+      [
+        471,
+        509
+      ],
+      [
+        442,
+        480
+      ],
+      [
+        395,
+        469
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 448772,
+    "draft_area_pixels": 677054,
+    "area_ratio_to_draft": 0.6628304389310159,
+    "boundary_edge_support": 0.9346938775510204,
+    "dark_foreground_fraction": 0.019728797617181375,
+    "changed_pixels": 228282,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_045",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 16,
+    "simplification_changed_fraction": 0.002119111111111111,
+    "polygon_vertices": [
+      [
+        1132,
+        292
+      ],
+      [
+        870,
+        360
+      ],
+      [
+        647,
+        434
+      ],
+      [
+        559,
+        475
+      ],
+      [
+        557,
+        493
+      ],
+      [
+        519,
+        531
+      ],
+      [
+        465,
+        520
+      ],
+      [
+        411,
+        546
+      ],
+      [
+        342,
+        601
+      ],
+      [
+        378,
+        733
+      ],
+      [
+        389,
+        747
+      ],
+      [
+        387,
+        774
+      ],
+      [
+        442,
+        1019
+      ],
+      [
+        460,
+        1051
+      ],
+      [
+        509,
+        1048
+      ],
+      [
+        1329,
+        772
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 461601,
+    "draft_area_pixels": 627916,
+    "area_ratio_to_draft": 0.7351317692175386,
+    "boundary_edge_support": 0.964608834486429,
+    "dark_foreground_fraction": 0.02218718581482497,
+    "changed_pixels": 166315,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_046",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 12,
+    "simplification_changed_fraction": 0.0020533333333333332,
+    "polygon_vertices": [
+      [
+        301,
+        396
+      ],
+      [
+        184,
+        805
+      ],
+      [
+        186,
+        847
+      ],
+      [
+        244,
+        866
+      ],
+      [
+        1110,
+        1016
+      ],
+      [
+        1160,
+        495
+      ],
+      [
+        1152,
+        467
+      ],
+      [
+        809,
+        411
+      ],
+      [
+        521,
+        390
+      ],
+      [
+        482,
+        411
+      ],
+      [
+        442,
+        383
+      ],
+      [
+        401,
+        379
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 479503,
+    "draft_area_pixels": 667536,
+    "area_ratio_to_draft": 0.7183178135711032,
+    "boundary_edge_support": 0.8884747706422018,
+    "dark_foreground_fraction": 0.021312316715542522,
+    "changed_pixels": 188071,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_047",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.002916148148148148,
+    "polygon_vertices": [
+      [
+        596,
+        201
+      ],
+      [
+        381,
+        229
+      ],
+      [
+        222,
+        270
+      ],
+      [
+        285,
+        764
+      ],
+      [
+        316,
+        774
+      ],
+      [
+        313,
+        762
+      ],
+      [
+        348,
+        742
+      ],
+      [
+        364,
+        772
+      ],
+      [
+        406,
+        766
+      ],
+      [
+        422,
+        816
+      ],
+      [
+        401,
+        837
+      ],
+      [
+        390,
+        829
+      ],
+      [
+        385,
+        866
+      ],
+      [
+        365,
+        876
+      ],
+      [
+        300,
+        861
+      ],
+      [
+        338,
+        1124
+      ],
+      [
+        419,
+        1124
+      ],
+      [
+        913,
+        997
+      ],
+      [
+        868,
+        795
+      ],
+      [
+        832,
+        764
+      ],
+      [
+        854,
+        737
+      ],
+      [
+        778,
+        447
+      ],
+      [
+        633,
+        231
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 447032,
+    "draft_area_pixels": 679826,
+    "area_ratio_to_draft": 0.6575682601136174,
+    "boundary_edge_support": 0.9491033755274262,
+    "dark_foreground_fraction": 0.0192389372178263,
+    "changed_pixels": 232794,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_048",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 16,
+    "simplification_changed_fraction": 0.0031626666666666665,
+    "polygon_vertices": [
+      [
+        554,
+        135
+      ],
+      [
+        347,
+        150
+      ],
+      [
+        212,
+        171
+      ],
+      [
+        154,
+        190
+      ],
+      [
+        150,
+        238
+      ],
+      [
+        197,
+        537
+      ],
+      [
+        267,
+        1106
+      ],
+      [
+        276,
+        1111
+      ],
+      [
+        388,
+        1093
+      ],
+      [
+        877,
+        969
+      ],
+      [
+        748,
+        400
+      ],
+      [
+        680,
+        293
+      ],
+      [
+        661,
+        283
+      ],
+      [
+        656,
+        255
+      ],
+      [
+        596,
+        167
+      ],
+      [
+        574,
+        165
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 514191,
+    "draft_area_pixels": 804371,
+    "area_ratio_to_draft": 0.6392460692889227,
+    "boundary_edge_support": 0.9116355653128431,
+    "dark_foreground_fraction": 0.018707308568029372,
+    "changed_pixels": 290252,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_049",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 11,
+    "simplification_changed_fraction": 0.003646222222222222,
+    "polygon_vertices": [
+      [
+        547,
+        135
+      ],
+      [
+        188,
+        195
+      ],
+      [
+        150,
+        212
+      ],
+      [
+        145,
+        225
+      ],
+      [
+        314,
+        1117
+      ],
+      [
+        894,
+        950
+      ],
+      [
+        744,
+        394
+      ],
+      [
+        673,
+        291
+      ],
+      [
+        652,
+        279
+      ],
+      [
+        648,
+        257
+      ],
+      [
+        583,
+        164
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 494887,
+    "draft_area_pixels": 692214,
+    "area_ratio_to_draft": 0.7149335321157908,
+    "boundary_edge_support": 0.9361817198485668,
+    "dark_foreground_fraction": 0.01844116727758361,
+    "changed_pixels": 197327,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_050",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 16,
+    "simplification_changed_fraction": 0.002590814814814815,
+    "polygon_vertices": [
+      [
+        1094,
+        284
+      ],
+      [
+        1064,
+        278
+      ],
+      [
+        754,
+        330
+      ],
+      [
+        504,
+        397
+      ],
+      [
+        478,
+        426
+      ],
+      [
+        461,
+        432
+      ],
+      [
+        419,
+        419
+      ],
+      [
+        360,
+        434
+      ],
+      [
+        293,
+        471
+      ],
+      [
+        295,
+        581
+      ],
+      [
+        310,
+        623
+      ],
+      [
+        301,
+        647
+      ],
+      [
+        315,
+        800
+      ],
+      [
+        330,
+        918
+      ],
+      [
+        395,
+        918
+      ],
+      [
+        1209,
+        771
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 430236,
+    "draft_area_pixels": 816476,
+    "area_ratio_to_draft": 0.5269426168068627,
+    "boundary_edge_support": 0.9014836795252226,
+    "dark_foreground_fraction": 0.020465519072556598,
+    "changed_pixels": 386240,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_051",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 15,
+    "simplification_changed_fraction": 0.0017457777777777777,
+    "polygon_vertices": [
+      [
+        934,
+        355
+      ],
+      [
+        895,
+        352
+      ],
+      [
+        439,
+        415
+      ],
+      [
+        351,
+        443
+      ],
+      [
+        305,
+        484
+      ],
+      [
+        272,
+        482
+      ],
+      [
+        252,
+        469
+      ],
+      [
+        201,
+        484
+      ],
+      [
+        128,
+        525
+      ],
+      [
+        124,
+        618
+      ],
+      [
+        135,
+        672
+      ],
+      [
+        125,
+        905
+      ],
+      [
+        135,
+        971
+      ],
+      [
+        190,
+        973
+      ],
+      [
+        1036,
+        838
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 431980,
+    "draft_area_pixels": 929015,
+    "area_ratio_to_draft": 0.464987110003606,
+    "boundary_edge_support": 0.9528245192307693,
+    "dark_foreground_fraction": 0.016773689479209902,
+    "changed_pixels": 497035,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_052",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 21,
+    "simplification_changed_fraction": 0.0028841481481481483,
+    "polygon_vertices": [
+      [
+        1046,
+        295
+      ],
+      [
+        983,
+        288
+      ],
+      [
+        765,
+        315
+      ],
+      [
+        436,
+        362
+      ],
+      [
+        393,
+        394
+      ],
+      [
+        354,
+        381
+      ],
+      [
+        287,
+        390
+      ],
+      [
+        222,
+        422
+      ],
+      [
+        214,
+        494
+      ],
+      [
+        222,
+        569
+      ],
+      [
+        203,
+        814
+      ],
+      [
+        214,
+        869
+      ],
+      [
+        256,
+        874
+      ],
+      [
+        1046,
+        802
+      ],
+      [
+        1063,
+        798
+      ],
+      [
+        1067,
+        785
+      ],
+      [
+        1077,
+        796
+      ],
+      [
+        1130,
+        793
+      ],
+      [
+        1106,
+        671
+      ],
+      [
+        1094,
+        656
+      ],
+      [
+        1098,
+        639
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 437187,
+    "draft_area_pixels": 584072,
+    "area_ratio_to_draft": 0.7485155939678669,
+    "boundary_edge_support": 0.8957703927492447,
+    "dark_foreground_fraction": 0.01704673378148017,
+    "changed_pixels": 146885,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_053",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.003054814814814815,
+    "polygon_vertices": [
+      [
+        898,
+        216
+      ],
+      [
+        741,
+        227
+      ],
+      [
+        470,
+        272
+      ],
+      [
+        418,
+        291
+      ],
+      [
+        473,
+        778
+      ],
+      [
+        499,
+        869
+      ],
+      [
+        550,
+        915
+      ],
+      [
+        550,
+        946
+      ],
+      [
+        533,
+        984
+      ],
+      [
+        555,
+        1051
+      ],
+      [
+        596,
+        1120
+      ],
+      [
+        1045,
+        1046
+      ],
+      [
+        1072,
+        1033
+      ],
+      [
+        1066,
+        1000
+      ],
+      [
+        1073,
+        991
+      ],
+      [
+        948,
+        428
+      ],
+      [
+        937,
+        416
+      ],
+      [
+        928,
+        361
+      ],
+      [
+        935,
+        357
+      ],
+      [
+        922,
+        339
+      ],
+      [
+        907,
+        255
+      ],
+      [
+        890,
+        249
+      ],
+      [
+        903,
+        239
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 440730,
+    "draft_area_pixels": 624451,
+    "area_ratio_to_draft": 0.7057879641477074,
+    "boundary_edge_support": 0.8799062683069713,
+    "dark_foreground_fraction": 0.014963826783335594,
+    "changed_pixels": 258085,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_054",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.002763851851851852,
+    "polygon_vertices": [
+      [
+        1001,
+        313
+      ],
+      [
+        514,
+        376
+      ],
+      [
+        524,
+        401
+      ],
+      [
+        494,
+        396
+      ],
+      [
+        507,
+        433
+      ],
+      [
+        475,
+        450
+      ],
+      [
+        490,
+        481
+      ],
+      [
+        446,
+        494
+      ],
+      [
+        404,
+        472
+      ],
+      [
+        425,
+        472
+      ],
+      [
+        388,
+        461
+      ],
+      [
+        382,
+        437
+      ],
+      [
+        405,
+        388
+      ],
+      [
+        167,
+        416
+      ],
+      [
+        182,
+        949
+      ],
+      [
+        743,
+        877
+      ],
+      [
+        836,
+        847
+      ],
+      [
+        851,
+        821
+      ],
+      [
+        989,
+        799
+      ],
+      [
+        1066,
+        753
+      ],
+      [
+        1075,
+        730
+      ],
+      [
+        1053,
+        615
+      ],
+      [
+        1029,
+        577
+      ],
+      [
+        1044,
+        571
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 439716,
+    "draft_area_pixels": 591359,
+    "area_ratio_to_draft": 0.7435686275172949,
+    "boundary_edge_support": 0.9561120086160474,
+    "dark_foreground_fraction": 0.019859925165499375,
+    "changed_pixels": 151675,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_055",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 14,
+    "simplification_changed_fraction": 0.0021368888888888887,
+    "polygon_vertices": [
+      [
+        958,
+        355
+      ],
+      [
+        908,
+        351
+      ],
+      [
+        456,
+        409
+      ],
+      [
+        372,
+        435
+      ],
+      [
+        320,
+        477
+      ],
+      [
+        261,
+        465
+      ],
+      [
+        149,
+        512
+      ],
+      [
+        141,
+        554
+      ],
+      [
+        141,
+        635
+      ],
+      [
+        149,
+        661
+      ],
+      [
+        137,
+        928
+      ],
+      [
+        147,
+        961
+      ],
+      [
+        204,
+        965
+      ],
+      [
+        1048,
+        854
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 439191,
+    "draft_area_pixels": 534757,
+    "area_ratio_to_draft": 0.8212907918923923,
+    "boundary_edge_support": 0.9548347984237647,
+    "dark_foreground_fraction": 0.017427711422075633,
+    "changed_pixels": 95566,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_056",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 15,
+    "simplification_changed_fraction": 0.0020106666666666667,
+    "polygon_vertices": [
+      [
+        989,
+        382
+      ],
+      [
+        981,
+        374
+      ],
+      [
+        494,
+        428
+      ],
+      [
+        407,
+        452
+      ],
+      [
+        363,
+        492
+      ],
+      [
+        340,
+        494
+      ],
+      [
+        297,
+        480
+      ],
+      [
+        188,
+        523
+      ],
+      [
+        179,
+        599
+      ],
+      [
+        188,
+        686
+      ],
+      [
+        184,
+        687
+      ],
+      [
+        170,
+        864
+      ],
+      [
+        180,
+        969
+      ],
+      [
+        228,
+        972
+      ],
+      [
+        1076,
+        876
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 428725,
+    "draft_area_pixels": 943787,
+    "area_ratio_to_draft": 0.45426033628350465,
+    "boundary_edge_support": 0.9475942384308919,
+    "dark_foreground_fraction": 0.01782770921316987,
+    "changed_pixels": 515062,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_057",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 17,
+    "simplification_changed_fraction": 0.002270814814814815,
+    "polygon_vertices": [
+      [
+        953,
+        362
+      ],
+      [
+        905,
+        360
+      ],
+      [
+        460,
+        432
+      ],
+      [
+        374,
+        465
+      ],
+      [
+        328,
+        509
+      ],
+      [
+        302,
+        509
+      ],
+      [
+        278,
+        497
+      ],
+      [
+        153,
+        547
+      ],
+      [
+        152,
+        665
+      ],
+      [
+        167,
+        700
+      ],
+      [
+        167,
+        719
+      ],
+      [
+        158,
+        713
+      ],
+      [
+        164,
+        728
+      ],
+      [
+        161,
+        928
+      ],
+      [
+        173,
+        997
+      ],
+      [
+        241,
+        997
+      ],
+      [
+        1066,
+        849
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 433680,
+    "draft_area_pixels": 935339,
+    "area_ratio_to_draft": 0.4636607689832243,
+    "boundary_edge_support": 0.9499110847658565,
+    "dark_foreground_fraction": 0.019170753455193937,
+    "changed_pixels": 501659,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_058",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.003547259259259259,
+    "polygon_vertices": [
+      [
+        879,
+        150
+      ],
+      [
+        405,
+        205
+      ],
+      [
+        409,
+        684
+      ],
+      [
+        424,
+        763
+      ],
+      [
+        467,
+        809
+      ],
+      [
+        445,
+        877
+      ],
+      [
+        490,
+        1010
+      ],
+      [
+        911,
+        982
+      ],
+      [
+        967,
+        959
+      ],
+      [
+        911,
+        465
+      ],
+      [
+        884,
+        473
+      ],
+      [
+        888,
+        443
+      ],
+      [
+        852,
+        456
+      ],
+      [
+        829,
+        428
+      ],
+      [
+        781,
+        474
+      ],
+      [
+        800,
+        446
+      ],
+      [
+        783,
+        440
+      ],
+      [
+        793,
+        385
+      ],
+      [
+        823,
+        378
+      ],
+      [
+        827,
+        350
+      ],
+      [
+        898,
+        363
+      ],
+      [
+        883,
+        197
+      ],
+      [
+        856,
+        208
+      ],
+      [
+        879,
+        191
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 401088,
+    "draft_area_pixels": 538732,
+    "area_ratio_to_draft": 0.7445037606824915,
+    "boundary_edge_support": 0.9120201737181284,
+    "dark_foreground_fraction": 0.007285064303184915,
+    "changed_pixels": 137644,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_059",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0034145185185185186,
+    "polygon_vertices": [
+      [
+        1003,
+        415
+      ],
+      [
+        895,
+        420
+      ],
+      [
+        520,
+        477
+      ],
+      [
+        509,
+        504
+      ],
+      [
+        520,
+        501
+      ],
+      [
+        531,
+        532
+      ],
+      [
+        501,
+        548
+      ],
+      [
+        514,
+        569
+      ],
+      [
+        508,
+        591
+      ],
+      [
+        454,
+        593
+      ],
+      [
+        433,
+        571
+      ],
+      [
+        448,
+        565
+      ],
+      [
+        418,
+        560
+      ],
+      [
+        412,
+        535
+      ],
+      [
+        433,
+        492
+      ],
+      [
+        203,
+        520
+      ],
+      [
+        212,
+        1040
+      ],
+      [
+        763,
+        971
+      ],
+      [
+        856,
+        941
+      ],
+      [
+        867,
+        916
+      ],
+      [
+        939,
+        913
+      ],
+      [
+        1025,
+        883
+      ],
+      [
+        1078,
+        849
+      ],
+      [
+        1089,
+        820
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 425350,
+    "draft_area_pixels": 487280,
+    "area_ratio_to_draft": 0.8729067476604827,
+    "boundary_edge_support": 0.9546213808463252,
+    "dark_foreground_fraction": 0.017964715117960585,
+    "changed_pixels": 63968,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_060",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 22,
+    "simplification_changed_fraction": 0.0027851851851851852,
+    "polygon_vertices": [
+      [
+        284,
+        390
+      ],
+      [
+        357,
+        869
+      ],
+      [
+        386,
+        883
+      ],
+      [
+        380,
+        870
+      ],
+      [
+        416,
+        851
+      ],
+      [
+        420,
+        879
+      ],
+      [
+        442,
+        883
+      ],
+      [
+        466,
+        862
+      ],
+      [
+        486,
+        923
+      ],
+      [
+        463,
+        955
+      ],
+      [
+        461,
+        934
+      ],
+      [
+        444,
+        979
+      ],
+      [
+        371,
+        970
+      ],
+      [
+        395,
+        1124
+      ],
+      [
+        896,
+        1124
+      ],
+      [
+        971,
+        1103
+      ],
+      [
+        834,
+        572
+      ],
+      [
+        772,
+        471
+      ],
+      [
+        742,
+        449
+      ],
+      [
+        740,
+        422
+      ],
+      [
+        686,
+        338
+      ],
+      [
+        641,
+        323
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 396568,
+    "draft_area_pixels": 498139,
+    "area_ratio_to_draft": 0.7960990807786582,
+    "boundary_edge_support": 0.9423517851293809,
+    "dark_foreground_fraction": 0.021203138312979267,
+    "changed_pixels": 118901,
+    "uncertain": true,
+    "flags": [
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_061",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.003453037037037037,
+    "polygon_vertices": [
+      [
+        351,
+        402
+      ],
+      [
+        345,
+        440
+      ],
+      [
+        375,
+        591
+      ],
+      [
+        404,
+        868
+      ],
+      [
+        425,
+        873
+      ],
+      [
+        463,
+        851
+      ],
+      [
+        467,
+        871
+      ],
+      [
+        489,
+        881
+      ],
+      [
+        511,
+        862
+      ],
+      [
+        529,
+        921
+      ],
+      [
+        506,
+        953
+      ],
+      [
+        497,
+        938
+      ],
+      [
+        495,
+        971
+      ],
+      [
+        474,
+        981
+      ],
+      [
+        419,
+        966
+      ],
+      [
+        443,
+        1124
+      ],
+      [
+        946,
+        1124
+      ],
+      [
+        1001,
+        1108
+      ],
+      [
+        866,
+        570
+      ],
+      [
+        808,
+        480
+      ],
+      [
+        783,
+        464
+      ],
+      [
+        783,
+        443
+      ],
+      [
+        733,
+        366
+      ],
+      [
+        675,
+        340
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "bottom"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 373800,
+    "draft_area_pixels": 999244,
+    "area_ratio_to_draft": 0.37408280660179094,
+    "boundary_edge_support": 0.917610710607621,
+    "dark_foreground_fraction": 0.018871122662297304,
+    "changed_pixels": 625488,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_062",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 20,
+    "simplification_changed_fraction": 0.005479111111111111,
+    "polygon_vertices": [
+      [
+        973,
+        360
+      ],
+      [
+        477,
+        420
+      ],
+      [
+        409,
+        439
+      ],
+      [
+        343,
+        488
+      ],
+      [
+        299,
+        474
+      ],
+      [
+        175,
+        520
+      ],
+      [
+        172,
+        969
+      ],
+      [
+        721,
+        907
+      ],
+      [
+        699,
+        844
+      ],
+      [
+        725,
+        839
+      ],
+      [
+        733,
+        816
+      ],
+      [
+        689,
+        778
+      ],
+      [
+        727,
+        793
+      ],
+      [
+        779,
+        774
+      ],
+      [
+        803,
+        799
+      ],
+      [
+        788,
+        808
+      ],
+      [
+        821,
+        811
+      ],
+      [
+        829,
+        843
+      ],
+      [
+        810,
+        895
+      ],
+      [
+        1069,
+        860
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 415298,
+    "draft_area_pixels": 530530,
+    "area_ratio_to_draft": 0.78279833374173,
+    "boundary_edge_support": 0.9144083713442447,
+    "dark_foreground_fraction": 0.01562738093222491,
+    "changed_pixels": 115232,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_063",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.0021635555555555557,
+    "polygon_vertices": [
+      [
+        1171,
+        23
+      ],
+      [
+        1154,
+        21
+      ],
+      [
+        1060,
+        59
+      ],
+      [
+        1029,
+        28
+      ],
+      [
+        1029,
+        0
+      ],
+      [
+        801,
+        0
+      ],
+      [
+        915,
+        58
+      ],
+      [
+        997,
+        69
+      ],
+      [
+        1009,
+        82
+      ],
+      [
+        901,
+        124
+      ],
+      [
+        692,
+        150
+      ],
+      [
+        698,
+        215
+      ],
+      [
+        672,
+        229
+      ],
+      [
+        660,
+        277
+      ],
+      [
+        633,
+        291
+      ],
+      [
+        602,
+        284
+      ],
+      [
+        535,
+        392
+      ],
+      [
+        576,
+        532
+      ],
+      [
+        645,
+        691
+      ],
+      [
+        670,
+        727
+      ],
+      [
+        759,
+        701
+      ],
+      [
+        1423,
+        388
+      ],
+      [
+        1306,
+        219
+      ],
+      [
+        1299,
+        195
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 371630,
+    "draft_area_pixels": 595165,
+    "area_ratio_to_draft": 0.6244150781715995,
+    "boundary_edge_support": 0.8982147615241141,
+    "dark_foreground_fraction": 0.020620798547751187,
+    "changed_pixels": 223535,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_064",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 23,
+    "simplification_changed_fraction": 0.0030939259259259257,
+    "polygon_vertices": [
+      [
+        1076,
+        25
+      ],
+      [
+        1037,
+        34
+      ],
+      [
+        823,
+        135
+      ],
+      [
+        559,
+        180
+      ],
+      [
+        537,
+        212
+      ],
+      [
+        539,
+        228
+      ],
+      [
+        563,
+        248
+      ],
+      [
+        548,
+        268
+      ],
+      [
+        578,
+        278
+      ],
+      [
+        549,
+        321
+      ],
+      [
+        505,
+        323
+      ],
+      [
+        480,
+        308
+      ],
+      [
+        405,
+        400
+      ],
+      [
+        422,
+        459
+      ],
+      [
+        580,
+        778
+      ],
+      [
+        607,
+        778
+      ],
+      [
+        1065,
+        536
+      ],
+      [
+        1280,
+        431
+      ],
+      [
+        1289,
+        414
+      ],
+      [
+        1303,
+        419
+      ],
+      [
+        1336,
+        401
+      ],
+      [
+        1211,
+        203
+      ],
+      [
+        1194,
+        193
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 389313,
+    "draft_area_pixels": 662184,
+    "area_ratio_to_draft": 0.5879226921822334,
+    "boundary_edge_support": 0.9554666666666667,
+    "dark_foreground_fraction": 0.011115726359893087,
+    "changed_pixels": 272871,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_065",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.002110814814814815,
+    "polygon_vertices": [
+      [
+        1063,
+        0
+      ],
+      [
+        1022,
+        0
+      ],
+      [
+        800,
+        102
+      ],
+      [
+        623,
+        128
+      ],
+      [
+        557,
+        212
+      ],
+      [
+        557,
+        245
+      ],
+      [
+        542,
+        255
+      ],
+      [
+        542,
+        271
+      ],
+      [
+        517,
+        287
+      ],
+      [
+        488,
+        287
+      ],
+      [
+        435,
+        349
+      ],
+      [
+        413,
+        392
+      ],
+      [
+        413,
+        414
+      ],
+      [
+        495,
+        626
+      ],
+      [
+        563,
+        740
+      ],
+      [
+        605,
+        733
+      ],
+      [
+        1041,
+        504
+      ],
+      [
+        1183,
+        442
+      ],
+      [
+        1256,
+        401
+      ],
+      [
+        1257,
+        389
+      ],
+      [
+        1269,
+        393
+      ],
+      [
+        1312,
+        371
+      ],
+      [
+        1284,
+        314
+      ],
+      [
+        1241,
+        268
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [
+      "top"
+    ],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 377347,
+    "draft_area_pixels": 604223,
+    "area_ratio_to_draft": 0.6245161140837076,
+    "boundary_edge_support": 0.9229881742140179,
+    "dark_foreground_fraction": 0.0026835131659864704,
+    "changed_pixels": 226876,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "frame_contact_check_truncation",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_066",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.002542814814814815,
+    "polygon_vertices": [
+      [
+        1013,
+        298
+      ],
+      [
+        848,
+        265
+      ],
+      [
+        865,
+        294
+      ],
+      [
+        835,
+        314
+      ],
+      [
+        802,
+        275
+      ],
+      [
+        829,
+        255
+      ],
+      [
+        669,
+        236
+      ],
+      [
+        631,
+        274
+      ],
+      [
+        617,
+        275
+      ],
+      [
+        453,
+        384
+      ],
+      [
+        370,
+        464
+      ],
+      [
+        385,
+        468
+      ],
+      [
+        368,
+        480
+      ],
+      [
+        358,
+        516
+      ],
+      [
+        312,
+        520
+      ],
+      [
+        270,
+        559
+      ],
+      [
+        225,
+        638
+      ],
+      [
+        427,
+        959
+      ],
+      [
+        460,
+        993
+      ],
+      [
+        538,
+        952
+      ],
+      [
+        1106,
+        509
+      ],
+      [
+        1105,
+        487
+      ],
+      [
+        1126,
+        494
+      ],
+      [
+        1155,
+        462
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 380210,
+    "draft_area_pixels": 467496,
+    "area_ratio_to_draft": 0.8132903810941697,
+    "boundary_edge_support": 0.8886856545597074,
+    "dark_foreground_fraction": 0.01217708082918801,
+    "changed_pixels": 123342,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_067",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.007445925925925926,
+    "polygon_vertices": [
+      [
+        195,
+        274
+      ],
+      [
+        197,
+        772
+      ],
+      [
+        446,
+        749
+      ],
+      [
+        419,
+        672
+      ],
+      [
+        504,
+        613
+      ],
+      [
+        472,
+        586
+      ],
+      [
+        472,
+        514
+      ],
+      [
+        508,
+        502
+      ],
+      [
+        538,
+        551
+      ],
+      [
+        561,
+        502
+      ],
+      [
+        598,
+        493
+      ],
+      [
+        601,
+        445
+      ],
+      [
+        672,
+        414
+      ],
+      [
+        751,
+        421
+      ],
+      [
+        777,
+        460
+      ],
+      [
+        788,
+        661
+      ],
+      [
+        752,
+        719
+      ],
+      [
+        1012,
+        697
+      ],
+      [
+        1079,
+        671
+      ],
+      [
+        1014,
+        330
+      ],
+      [
+        954,
+        274
+      ],
+      [
+        491,
+        240
+      ],
+      [
+        417,
+        248
+      ],
+      [
+        408,
+        269
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 312561,
+    "draft_area_pixels": 518739,
+    "area_ratio_to_draft": 0.60254000566759,
+    "boundary_edge_support": 0.8225238813474107,
+    "dark_foreground_fraction": 0.020271790487332943,
+    "changed_pixels": 206178,
+    "uncertain": true,
+    "flags": [
+      "large_area_change",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_068",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 20,
+    "simplification_changed_fraction": 0.013098666666666666,
+    "polygon_vertices": [
+      [
+        252,
+        193
+      ],
+      [
+        248,
+        258
+      ],
+      [
+        324,
+        200
+      ],
+      [
+        418,
+        226
+      ],
+      [
+        439,
+        256
+      ],
+      [
+        371,
+        506
+      ],
+      [
+        352,
+        460
+      ],
+      [
+        231,
+        498
+      ],
+      [
+        220,
+        708
+      ],
+      [
+        483,
+        702
+      ],
+      [
+        463,
+        621
+      ],
+      [
+        503,
+        577
+      ],
+      [
+        566,
+        584
+      ],
+      [
+        600,
+        554
+      ],
+      [
+        554,
+        612
+      ],
+      [
+        591,
+        632
+      ],
+      [
+        578,
+        701
+      ],
+      [
+        1145,
+        662
+      ],
+      [
+        1091,
+        311
+      ],
+      [
+        1032,
+        208
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 371620,
+    "draft_area_pixels": 452352,
+    "area_ratio_to_draft": 0.8215283672891908,
+    "boundary_edge_support": 0.8557345515748979,
+    "dark_foreground_fraction": 0.02708609271523179,
+    "changed_pixels": 105412,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_069",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 24,
+    "simplification_changed_fraction": 0.005148444444444444,
+    "polygon_vertices": [
+      [
+        317,
+        246
+      ],
+      [
+        272,
+        724
+      ],
+      [
+        522,
+        724
+      ],
+      [
+        498,
+        660
+      ],
+      [
+        534,
+        641
+      ],
+      [
+        540,
+        609
+      ],
+      [
+        576,
+        601
+      ],
+      [
+        562,
+        482
+      ],
+      [
+        665,
+        303
+      ],
+      [
+        772,
+        329
+      ],
+      [
+        813,
+        370
+      ],
+      [
+        720,
+        557
+      ],
+      [
+        593,
+        622
+      ],
+      [
+        595,
+        661
+      ],
+      [
+        621,
+        662
+      ],
+      [
+        608,
+        723
+      ],
+      [
+        1067,
+        728
+      ],
+      [
+        1144,
+        706
+      ],
+      [
+        1101,
+        378
+      ],
+      [
+        1045,
+        314
+      ],
+      [
+        601,
+        244
+      ],
+      [
+        533,
+        246
+      ],
+      [
+        526,
+        263
+      ],
+      [
+        491,
+        245
+      ]
+    ],
+    "exclusion_polygons": [],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 317333,
+    "draft_area_pixels": 367836,
+    "area_ratio_to_draft": 0.8627023999826009,
+    "boundary_edge_support": 0.9089874857792947,
+    "dark_foreground_fraction": 0.025772567616979315,
+    "changed_pixels": 93333,
+    "uncertain": true,
+    "flags": [
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  },
+  {
+    "name": "notebook_070",
+    "status": "automatically_proposed",
+    "structural_checks": "pass",
+    "recommended_corrections": "Inspect pale corners and glare; straighten visible edges; trace only visible notebook pixels; check mouse cutouts and frame contact.",
+    "vertex_count": 13,
+    "simplification_changed_fraction": 0.003197037037037037,
+    "polygon_vertices": [
+      [
+        1027,
+        203
+      ],
+      [
+        215,
+        258
+      ],
+      [
+        192,
+        757
+      ],
+      [
+        250,
+        746
+      ],
+      [
+        788,
+        718
+      ],
+      [
+        773,
+        711
+      ],
+      [
+        773,
+        686
+      ],
+      [
+        789,
+        714
+      ],
+      [
+        771,
+        672
+      ],
+      [
+        769,
+        635
+      ],
+      [
+        819,
+        583
+      ],
+      [
+        1029,
+        538
+      ],
+      [
+        1055,
+        544
+      ]
+    ],
+    "exclusion_polygons": [
+      [
+        [
+          771,
+          680
+        ],
+        [
+          773,
+          686
+        ],
+        [
+          769,
+          690
+        ],
+        [
+          766,
+          686
+        ]
+      ]
+    ],
+    "truncated_borders": [],
+    "mouse_occlusion": true,
+    "mouse_detection": "candidate_only",
+    "area_pixels": 378331,
+    "draft_area_pixels": 536424,
+    "area_ratio_to_draft": 0.7052835070764917,
+    "boundary_edge_support": 0.9734932155254024,
+    "dark_foreground_fraction": 0.01943786295005807,
+    "changed_pixels": 169843,
+    "uncertain": true,
+    "flags": [
+      "image_guided_corner_seed_requires_review",
+      "mouse_or_dark_print_cutout_candidate",
+      "pale_corners_glare_and_mouse_need_visual_review",
+      "human_review_required"
+    ],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval."
+  }
+]

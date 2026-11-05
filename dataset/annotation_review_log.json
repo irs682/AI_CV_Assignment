@@ -92,7 +92,7 @@
     ],
     "orientation": "landscape",
     "priority": "CRITICAL",
-    "status": "automatically_proposed",
+    "status": "manually_verified",
     "initial_issues": [
       "AXIS_ALIGNED_BBOX: Draft mask is a naive bounding box, incorporating background.",
       "MOUSE_INCLUSION_SUSPECTED: Significant dark pixels (89694) inside mask.",
@@ -102,77 +102,29 @@
     "mouse_occlusion": true,
     "polygon_vertices": [
       [
-        284,
-        289
+        533,
+        342
       ],
       [
-        284,
-        894
+        500,
+        879
       ],
       [
-        1497,
-        894
+        1425,
+        904
       ],
       [
-        1497,
-        289
+        1371,
+        367
       ]
     ],
-    "exclusion_polygons": [
-      [
-        [
-          768,
-          886
-        ],
-        [
-          864,
-          950
-        ],
-        [
-          905,
-          926
-        ],
-        [
-          888,
-          962
-        ],
-        [
-          1074,
-          991
-        ],
-        [
-          1055,
-          965
-        ],
-        [
-          956,
-          964
-        ],
-        [
-          987,
-          939
-        ],
-        [
-          937,
-          889
-        ],
-        [
-          931,
-          926
-        ],
-        [
-          914,
-          889
-        ],
-        [
-          902,
-          910
-        ]
-      ]
-    ],
-    "reviewer_notes": "Automated proposal: 4-corner perspective quad fitting replacing naive axis-aligned rectangle. Mouse exclusion cutout proposed on notebook border.",
-    "verified_at": null,
-    "verified_by": null
+    "exclusion_polygons": [],
+    "reviewer_notes": "Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval.",
+    "verified_at": "2026-11-05T08:28:43.367599+00:00",
+    "verified_by": "IRHSAD AMIN",
+    "inspected_at": "2026-11-05T08:28:43.367599+00:00",
+    "inspected_by": "IRHSAD AMIN",
+    "verified_mask_sha256": "1a82873803ec39062f130697c52e416006e3dbd55915314cb743387c30796adb"
   },
   {
     "name": "notebook_004",

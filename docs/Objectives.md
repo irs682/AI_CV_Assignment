@@ -1,31 +1,34 @@
-# Proposed Measurable Objectives
+# Objectives, targets and measured evidence
 
-These are proposed targets, not achieved results. Report whether each target is met only after evaluation on collected data.
+Status date: 2026-11-05. Targets are planning objectives retained from the original
+project documents, not achieved results or independently confirmed assessment thresholds.
 
-## MO-1 — Physical measurement accuracy
+| Objective | Target | Current result / status |
+|---|---|---|
+| MO-1: measurement accuracy | Mean absolute error <=2 mm on at least 20 independently referenced held-out measurements | Unfinished: no reference dimensions or measurement results. |
+| MO-2: segmentation accuracy | Mean per-image test Dice >=0.90 | Unfinished: no trained checkpoint, predictions or approved test masks. |
+| Dataset integrity | Preserve 70 supplied photos and fixed 49/14/7 membership | Completed structural checks: copies match, draft/proposal masks are binary and dimension-matched, splits unchanged. |
+| Human annotation | 70 manually corrected and approved masks | Partial workflow; labels unfinished: **1/70 approved; 69 pending**. |
+| Calibration reproducibility | Reproduce archived fits without overwriting them | Completed experiment: 24/24 detected; cohort RMS reproduced to numerical precision. Camera accuracy remains unvalidated. |
 
-On at least 20 held-out object measurements, achieve a mean absolute error of no more than 2 mm between predicted dimensions and independently recorded reference dimensions.
+| Calibration experiment | Images | RMS reprojection error |
+|---|---:|---:|
+| 1500x1125 baseline | 9 | 0.318996 px |
+| 1500x2000 baseline | 15 | 1.527988 px |
+| 1500x2000 excluding only checkerboard_002 | 14 | 0.501806 px |
+| Original model on the same 14 retained views | 14 | 0.536554 px |
 
-## MO-2 — Segmentation accuracy
+The 67.1590% reduction compares fitted corner residuals on different fit sets;
+it is not independent camera or measurement accuracy. Checkerboard 002's archived
+per-image RMS is 5.566935 px. All 63 corners were detected using the classic fallback;
+localization concerns are plausible, but the cause is not established.
 
-Achieve a mean Dice coefficient of at least 0.90 between predicted masks and reviewed ground-truth masks on the held-out test set. Compute the score per image and report the test-set mean.
+The photographs came through a PDF. Prior geometric processing and camera settings
+are not independently verified. Checkerboard square size is unmeasured; object
+coordinates use arbitrary unit squares. No millimetre scale, physical object size,
+segmentation accuracy or end-to-end measurement accuracy is claimed.
 
-## Calibration experiment: measured evidence
-
-The 1500x2000 baseline used 15 images and achieved RMS reprojection error
-**1.527988 px**. Excluding only `checkerboard_002.jpg` produced **0.501806 px**
-on 14 images (67.16% lower). The original model scored 0.536554 px on those same
-14 images. These are fitted corner residuals, not independent accuracy measurements.
-
-Image 002 had 5.566935 px per-image RMS, versus 0.389709-0.637938 px for the
-other original views, despite detecting all 63 corners. It used the classic
-fallback detector and appeared softer; these are possible localization concerns,
-not a proven cause. No other image was excluded.
-
-The source photographs came from a PDF (user-confirmed). Prior resizing,
-resampling, cropping or compression cannot be ruled out. The checkerboard's
-physical square size was not verified; object coordinates use arbitrary unit
-squares. Neither millimetre scale nor final camera accuracy is independently
-validated. MO-1 and MO-2 remain unevaluated; no segmentation training was run.
-
-Evidence and both model locations: [calibration README](../calibration/README.md).
+Evidence: [calibration verification](submission_evidence/calibration_verification.json),
+[archived calibration details](../calibration/README.md),
+[dataset audit](submission_evidence/dataset_audit.json),
+[approval audit](stage3_verification_report.md).

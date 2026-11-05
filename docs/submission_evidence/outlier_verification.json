@@ -1,0 +1,14 @@
+{
+  "original_saved_rms_px": 1.5279877265042798,
+  "reproduced_baseline_rms_px": 1.5279877265042816,
+  "updated_rms_px": 0.5018058114169525,
+  "original_model_rms_on_same_14_images_px": 0.5365541168276432,
+  "rms_reduction_percent": 67.1590417440734,
+  "original_image_count": 15,
+  "updated_image_count": 14,
+  "excluded_images": [
+    "checkerboard_002.jpg"
+  ],
+  "original_files_unchanged": true,
+  "source": "calibration\\comparisons\\exclude_002_20261105T081203267236Z\\comparison.json"
+}

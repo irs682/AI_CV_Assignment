@@ -1,0 +1,18 @@
+{
+  "torch_version": "2.15.0+cpu",
+  "parameters": 488705,
+  "input_shape": [
+    2,
+    3,
+    256,
+    256
+  ],
+  "output_shape": [
+    2,
+    1,
+    256,
+    256
+  ],
+  "finite": true,
+  "mode": "synthetic inference only; no optimization or training"
+}

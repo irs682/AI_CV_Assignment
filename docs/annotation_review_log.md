@@ -11,8 +11,8 @@
 
 ## Summary Metrics
 - **Total Images:** 70
-- **Manually Verified:** 0 / 70
-- **Automatically Proposed:** 2 / 70
+- **Manually Verified:** 1 / 70
+- **Automatically Proposed:** 1 / 70
 - **Unresolved:** 68 / 70
 - **High / Critical Priority Images:** 9
 
@@ -22,7 +22,7 @@
 |---|---|---|---|---|---|---|---|
 | `notebook_001` | TRAIN | MEDIUM | 1500x2000 | `unresolved` | None | Yes | - |
 | `notebook_002` | TEST | HIGH | 1500x2000 | `unresolved` | None | Yes | - |
-| `notebook_003` | TRAIN | CRITICAL | 1500x1125 | `automatically_proposed` | None | Yes | Automated proposal: 4-corner perspective quad fitting replacing naive axis-aligned rectangle. Mouse exclusion cutout proposed on notebook border. |
+| `notebook_003` | TRAIN | CRITICAL | 1500x1125 | `manually_verified` | None | Yes | Automatic OpenCV proposal; inspect all boundaries, glare and mouse exclusions before approval. |
 | `notebook_004` | TRAIN | MEDIUM | 1500x2000 | `unresolved` | None | Yes | - |
 | `notebook_005` | VAL | MEDIUM | 1500x2000 | `unresolved` | None | Yes | - |
 | `notebook_006` | TRAIN | MEDIUM | 1500x2000 | `unresolved` | right | Yes | - |

@@ -1,0 +1,35 @@
+{
+  "total_images": 70,
+  "manually_verified": 1,
+  "remaining": 69,
+  "invalid_verified_masks": 0,
+  "proposal_structural_pass": 70,
+  "refinement": {
+    "processed": 69,
+    "protected_verified": 1,
+    "proposals_generated": 69,
+    "total_proposals": 70,
+    "edge_refined_candidates": 35,
+    "changed_from_previous_proposals": 50,
+    "structural_checks_passed": 70,
+    "uncertain": 69,
+    "failed": 0,
+    "requiring_manual_review": 69,
+    "protected_files_unchanged": true
+  },
+  "qc_warnings": {
+    "pale_corners_glare_and_mouse_need_visual_review": 69,
+    "human_review_required": 69,
+    "large_area_change": 21,
+    "frame_contact_check_truncation": 11,
+    "image_guided_corner_seed_requires_review": 1,
+    "mouse_or_dark_print_cutout_candidate": 1
+  },
+  "backend_safety_tests_passed": 9,
+  "ui_logic_tests": "passed with isolated mock API/storage; no real approvals created",
+  "training_preflight_exit": 2,
+  "training_blocked_missing_approvals": 69,
+  "saving_problems_observed": [],
+  "protected_mask": "notebook_003",
+  "app_url": "http://localhost:8080/?image=notebook_001"
+}

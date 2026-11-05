@@ -1,16 +1,25 @@
-# Proposed 8-Hour Workflow
+# Plan and actual delivery status
 
-This plan describes a proposed time-boxed workflow; it does not report completed work or experimental results.
+Status date: 2026-11-05. Overall: partial submission. The original eight-hour
+workflow was a proposed time box; actual elapsed effort was not tracked.
 
-| Time | Activity | Proposed work |
-|---|---|---|
-| 1 hour | Camera calibration | Capture calibration-board views with the Android phone, estimate camera parameters, and check undistortion visually. |
-| 1 hour | Image collection | Photograph representative objects with consistent lighting, a scale reference, and a documented camera setup. |
-| 1.5 hours | Annotation | Create and review object masks; then divide the collected images into training, validation, and test sets without overlap. |
-| 1.5 hours | Segmentation training | Configure and train a baseline segmentation model such as U-Net; select a checkpoint using validation data only. |
-| 1 hour | Pixel-to-millimetre conversion | Use the calibrated, undistorted image and a known in-plane reference to derive and apply the pixel-to-millimetre scale. |
-| 0.75 hour | Accuracy evaluation | Evaluate segmentation on held-out test images and compare predicted physical dimensions with independent reference measurements. |
-| 0.75 hour | Documentation | Record setup, data and annotation procedures, configuration, evaluation method, and actual results when available. |
-| 0.5 hour | Demonstration | Prepare and run a brief end-to-end demonstration using collected images and clearly identify limitations. |
+| Work item | Original allocation | Status and evidence |
+|---|---:|---|
+| Calibration | 1 h | Partial: implementation reproduces on 24/24 images; independent accuracy and physical scale unvalidated. [Evidence](submission_evidence/calibration_verification.json). |
+| Image collection/preparation | 1 h | Partial: 70 supplied PDF-extracted photos prepared; raw/training copies match; committed 49/14/7 splits preserved. Original phone settings/reference dimensions unverified. [Audit](submission_evidence/dataset_audit.json). |
+| Annotation | 1.5 h | Partial: 70 proposals and working review/QC tooling; **1/70 approved; 69 pending**. [Blockers](stage3_verification_report.md). |
+| Segmentation training | 1.5 h | Prepared, not trained: CPU U-Net/config and verified-only loaders; approval gate blocks training. [Guide](../models/README.md). |
+| Pixel-to-mm conversion | 1 h | Unfinished: no verified physical scale; measurement code is empty. |
+| Accuracy evaluation | 0.75 h | Unfinished: no model predictions, test Dice/IoU or physical measurement errors. |
+| Documentation | 0.75 h | Partial-submission documents complete; final trained-system documentation conditional on future work. |
+| Demonstration | 0.5 h | Outline prepared; recording unfinished. [Loom outline](loom_outline.md). |
 
-The schedule totals 8 hours. If a stage takes longer, record the scope or schedule adjustment rather than implying that a target was met.
+Deadline plan: submit only the demonstrated partial scope, preserve measured
+calibration artifacts, label automatic masks unverified, and disclose blockers.
+Record the working-feature demonstration if time permits; an outline is not a video.
+
+Completion plan: manually approve corrected masks; rerun audits and training
+preflight; then train and select a checkpoint using validation data. Implement
+inference and metric conversion with independently verified in-plane reference
+geometry, evaluate on held-out data, and record actual results. Do not infer
+reference sizes or performance numbers to fill missing evidence.

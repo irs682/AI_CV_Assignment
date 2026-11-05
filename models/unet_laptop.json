@@ -1,0 +1,18 @@
+{
+  "seed": 224,
+  "device": "cpu",
+  "cpu_threads": 4,
+  "image_size": 256,
+  "batch_size": 2,
+  "base_channels": 16,
+  "epochs": 60,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 10,
+  "output_dir": "models/weights/unet_laptop",
+  "split_sha256": {
+    "train": "fc5a1b5675e80aba28be736f3e492201a35d7d864cf5978bae80eabcfb9e1673",
+    "val": "4ee18be8ead0cdb4035b9543b71c5463df3dd838fefff517f576162ccb6b7c1a",
+    "test": "2af9e37feaa6c762fd3fb7fe97dc462c158d8dd5a24afa33071c59e819101502"
+  }
+}

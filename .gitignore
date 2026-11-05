@@ -16,3 +16,30 @@ outputs/*
 *.tmp
 *.temp
 *.log
+
+# Local/private environment and credentials
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+.codex/
+*.pem
+*.key
+*.pfx
+*.p12
+node_modules/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Unapproved working notes are local; approved review records remain versioned.
+dataset/annotation_review_drafts.json
+
+# Redundant inspection/debug artifacts; reproducible QC outputs remain included.
+dataset/inspection_*.jpg
+dataset/refinement_qc/app_syntax_check.js
+dataset/refinement_qc/critical_070.jpg
+dataset/refinement_qc/review_session_preservation.json
+calibration/reproductions/*/detected_corners/

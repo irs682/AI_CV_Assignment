@@ -9,6 +9,9 @@ import os
 import sys
 import json
 import argparse
+import re
+import hashlib
+import socket
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import urllib.parse
 from datetime import datetime, timezone
@@ -23,6 +26,45 @@ DRAFT_MASK_DIR = "dataset/masks"
 VERIFIED_MASK_DIR = "dataset/masks_verified"
 LOG_JSON = "dataset/annotation_review_log.json"
 LOG_MD = "docs/annotation_review_log.md"
+EDITS_JSON = 'dataset/annotation_review_drafts.json'
+
+def atomic_json(path, data):
+    temporary=path+'.tmp'
+    with open(temporary,'w') as f:
+        json.dump(data,f,indent=2)
+    os.replace(temporary,path)
+
+def with_proposals(records):
+    """Offer proposals without writing over review records or human work."""
+    path = 'dataset/masks_proposed/proposals.json'
+    proposals = {}
+    if os.path.exists(path):
+        with open(path) as f:
+            proposals = {r['name']: r for r in json.load(f)}
+    edits = json.load(open(EDITS_JSON)) if os.path.exists(EDITS_JSON) else {}
+    for record in records:
+        human_work = (record.get('status') == 'manually_verified'
+                      or record.get('verified_at') or record.get('verified_by')
+                      or (record.get('reviewer_notes') and not
+                          (record.get('status') == 'automatically_proposed' and
+                           record['reviewer_notes'].startswith('Automated proposal:')))
+                      or os.path.exists(os.path.join(VERIFIED_MASK_DIR, record['name']+'.png')))
+        if record['name'] in proposals and not human_work:
+            record['draft_polygon_vertices'] = record.get('polygon_vertices', [])
+            proposal = proposals[record['name']]
+            for key in ['status','polygon_vertices','exclusion_polygons','truncated_borders','mouse_occlusion','reviewer_notes']:
+                record[key] = proposal[key]
+            record['proposal_flags'] = proposal['flags']
+        record['uncertain'] = proposals.get(record['name'], {}).get('uncertain', True)
+        record['proposal_flags'] = proposals.get(record['name'], {}).get('flags', [])
+        approved = (record.get('status') == 'manually_verified' and record.get('verified_at')
+                    and record.get('verified_by') and os.path.exists(os.path.join(VERIFIED_MASK_DIR, record['name']+'.png')))
+        record['approved'] = bool(approved)
+        edit = edits.get(record['name'])
+        if edit and not approved:
+            for key in ['polygon_vertices','exclusion_polygons','truncated_borders','mouse_occlusion','reviewer_notes','inspected_at','inspected_by','work_saved_at','draft_drawing_points','draft_mode']:
+                if key in edit: record[key] = edit[key]
+    return records
 
 sys.path.insert(0, WORKSPACE_ROOT)
 from dataset.generate_qc_contact_sheet import generate_qc_contact_sheet
@@ -56,7 +98,7 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
                     data = json.load(f)
             else:
                 data = []
-            self.wfile.write(json.dumps(data).encode("utf-8"))
+            self.wfile.write(json.dumps(with_proposals(data)).encode("utf-8"))
             return
 
         if path.startswith("/api/image/"):
@@ -94,12 +136,47 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
             length = int(self.headers.get("Content-Length", 0))
             body = self.rfile.read(length)
             payload = json.loads(body.decode("utf-8"))
-            result = self._save_verified_mask(payload)
+            try:
+                result = self._save_verified_mask(payload)
+            except (ValueError,TypeError,OSError,cv2.error) as error:
+                result = {'success':False,'error':'Save failed: '+str(error)}
             self.send_response(200 if result.get("success") else 400)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps(result).encode("utf-8"))
             return
+
+        if path == '/api/review':
+            payload = json.loads(self.rfile.read(int(self.headers.get('Content-Length', 0))))
+            name = payload.get('name', '')
+            reviewer = str(payload.get('verified_by', '')).strip()
+            if not re.fullmatch(r'notebook_\d{3}', name) or not os.path.exists(os.path.join(IMAGES_DIR, name+'.jpg')):
+                result = {'success': False, 'error': 'Unknown image'}
+            elif os.path.exists(os.path.join(VERIFIED_MASK_DIR,name+'.png')):
+                result = {'success':False,'error':'Existing verified annotation is protected.'}
+            elif payload.get('inspected') is not True or not reviewer:
+                result = {'success': False, 'error': 'Enter your reviewer name and explicitly confirm inspection.'}
+            else:
+                edits = json.load(open(EDITS_JSON)) if os.path.exists(EDITS_JSON) else {}
+                edits[name] = {'polygon_vertices':payload.get('polygon', []), 'exclusion_polygons':payload.get('exclusions', []),
+                    'truncated_borders':payload.get('truncated_borders', []), 'mouse_occlusion':payload.get('mouse_occlusion', False),
+                    'reviewer_notes':payload.get('reviewer_notes', ''), 'inspected_by':reviewer,
+                    'inspected_at':datetime.now(timezone.utc).isoformat()}
+                atomic_json(EDITS_JSON,edits)
+                result = {'success': True, 'inspection': edits[name]}
+            self.send_response(200 if result['success'] else 400)
+            self.send_header('Content-Type','application/json'); self.end_headers()
+            self.wfile.write(json.dumps(result).encode()); return
+
+        if path == '/api/autosave':
+            try:
+                payload=json.loads(self.rfile.read(int(self.headers.get('Content-Length',0))))
+                result=self._save_work(payload)
+            except (ValueError,TypeError,OSError) as error:
+                result={'success':False,'error':str(error)}
+            self.send_response(200 if result['success'] else 400)
+            self.send_header('Content-Type','application/json');self.end_headers()
+            self.wfile.write(json.dumps(result).encode());return
 
         if path == "/api/generate_qc":
             res = generate_qc_contact_sheet()
@@ -116,7 +193,7 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
             return {"error": "Review log not found"}
         with open(LOG_JSON, "r") as f:
             records = json.load(f)
-        for r in records:
+        for r in with_proposals(records):
             if r["name"] == name:
                 # Check if verified mask already exists on disk
                 vmask_path = os.path.join(VERIFIED_MASK_DIR, f"{name}.png")
@@ -124,15 +201,44 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
                 return r
         return {"error": f"Image {name} not found"}
 
+    def _save_work(self, payload):
+        name=payload.get('name','')
+        if not re.fullmatch(r'notebook_\d{3}',name) or not os.path.exists(os.path.join(IMAGES_DIR,name+'.jpg')):
+            return {'success':False,'error':'Unknown image'}
+        if os.path.exists(os.path.join(VERIFIED_MASK_DIR,name+'.png')):
+            return {'success':False,'error':'Verified annotation is protected; autosave did not change it.'}
+        polygon=np.asarray(payload.get('polygon',[]))
+        if polygon.ndim!=2 or polygon.shape[1]!=2 or len(polygon)<3 or not np.isfinite(polygon).all():
+            return {'success':False,'error':'Invalid work polygon'}
+        edits=json.load(open(EDITS_JSON)) if os.path.exists(EDITS_JSON) else {}
+        # Work timestamps describe file saves, never human inspection/approval.
+        edit={'polygon_vertices':payload['polygon'],'exclusion_polygons':payload.get('exclusions',[]),
+            'truncated_borders':payload.get('truncated_borders',[]),'mouse_occlusion':payload.get('mouse_occlusion',False),
+            'reviewer_notes':payload.get('reviewer_notes',''),'draft_drawing_points':payload.get('draft_drawing_points',[]),
+            'draft_mode':payload.get('draft_mode','edit'),'work_saved_at':datetime.now(timezone.utc).isoformat()}
+        edits[name]=edit
+        atomic_json(EDITS_JSON,edits)
+        return {'success':True,'work_saved_at':edit['work_saved_at'],'approved':False}
+
     def _save_verified_mask(self, payload):
         name = payload.get("name")
         polygon = payload.get("polygon", [])
         exclusions = payload.get("exclusions", [])
-        status = payload.get("status", "manually_verified")
+        status = payload.get("status", "automatically_proposed")
         truncated_borders = payload.get("truncated_borders", [])
         mouse_occlusion = payload.get("mouse_occlusion", False)
         reviewer_notes = payload.get("reviewer_notes", "")
-        verified_by = payload.get("verified_by", "manual_reviewer")
+        verified_by = str(payload.get("verified_by", "")).strip()
+
+        if payload.get('inspected') is not True or not verified_by:
+            return {'success': False, 'error': 'Enter your reviewer name and explicitly confirm you inspected this mask.'}
+        if not re.fullmatch(r'notebook_\d{3}', str(name)):
+            return {'success': False, 'error': 'Invalid image identifier'}
+        if os.path.exists(os.path.join(VERIFIED_MASK_DIR,name+'.png')):
+            return {'success':False,'error':'Existing verified annotation is protected. It was not overwritten.'}
+
+        if status != 'manually_verified':
+            return {'success': False, 'error': 'Finish human review and explicitly select Manually Verified before saving to masks_verified. Unapproved proposals remain in masks_proposed.'}
 
         if not name or not polygon or len(polygon) < 3:
             return {"success": False, "error": "Invalid polygon vertices (minimum 3 vertices required)"}
@@ -143,6 +249,10 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
         if img is None:
             return {"success": False, "error": f"Could not read source image {img_path}"}
         h, w = img.shape[:2]
+        for points in [polygon] + exclusions:
+            arr = np.asarray(points)
+            if arr.ndim != 2 or arr.shape[1] != 2 or len(arr)<3 or not np.isfinite(arr).all() or np.any(arr<0) or np.any(arr[:,0]>=w) or np.any(arr[:,1]>=h):
+                return {'success':False, 'error':'Polygons require at least three finite vertices inside the image.'}
 
         # 1. Render binary mask with strict {0, 255} integrity
         mask = np.zeros((h, w), dtype=np.uint8)
@@ -159,6 +269,8 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
 
         # Integrity verification: strictly binary {0, 255}
         unique_vals = np.unique(mask).tolist()
+        if not np.any(mask) or np.all(mask):
+            return {'success':False, 'error':'Empty or full-image masks cannot be approved.'}
         non_bin = [v for v in unique_vals if v not in (0, 255)]
         if non_bin:
             return {"success": False, "error": f"Generated mask contains non-binary values: {non_bin}"}
@@ -166,7 +278,14 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
         # 2. Save PNG to dataset/masks_verified/
         os.makedirs(VERIFIED_MASK_DIR, exist_ok=True)
         out_mask_path = os.path.join(VERIFIED_MASK_DIR, f"{name}.png")
-        cv2.imwrite(out_mask_path, mask)
+        temporary_mask=out_mask_path+'.tmp.png'
+        if not cv2.imwrite(temporary_mask, mask):
+            return {'success':False,'error':'Could not write verified PNG; approval was not recorded.'}
+        check=cv2.imread(temporary_mask,cv2.IMREAD_UNCHANGED)
+        if check is None or not np.array_equal(check,mask):
+            os.remove(temporary_mask)
+            return {'success':False,'error':'PNG readback failed; approval was not recorded.'}
+        os.replace(temporary_mask,out_mask_path)
 
         # 3. Update Review Log
         if os.path.exists(LOG_JSON):
@@ -187,6 +306,9 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
                 r["reviewer_notes"] = reviewer_notes
                 r["verified_at"] = now_iso if status == "manually_verified" else None
                 r["verified_by"] = verified_by if status == "manually_verified" else None
+                r['inspected_at'] = now_iso
+                r['inspected_by'] = verified_by
+                r['verified_mask_sha256'] = hashlib.sha256(open(out_mask_path,'rb').read()).hexdigest()
                 updated = True
                 break
 
@@ -206,13 +328,17 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
                 "verified_by": verified_by
             })
 
-        with open(LOG_JSON, "w") as f:
-            json.dump(records, f, indent=2)
+        try:
+            atomic_json(LOG_JSON,records)
+        except OSError as error:
+            os.remove(out_mask_path) # Newly created file only; existing files are protected above.
+            return {'success':False,'error':'Approval log failed; new mask rolled back: '+str(error)}
 
-        write_markdown_log(records)
-
-        # 4. Refresh QC Contact Sheet
-        qc_res = generate_qc_contact_sheet()
+        try:
+            write_markdown_log(records)
+            qc_res = generate_qc_contact_sheet()
+        except Exception as error:
+            qc_res={'warning':'Mask and approval saved; secondary QC/log refresh failed: '+str(error)}
 
         return {
             "success": True,
@@ -225,8 +351,14 @@ class AnnotationRequestHandler(SimpleHTTPRequestHandler):
         }
 
 def run_server(port=8080):
-    server_address = ("", port)
-    httpd = HTTPServer(server_address, AnnotationRequestHandler)
+    class LocalServer(HTTPServer):
+        allow_reuse_address = False
+        def server_bind(self):
+            if hasattr(socket, 'SO_EXCLUSIVEADDRUSE'):
+                self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+            super().server_bind()
+    server_address = ("127.0.0.1", port)
+    httpd = LocalServer(server_address, AnnotationRequestHandler)
     print("=" * 70)
     print(f"Stage 3 Annotation Server running at http://localhost:{port}/")
     print(f"Dataset root: {WORKSPACE_ROOT}")

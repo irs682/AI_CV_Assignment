@@ -1,5 +1,18 @@
 # Stage 1: Camera calibration
 
+Submission-audit reproduction (preserves archived results):
+
+```powershell
+.\.venv\Scripts\python.exe calibration\verify_calibration.py
+```
+
+This wrapper executes the existing implementation on all 24 photographs into a
+new `calibration/reproductions/<timestamp>/` directory, compares its cohort RMS
+values to the archive, and checks hashes of the original images, parameters and
+prior comparisons. See [verification evidence](../docs/submission_evidence/calibration_verification.json).
+The baseline command below is historical and overwrites archived output; prefer
+the wrapper for submission checks.
+
 Run from the repository root in PowerShell:
 
 ```powershell
@@ -87,3 +100,6 @@ parameter stability are not established. Lower fitted RMS demonstrates an
 improved fit to the retained corners, not independently validated camera or
 measurement accuracy. Independent validation on matching camera settings and
 known geometry remains pending. No dataset training forms part of this work.
+
+
+The submission includes compact reproduction summaries, model parameters, CSVs and previews. Duplicate regenerated corner-overlay images under reproductions are omitted from Git; they can be regenerated with verify_calibration.py. The original archived corner overlays remain included.

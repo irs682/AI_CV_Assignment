@@ -1,0 +1,277 @@
+{
+  "opencv_version": "5.0.0",
+  "original_saved_rms_px": 1.5279877265042798,
+  "reproduced_baseline_rms_px": 1.5279877265042816,
+  "updated_rms_px": 0.5018058114169525,
+  "original_model_rms_on_same_14_images_px": 0.5365541168276432,
+  "rms_reduction_percent": 67.1590417440734,
+  "original_image_count": 15,
+  "updated_image_count": 14,
+  "excluded_images": [
+    "checkerboard_002.jpg"
+  ],
+  "camera_matrix": [
+    [
+      1673.5791313861064,
+      0.0,
+      745.1876255039133
+    ],
+    [
+      0.0,
+      1674.1957935386827,
+      1005.7309435001262
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion_coefficients_order": [
+    "k1",
+    "k2",
+    "p1",
+    "p2",
+    "k3"
+  ],
+  "distortion_coefficients": [
+    0.18201030200280274,
+    -0.798348661293163,
+    0.0009669824299615424,
+    -0.001595189514039963,
+    0.6787843649124699
+  ],
+  "viewing_diversity": {
+    "tilt_deg": [
+      4.1816506127715325,
+      42.873971772121386
+    ],
+    "normal_x_angle_deg": [
+      -42.40692884660933,
+      38.643957125268116
+    ],
+    "normal_y_angle_deg": [
+      -31.448452216820044,
+      36.84803519484057
+    ],
+    "centroid_x_px": [
+      407.82904052734375,
+      926.4241333007812
+    ],
+    "centroid_y_px": [
+      570.954345703125,
+      1273.754150390625
+    ],
+    "corner_hull_image_fraction": [
+      0.1185681970014389,
+      0.3356163425141602
+    ],
+    "max_pairwise_normal_angle_deg": 83.56804697604618,
+    "note": "Pose estimates depend on the fitted intrinsics. Angular diversity and spatial coverage are diagnostics, not an accuracy certificate."
+  },
+  "per_image_results": [
+    {
+      "image": "checkerboard_002.jpg",
+      "retained": false,
+      "detector": "classic",
+      "original_error_px": 5.566934585571289,
+      "updated_error_px": 5.6702985763549805,
+      "tilt_deg": 29.46789766491234,
+      "normal_x_angle_deg": -19.88508229078363,
+      "normal_y_angle_deg": 23.465256917672406,
+      "centroid_x_px": 749.5048828125,
+      "centroid_y_px": 657.513916015625,
+      "corner_hull_image_fraction": 0.19513679173387619
+    },
+    {
+      "image": "checkerboard_003.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5996449589729309,
+      "updated_error_px": 0.5770153999328613,
+      "tilt_deg": 15.158694207663425,
+      "normal_x_angle_deg": 0.8325938591683957,
+      "normal_y_angle_deg": -15.137871907575445,
+      "centroid_x_px": 709.0418701171875,
+      "centroid_y_px": 1003.9713134765625,
+      "corner_hull_image_fraction": 0.28717303846548325
+    },
+    {
+      "image": "checkerboard_004.jpg",
+      "retained": true,
+      "detector": "classic",
+      "original_error_px": 0.6379384398460388,
+      "updated_error_px": 0.646047055721283,
+      "tilt_deg": 31.449998521725515,
+      "normal_x_angle_deg": 0.3858721502815626,
+      "normal_y_angle_deg": -31.448452216820044,
+      "centroid_x_px": 748.9713745117188,
+      "centroid_y_px": 1087.6651611328125,
+      "corner_hull_image_fraction": 0.33063180021498334
+    },
+    {
+      "image": "checkerboard_005.jpg",
+      "retained": true,
+      "detector": "classic",
+      "original_error_px": 0.46611452102661133,
+      "updated_error_px": 0.4672446548938751,
+      "tilt_deg": 29.924683006496952,
+      "normal_x_angle_deg": 0.05224991259288114,
+      "normal_y_angle_deg": -29.924651916642947,
+      "centroid_x_px": 733.679443359375,
+      "centroid_y_px": 1025.951904296875,
+      "corner_hull_image_fraction": 0.22773930537504145
+    },
+    {
+      "image": "checkerboard_006.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5363855361938477,
+      "updated_error_px": 0.4673987030982971,
+      "tilt_deg": 29.710470174079568,
+      "normal_x_angle_deg": 28.726628891407948,
+      "normal_y_angle_deg": -9.023735665705276,
+      "centroid_x_px": 407.82904052734375,
+      "centroid_y_px": 1128.4359130859375,
+      "corner_hull_image_fraction": 0.17574325307928615
+    },
+    {
+      "image": "checkerboard_007.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.636963427066803,
+      "updated_error_px": 0.4431847929954529,
+      "tilt_deg": 42.873971772121386,
+      "normal_x_angle_deg": -42.40692884660933,
+      "normal_y_angle_deg": -9.45667516061572,
+      "centroid_x_px": 926.4241333007812,
+      "centroid_y_px": 980.2291870117188,
+      "corner_hull_image_fraction": 0.181668096270686
+    },
+    {
+      "image": "checkerboard_008.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5799000859260559,
+      "updated_error_px": 0.5644769072532654,
+      "tilt_deg": 30.253317772692643,
+      "normal_x_angle_deg": -2.551670942496733,
+      "normal_y_angle_deg": -30.180372208106675,
+      "centroid_x_px": 733.5889282226562,
+      "centroid_y_px": 945.479248046875,
+      "corner_hull_image_fraction": 0.2928604175371133
+    },
+    {
+      "image": "checkerboard_010.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.49381858110427856,
+      "updated_error_px": 0.49880316853523254,
+      "tilt_deg": 17.681181973853235,
+      "normal_x_angle_deg": -1.6516515798441864,
+      "normal_y_angle_deg": -17.61318983436263,
+      "centroid_x_px": 709.0390014648438,
+      "centroid_y_px": 1155.1431884765625,
+      "corner_hull_image_fraction": 0.22391888449270822
+    },
+    {
+      "image": "checkerboard_012.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.48075607419013977,
+      "updated_error_px": 0.4824504256248474,
+      "tilt_deg": 13.389767986713181,
+      "normal_x_angle_deg": 3.9608630266648914,
+      "normal_y_angle_deg": -12.830394097067897,
+      "centroid_x_px": 580.2548828125,
+      "centroid_y_px": 1051.5113525390625,
+      "corner_hull_image_fraction": 0.26575708702067347
+    },
+    {
+      "image": "checkerboard_013.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.46932899951934814,
+      "updated_error_px": 0.315458208322525,
+      "tilt_deg": 10.654081503315801,
+      "normal_x_angle_deg": -9.330751269991957,
+      "normal_y_angle_deg": 5.2344360338340765,
+      "centroid_x_px": 739.71826171875,
+      "centroid_y_px": 1015.3762817382812,
+      "corner_hull_image_fraction": 0.13488431437991838
+    },
+    {
+      "image": "checkerboard_015.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5908324122428894,
+      "updated_error_px": 0.6020492315292358,
+      "tilt_deg": 30.611089714439593,
+      "normal_x_angle_deg": -3.802566486534532,
+      "normal_y_angle_deg": -30.451890415965963,
+      "centroid_x_px": 707.5228271484375,
+      "centroid_y_px": 1011.155029296875,
+      "corner_hull_image_fraction": 0.3356163425141602
+    },
+    {
+      "image": "checkerboard_018.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5259534120559692,
+      "updated_error_px": 0.436203271150589,
+      "tilt_deg": 4.1816506127715325,
+      "normal_x_angle_deg": 3.435071208305387,
+      "normal_y_angle_deg": -2.3903557854435413,
+      "centroid_x_px": 669.2860717773438,
+      "centroid_y_px": 1273.754150390625,
+      "corner_hull_image_fraction": 0.17141194680636843
+    },
+    {
+      "image": "checkerboard_019.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.4857267439365387,
+      "updated_error_px": 0.35054323077201843,
+      "tilt_deg": 41.66840024139575,
+      "normal_x_angle_deg": 38.643957125268116,
+      "normal_y_angle_deg": 21.349560443435504,
+      "centroid_x_px": 735.7824096679688,
+      "centroid_y_px": 1209.122802734375,
+      "corner_hull_image_fraction": 0.1185681970014389
+    },
+    {
+      "image": "checkerboard_020.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.5551395416259766,
+      "updated_error_px": 0.6528364419937134,
+      "tilt_deg": 38.37642400163224,
+      "normal_x_angle_deg": -14.358889985779905,
+      "normal_y_angle_deg": 36.84803519484057,
+      "centroid_x_px": 741.5547485351562,
+      "centroid_y_px": 570.954345703125,
+      "corner_hull_image_fraction": 0.1560610570846966
+    },
+    {
+      "image": "checkerboard_021.jpg",
+      "retained": true,
+      "detector": "SB",
+      "original_error_px": 0.38970890641212463,
+      "updated_error_px": 0.37457475066185,
+      "tilt_deg": 9.684558124948204,
+      "normal_x_angle_deg": 1.5685506223415935,
+      "normal_y_angle_deg": -9.5614024212262,
+      "centroid_x_px": 792.9317016601562,
+      "centroid_y_px": 793.2132568359375,
+      "corner_hull_image_fraction": 0.2046894909778914
+    }
+  ],
+  "original_files_unchanged": true,
+  "caveats": [
+    "Excluded-image error uses pose fitted with fixed updated intrinsics; it is not independent validation.",
+    "Photographs came from a PDF (user-confirmed); prior geometric processing is unknown.",
+    "Physical checkerboard square size was not verified; unit-square coordinates do not establish millimetre scale.",
+    "Lower training RMS does not prove calibration accuracy or metric measurement accuracy.",
+    "No other images excluded; 1500x1125 model not recalibrated or written."
+  ]
+}

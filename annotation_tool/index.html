@@ -36,9 +36,12 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      height: 54px;
+      min-height: 54px;
+      height: auto;
+      flex-wrap: wrap;
     }
     .header-title {
+      flex-wrap: wrap;
       font-size: 15px;
       font-weight: 600;
       display: flex;
@@ -62,6 +65,7 @@
 
     /* Top Controls */
     .top-controls {
+      flex-wrap: wrap;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -98,7 +102,7 @@
     .main-container {
       display: flex;
       flex: 1;
-      height: calc(100vh - 54px);
+      min-height: 0;
     }
     /* Sidebar */
     .sidebar {
@@ -226,11 +230,17 @@
       <span>Measure It: Stage 3 Annotation Refinement</span>
       <span id="current-badge" class="badge badge-normal">UNRESOLVED</span>
       <span id="priority-badge" class="badge badge-normal">PRIORITY</span>
+      <span id="review-progress" class="badge">Approved 0/70</span>
+      <span id="image-position" class="badge"></span>
     </div>
 
     <div class="top-controls">
       <select id="filter-select">
         <option value="all">Filter: All Images (70)</option>
+        <option value="unreviewed">Filter: Not Approved</option>
+        <option value="not-inspected">Filter: Not Inspected</option>
+        <option value="critical">Filter: Critical</option>
+        <option value="uncertain">Filter: Uncertain</option>
         <option value="priority">Filter: High / Critical Priority</option>
         <option value="test">Filter: Held-Out Test Set (7)</option>
         <option value="unresolved">Filter: Unresolved</option>
@@ -243,6 +253,8 @@
       <button id="btn-next" title="Next Image ]">Next &rarr;</button>
 
       <button id="btn-save" class="btn-success" title="Save Verified Mask (Ctrl+S)">Save & Verify Mask</button>
+      <button id="btn-focus" title="Toggle sidebar (Tab)">Focus image</button>
+      <span id="save-feedback" role="status" aria-live="polite" style="font-size:12px;flex-basis:100%;">Approve each image only after inspection.</span>
     </div>
   </header>
 
@@ -280,6 +292,11 @@
 
       <div class="sidebar-section">
         <h3>Verification & Status</h3>
+        <label>Reviewer name: <input id="reviewer-name" type="text" placeholder="Your name"></label>
+        <label class="checkbox-label"><input type="checkbox" id="inspection-confirm"> I inspected this image and mask</label>
+        <button id="btn-save-review">Save inspected work (without approval)</button>
+        <p id="work-state" role="status" aria-live="polite">Work will autosave without approval.</p>
+        <p id="review-warnings" style="font-size:12px;"></p>
         <label style="font-size:12px; color:var(--text-dim);">Verification Status:</label>
         <select id="status-select">
           <option value="unresolved">Unresolved (Draft)</option>
@@ -333,7 +350,7 @@
     </div>
   </div>
 
-  <div id="toast">Mask Saved Successfully!</div>
+  <div id="toast" role="status" aria-live="polite"></div>
 
   <script>
     // State variables
@@ -367,8 +384,12 @@
 
     // Init
     async function init() {
+      document.getElementById('reviewer-name').value = localStorage.getItem('measureit-reviewer') || '';
+      document.getElementById('filter-select').value = 'unreviewed';
       setupEventListeners();
       await fetchImages();
+      setInterval(preserveWork, 800);
+      window.addEventListener('pagehide', () => preserveWork(true));
     }
 
     async function fetchImages() {
@@ -378,7 +399,7 @@
         populateImageSelector();
         const urlParams = new URLSearchParams(window.location.search);
         const reqImage = urlParams.get('image');
-        let initialIdx = 0;
+        let initialIdx = Math.max(0, imagesList.findIndex(img => !img.approved));
         if (reqImage) {
           const found = imagesList.findIndex(img => img.name === reqImage);
           if (found !== -1) initialIdx = found;
@@ -392,12 +413,19 @@
     }
 
     function populateImageSelector() {
+      const approved = imagesList.filter(img => img.approved).length;
+      const inspected = imagesList.filter(img => img.inspected_at).length;
+      document.getElementById('review-progress').textContent = `Approved ${approved}/${imagesList.length} · Inspected ${inspected}/${imagesList.length}`;
       const select = document.getElementById('image-select');
       const filter = document.getElementById('filter-select').value;
       select.innerHTML = '';
 
       imagesList.forEach((img, idx) => {
         let include = true;
+        if (filter === 'unreviewed' && img.approved) include = false;
+        if (filter === 'not-inspected' && img.inspected_at) include = false;
+        if (filter === 'critical' && img.priority !== 'CRITICAL') include = false;
+        if (filter === 'uncertain' && !img.uncertain) include = false;
         if (filter === 'priority' && img.priority !== 'CRITICAL' && img.priority !== 'HIGH') include = false;
         if (filter === 'test' && img.split !== 'test') include = false;
         if (filter === 'unresolved' && img.status !== 'unresolved') include = false;
@@ -413,12 +441,20 @@
           select.appendChild(opt);
         }
       });
+      if (currentRecord) select.value = imagesList.indexOf(currentRecord);
     }
 
     async function selectImage(index) {
       if (index < 0 || index >= imagesList.length) return;
+      preserveWork();
       currentImageIndex = index;
       currentRecord = imagesList[index];
+      document.getElementById('image-position').textContent = `Image ${index + 1}/${imagesList.length}: ${currentRecord.name}`;
+      document.getElementById('btn-save').disabled = !!currentRecord.approved;
+      document.getElementById('btn-save-review').disabled = !!currentRecord.approved;
+      document.getElementById('work-state').textContent = currentRecord.approved ? 'Verified annotation protected.' : 'Work autosaves; inspection and approval remain explicit.';
+      document.getElementById('inspection-confirm').checked = false;
+      document.getElementById('review-warnings').textContent = (currentRecord.proposal_flags || []).join('; ');
 
       document.getElementById('image-select').value = index;
       updateSidebarMeta();
@@ -426,9 +462,23 @@
       // Reset state
       polygon = currentRecord.polygon_vertices ? JSON.parse(JSON.stringify(currentRecord.polygon_vertices)) : [];
       exclusions = currentRecord.exclusion_polygons ? JSON.parse(JSON.stringify(currentRecord.exclusion_polygons)) : [];
-      draftPolygon = JSON.parse(JSON.stringify(polygon));
+      draftPolygon = JSON.parse(JSON.stringify(currentRecord.draft_polygon_vertices || polygon));
       drawingPts = [];
       activeMode = 'edit';
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem('measureit-work-' + currentRecord.name)); } catch (_) {}
+      if (!currentRecord.approved && cached && (!currentRecord.work_saved_at || cached.work_saved_at > currentRecord.work_saved_at)) {
+        polygon = cached.polygon;
+        exclusions = cached.exclusions;
+        document.getElementById('reviewer-notes').value = cached.reviewer_notes || '';
+        document.getElementById('chk-mouse-present').checked = !!cached.mouse_occlusion;
+        ['top','bottom','left','right'].forEach(side => document.getElementById('trunc-'+side).checked = (cached.truncated_borders || []).includes(side));
+      } else { cached = null; }
+      if (!currentRecord.approved) {
+        drawingPts = (cached || currentRecord).draft_drawing_points || [];
+        activeMode = (cached || currentRecord).draft_mode || 'edit';
+      }
+      lastWork = JSON.stringify(workPayload());
       updateModeButtons();
 
       // Load base photograph
@@ -440,6 +490,7 @@
         generateEdgeGuide();
         redraw();
       };
+      baseImage.onerror = () => showToast('Photograph failed to load: ' + currentRecord.name, '#c0392b');
       baseImage.src = `/dataset/images/${currentRecord.name}.jpg`;
     }
 
@@ -560,19 +611,20 @@
 
         // Cut out exclusions (Mouse occlusions)
         if (exclusions.length > 0) {
-          ctx.globalCompositeOperation = 'destination-out';
           exclusions.forEach(exc => {
             if (exc.length > 2) {
+              ctx.save();
               ctx.beginPath();
               exc.forEach((pt, i) => {
                 if (i === 0) ctx.moveTo(pt[0], pt[1]);
                 else ctx.lineTo(pt[0], pt[1]);
               });
               ctx.closePath();
-              ctx.fill();
+              ctx.clip();
+              ctx.drawImage(baseImage, 0, 0);
+              ctx.restore();
             }
           });
-          ctx.globalCompositeOperation = 'source-over';
         }
         ctx.restore();
       }
@@ -735,6 +787,12 @@
 
     // Event Listeners
     function setupEventListeners() {
+      document.getElementById('reviewer-name').addEventListener('input', e => localStorage.setItem('measureit-reviewer', e.target.value));
+      document.getElementById('btn-focus').addEventListener('click', () => {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = sidebar.style.display === 'none' ? '' : 'none';
+        fitToScreen();
+      });
       // Pan & Zoom
       viewport.addEventListener('wheel', (e) => {
         e.preventDefault();
@@ -903,7 +961,11 @@
       });
 
       // Filter and Select
-      document.getElementById('filter-select').addEventListener('change', populateImageSelector);
+      document.getElementById('filter-select').addEventListener('change', () => {
+        populateImageSelector();
+        const select = document.getElementById('image-select');
+        if (select.selectedIndex < 0 && select.options.length) selectImage(parseInt(select.options[0].value));
+      });
       document.getElementById('image-select').addEventListener('change', (e) => selectImage(parseInt(e.target.value)));
       document.getElementById('btn-prev').addEventListener('click', () => {
         const sel = document.getElementById('image-select');
@@ -922,10 +984,22 @@
 
       // Save Action
       document.getElementById('btn-save').addEventListener('click', saveVerifiedMask);
+      document.getElementById('btn-save-review').addEventListener('click', () => saveVerifiedMask(true));
 
       // Keyboard navigation
       window.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+          e.preventDefault(); saveVerifiedMask(); return;
+        }
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.target.tagName === 'SELECT') return;
+        if (['ArrowLeft','ArrowRight','Tab','+','=','-'].includes(e.key)) e.preventDefault();
+        if (e.key === 'ArrowLeft') document.getElementById('btn-prev').click();
+        if (e.key === 'ArrowRight') document.getElementById('btn-next').click();
+        if (e.key === 'n') nextUnapproved();
+        if (e.key === 'Tab') document.getElementById('btn-focus').click();
+        if (e.key === '+' || e.key === '=') { zoom = Math.min(8, zoom * 1.2); updateTransform(); redraw(); }
+        if (e.key === '-') { zoom = Math.max(.05, zoom / 1.2); updateTransform(); redraw(); }
         if (e.key === '[' || e.key === 'a') document.getElementById('btn-prev').click();
         if (e.key === ']' || e.key === 'd') document.getElementById('btn-next').click();
         if (e.key === 'f') fitToScreen();
@@ -961,7 +1035,7 @@
       }
       if (activeMode === 'redraw') {
         polygon = drawingPts;
-        document.getElementById('status-select').value = 'manually_verified';
+        document.getElementById('status-select').value = 'automatically_proposed';
       } else if (activeMode === 'add_exclusion') {
         exclusions.push(drawingPts);
         document.getElementById('chk-mouse-present').checked = true;
@@ -993,8 +1067,13 @@
       }
     }
 
-    async function saveVerifiedMask() {
+    async function saveVerifiedMask(reviewOnly = false) {
+      reviewOnly = reviewOnly === true;
       if (!currentRecord) return;
+      if (currentRecord.approved || savingApproval) return;
+      if (!document.getElementById('inspection-confirm').checked || !document.getElementById('reviewer-name').value.trim()) {
+        showToast('Inspect the mask, enter your name, and check the inspection box first.', '#c0392b'); return;
+      }
       if (polygon.length < 3) {
         showToast('Error: Notebook boundary has fewer than 3 vertices!', '#e74c3c');
         return;
@@ -1014,17 +1093,29 @@
         truncated_borders: truncBorders,
         mouse_occlusion: document.getElementById('chk-mouse-present').checked,
         reviewer_notes: document.getElementById('reviewer-notes').value,
-        verified_by: "manual_reviewer"
+        verified_by: document.getElementById('reviewer-name').value.trim(),
+        inspected: document.getElementById('inspection-confirm').checked
       };
 
       try {
-        const res = await fetch('/api/save', {
+        savingApproval = true;
+        document.getElementById('btn-save').textContent = 'Saving…';
+        await workQueue;
+        const res = await fetch(reviewOnly ? '/api/review' : '/api/save', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
         const data = await res.json();
         if (data.success) {
+          if (reviewOnly) {
+            Object.assign(currentRecord, data.inspection);
+            populateImageSelector();
+            showToast('Inspected work saved; not approved.');
+            return;
+          }
+          currentRecord.approved = true;
+          currentRecord.inspected_at = new Date().toISOString();
           showToast(`Saved verified mask for ${currentRecord.name}!`, '#27ae60');
           currentRecord.status = payload.status;
           currentRecord.truncated_borders = truncBorders;
@@ -1034,15 +1125,69 @@
           currentRecord.exclusion_polygons = exclusions;
           updateSidebarMeta();
           populateImageSelector();
+          localStorage.removeItem('measureit-work-' + currentRecord.name);
+          const qcWarning = data.qc_summary && data.qc_summary.warning;
+          if (qcWarning) showToast(qcWarning, '#b7950b');
+          nextUnapproved();
         } else {
           showToast('Error: ' + data.error, '#e74c3c');
         }
       } catch (err) {
         showToast('Save failed: ' + err.message, '#e74c3c');
+      } finally {
+        savingApproval = false;
+        document.getElementById('btn-save').textContent = 'Save & Verify Mask';
       }
     }
 
+    let lastWork = null, workQueue = Promise.resolve(), savingApproval = false;
+    function workPayload() {
+      return { name: currentRecord.name, polygon, exclusions,
+        truncated_borders: ['top','bottom','left','right'].filter(side => document.getElementById('trunc-'+side).checked),
+        mouse_occlusion: document.getElementById('chk-mouse-present').checked,
+        reviewer_notes: document.getElementById('reviewer-notes').value,
+        draft_drawing_points: drawingPts, draft_mode: activeMode };
+    }
+    function preserveWork(leaving = false) {
+      if (!currentRecord || currentRecord.approved || savingApproval) return;
+      const payload = workPayload(), signature = JSON.stringify(payload);
+      if (signature === lastWork) return;
+      lastWork = signature;
+      const copy = JSON.parse(signature);
+      copy.work_saved_at = new Date().toISOString();
+      try { localStorage.setItem('measureit-work-' + payload.name, JSON.stringify(copy)); }
+      catch (error) { showToast('Browser backup failed: ' + error.message, '#c0392b'); }
+      // This backup contains no inspected flag, reviewer affirmation or approval status.
+      document.getElementById('inspection-confirm').checked = false;
+      const workRecord = imagesList.find(r => r.name === payload.name);
+      Object.assign(workRecord, {polygon_vertices: copy.polygon, exclusion_polygons: copy.exclusions,
+        truncated_borders: copy.truncated_borders, mouse_occlusion: copy.mouse_occlusion,
+        reviewer_notes: copy.reviewer_notes, draft_drawing_points: copy.draft_drawing_points, draft_mode: copy.draft_mode});
+      document.getElementById('work-state').textContent = 'Saving work only (not approved)…';
+      workQueue = workQueue.catch(() => {}).then(async () => {
+        const response = await fetch('/api/autosave', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(copy), keepalive:leaving});
+        const data = await response.json();
+        if (!data.success) throw new Error(data.error);
+        workRecord.work_saved_at = data.work_saved_at;
+        delete workRecord.inspected_at; delete workRecord.inspected_by;
+        if (currentRecord.name === payload.name) document.getElementById('work-state').textContent = 'Work saved automatically. Not approved.';
+      }).catch(error => {
+        if (currentRecord.name === payload.name) document.getElementById('work-state').textContent = 'Server autosave failed; browser backup retained. ' + error.message;
+      });
+    }
+    function nextUnapproved() {
+      for (let step=1; step<=imagesList.length; step++) {
+        const index = (currentImageIndex + step) % imagesList.length;
+        if (!imagesList[index].approved) {
+          document.getElementById('filter-select').value = 'unreviewed';
+          populateImageSelector(); selectImage(index); return;
+        }
+      }
+      showToast('All images have saved human approvals. Run the final audit.');
+    }
+
     function showToast(msg, bg) {
+      document.getElementById('save-feedback').textContent = msg;
       const toast = document.getElementById('toast');
       toast.textContent = msg;
       toast.style.background = bg || '#27ae60';

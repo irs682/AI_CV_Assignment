@@ -18,7 +18,7 @@ This report documents the verification, audit, and preparation of the notebook s
   - `dataset/images/`: 70 training-ready copies verified via SHA-256 against `raw_images/`. Unverified camera calibration undistortion was **not** applied, preserving raw pixel geometry.
   - `dataset/masks/`: 70 automatically generated draft masks (`notebook_001.png` to `notebook_070.png`).
   - `dataset/splits/`: Finalized split lists (`train.txt`: 49, `val.txt`: 14, `test.txt`: 7).
-- **Mask Ground Truth Status:** **UNVERIFIED DRAFT MASKS**. None of the 70 masks are approved ground truth. All 70 masks require manual annotation review and correction before training.
+- **Mask Ground Truth Status:** **UNVERIFIED DRAFT MASKS**. The historical Stage 2 audit had no approved masks. The current audit has one saved human-approved mask (notebook_003) and 69 pending reviews; original draft masks remain unverified.
 - **Hold Point:** U-Net model training is **halted** pending manual annotation review and user approval.
 
 ---
@@ -29,7 +29,7 @@ All four existing dataset directories were inspected directly on disk:
 
 | Directory | Expected Role | File Count | Formats / Names | Verification Status |
 |---|---|---:|---|---|
-| `dataset/raw_images/` | Original photo repository | 70 images + 1 `.gitkeep` | `notebook_001.jpg` – `notebook_070.jpg` | Verified 100% readable, undamaged |
+| `dataset/raw_images/` | Original photo repository | 70 images + 1 `.gitkeep` | `notebook_001.jpg` – `notebook_070.jpg` | All 70 decode; original acquisition integrity is not established |
 | `dataset/images/` | Training-ready copies | 70 images + 1 `.gitkeep` | `notebook_001.jpg` – `notebook_070.jpg` | Verified SHA-256 match with `raw_images/` |
 | `dataset/masks/` | Segmentation masks | 70 masks + 1 `.gitkeep` | `notebook_001.png` – `notebook_070.png` | Verified 1:1 filename correspondence |
 | `dataset/splits/` | Split partition files | 3 text files | `train.txt`, `val.txt`, `test.txt` | Populated with exact filenames |
@@ -87,7 +87,7 @@ Perceptual hash ($dHash$) and HSV color histogram correlation revealed several m
 3. `notebook_060` and `notebook_061` (HistCorr: 0.9422)
 4. `notebook_064` and `notebook_065` (HistCorr: 0.9708)
 
-**Leakage Mitigation:** The partitioning strategy strictly isolates these clusters into the Training set so that neither Validation nor Test sets suffer from data leakage.
+**Leakage Mitigation:** The historical partitioning strategy intended to isolate identified clusters into training. The current audit confirms committed split membership is unchanged and finds no exact duplicate files. Independent visual near-duplicate leakage validation remains pending; zero leakage is not established.
 
 ---
 
@@ -142,7 +142,7 @@ Visual contact sheets showing photograph/mask overlays with red contour boundari
 
 ### Ground Truth Classification
 **Status: Unverified Draft Annotations.**  
-Per Task 8 instructions, **none** of the automatically generated draft masks are marked as verified ground truth. All 70 masks require manual inspection and polygon vertex correction prior to model evaluation.
+Per Task 8 instructions, **none** of the automatically generated draft masks are marked as verified ground truth. The current audit has 69 pending human reviews; notebook_003 has one separate saved human-approved annotation. Original automatic draft masks are not ground truth.
 
 ---
 
@@ -163,3 +163,8 @@ All 70 images are cataloged below with their primary defects:
 
 1. **Commit and Push:** Finalized split lists (`dataset/splits/`), reproducible script (`dataset/verify_and_prepare_dataset.py`), metadata (`dataset/dataset_verification_metadata.json`), contact sheets (`dataset/verification_previews/`), and documentation are committed to `dev-test01` and pushed to `origin/dev-test01`.
 2. **Hold Point:** Per Task 20, **U-Net training will NOT proceed** until the user reviews and approves the dataset and annotation correction plan.
+
+
+## Current submission audit supplement
+
+See [submission readiness report](submission_readiness_report.md) and [read-only audit evidence](submission_evidence/dataset_audit.json). All 70 draft and proposed masks pass dimension/binary checks, but only 1 mask is human approved and 69 remain pending. Structural checks do not establish segmentation accuracy. The committed 49/14/7 membership was preserved.

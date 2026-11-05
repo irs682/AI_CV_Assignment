@@ -1,0 +1,32 @@
+{
+  "detected_images": 24,
+  "input_images": 24,
+  "failed_images": [],
+  "cohorts": [
+    {
+      "resolution": {
+        "width": 1500,
+        "height": 1125
+      },
+      "images": 9,
+      "archived_rms_px": 0.3189961432546957,
+      "reproduced_rms_px": 0.3189961432546932,
+      "rms_absolute_difference_px": 2.4980018054066022e-15,
+      "camera_matrix_finite": true
+    },
+    {
+      "resolution": {
+        "width": 1500,
+        "height": 2000
+      },
+      "images": 15,
+      "archived_rms_px": 1.5279877265042798,
+      "reproduced_rms_px": 1.5279877265042783,
+      "rms_absolute_difference_px": 1.5543122344752192e-15,
+      "camera_matrix_finite": true
+    }
+  ],
+  "archived_files_unchanged": true,
+  "limitations": "Reprojection fit residuals only; no independent camera accuracy or physical scale validation.",
+  "output_directory": "calibration\\reproductions\\20261105T081036331500Z"
+}

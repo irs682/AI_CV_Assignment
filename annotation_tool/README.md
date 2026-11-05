@@ -60,3 +60,52 @@ Then open your browser to:
 | `Enter` | Close and finish drawing polygon |
 | `Escape` | Cancel active drawing mode |
 | `Alt + Click` or `Right-Click` | Delete vertex |
+
+
+## Human review tracking
+
+The latest proposal geometry is loaded for untouched images; existing human edits
+and approvals take precedence. The header counts approved and explicitly inspected
+images. Filters include Not Approved, Critical and Uncertain. Notebook 003 is the
+default starting image.
+
+Enter your reviewer name and check **I inspected this image and mask** only after
+inspection. **Save inspected work (without approval)** stores work in
+`dataset/annotation_review_drafts.json`, without creating ground truth or approval
+timestamps. Saved work can be resumed after navigation or reload. Unchecked images
+are never recorded as inspected merely by opening them.
+
+For final approval, complete the boundary and mouse cutouts, explicitly choose
+**Manually Verified**, and click **Save & Verify Mask** (Ctrl+S). The server requires
+the inspection checkbox and reviewer name. Only this explicit save records human
+approval and writes `dataset/masks_verified/`. Opening images never approves them.
+
+Generated QC: `dataset/refinement_qc/statistics.csv` and contact/comparison sheets.
+The CSV includes status, structural checks, boundary/area diagnostics, uncertainty
+and recommended corrections. The geometric diagnostics are not accuracy metrics.
+
+
+## Fast review and automatic work preservation
+
+The default filter is Not Approved and the starting image is the first unapproved
+record. The header shows the image index, identifier, and approved/inspected totals.
+After a successful explicit approval, the tool advances to the next unapproved
+image, wrapping around the list. A failed save stays on the current image.
+
+Your reviewer name persists in browser local storage. Geometry, cutouts, notes,
+truncation flags and unfinished drawing points are backed up automatically in the
+browser and to `dataset/annotation_review_drafts.json`. Autosave uses a work-save
+timestamp only; it never records inspection or approval. Editing invalidates the
+inspection checkbox. Check it after completing your corrections. Existing verified
+mask files are protected from overwrite, including via autosave.
+
+Shortcuts: Left/Right arrows or A/D or [/] navigate; N finds the next unapproved
+image; F fits; +/- zoom; Tab toggles the sidebar for a large image view; Ctrl+S
+attempts explicit approval and requires the reviewer name, inspection checkbox
+and Manually Verified status. Wheel zoom and middle/Space-drag pan remain available.
+Ctrl+S also works when notes or the reviewer input has focus. Save feedback reports
+failures without advancing. A browser backup remains available if server autosave
+fails. Opening an image is not an inspection or approval.
+
+Tests: `node tests/test_review_ui.cjs` and
+`.venv\Scripts\python.exe -m unittest discover -s tests -v`.

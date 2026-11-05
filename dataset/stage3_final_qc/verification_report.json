@@ -1,0 +1,1014 @@
+{
+  "summary": {
+    "images": 70,
+    "verified_png_files": 1,
+    "complete_manual_approval_records": 1,
+    "manually_verified_with_file": 1,
+    "structurally_valid_verified_masks": 1,
+    "unverified_or_problematic": 69,
+    "review_status_counts": {
+      "unresolved": 68,
+      "manually_verified": 1,
+      "automatically_proposed": 1
+    },
+    "split_checks": {
+      "train": {
+        "count": 49,
+        "matches_committed_content": true
+      },
+      "val": {
+        "count": 14,
+        "matches_committed_content": true
+      },
+      "test": {
+        "count": 7,
+        "matches_committed_content": true
+      }
+    },
+    "split_issues": [],
+    "ready_for_training": false,
+    "protected_files_unchanged": true
+  },
+  "records": [
+    {
+      "name": "notebook_001",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_002",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_003",
+      "split": "train",
+      "review_status": "manually_verified",
+      "verified_file_exists": true,
+      "approval_record_complete": true,
+      "structurally_valid": true,
+      "counted_as_manually_verified": true,
+      "pixel_values": [
+        0,
+        255
+      ],
+      "problems": []
+    },
+    {
+      "name": "notebook_004",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_005",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_006",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_007",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_008",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_009",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_010",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_011",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_012",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_013",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_014",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_015",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_016",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_017",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_018",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_019",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_020",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_021",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_022",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_023",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_024",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_025",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_026",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_027",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_028",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_029",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_030",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_031",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_032",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_033",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_034",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_035",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_036",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_037",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_038",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_039",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_040",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_041",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_042",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_043",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_044",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_045",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_046",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_047",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_048",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_049",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_050",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_051",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_052",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_053",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_054",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_055",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_056",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_057",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_058",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_059",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_060",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_061",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_062",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_063",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_064",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_065",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_066",
+      "split": "val",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_067",
+      "split": "train",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_068",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_069",
+      "split": "test",
+      "review_status": "unresolved",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    },
+    {
+      "name": "notebook_070",
+      "split": "train",
+      "review_status": "automatically_proposed",
+      "verified_file_exists": false,
+      "approval_record_complete": false,
+      "structurally_valid": false,
+      "counted_as_manually_verified": false,
+      "pixel_values": null,
+      "problems": [
+        "missing_complete_human_approval_record",
+        "missing_verified_mask"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "images": 70,
+  "draft_structural_pass": 70,
+  "proposal_structural_pass": 70,
+  "split_checks": {
+    "train": {
+      "count": 49,
+      "sha256": "fc5a1b5675e80aba28be736f3e492201a35d7d864cf5978bae80eabcfb9e1673",
+      "matches_committed_content": true,
+      "overlaps": []
+    },
+    "val": {
+      "count": 14,
+      "sha256": "4ee18be8ead0cdb4035b9543b71c5463df3dd838fefff517f576162ccb6b7c1a",
+      "matches_committed_content": true,
+      "overlaps": []
+    },
+    "test": {
+      "count": 7,
+      "sha256": "2af9e37feaa6c762fd3fb7fe97dc462c158d8dd5a24afa33071c59e819101502",
+      "matches_committed_content": true,
+      "overlaps": []
+    }
+  },
+  "exact_duplicate_groups": [],
+  "near_duplicate_note": "Existing committed grouping preserved; this audit does not independently validate visual near-duplicate separation.",
+  "errors": [],
+  "protected_files_unchanged": true,
+  "records": [
+    {
+      "name": "notebook_001",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_002",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_003",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_004",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_005",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_006",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_007",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_008",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_009",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_010",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_011",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_012",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_013",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        2000
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_014",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_015",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_016",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_017",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_018",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_019",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_020",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_021",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_022",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_023",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_024",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_025",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_026",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_027",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_028",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_029",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_030",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_031",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_032",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_033",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_034",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_035",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_036",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_037",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_038",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_039",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_040",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_041",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_042",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_043",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_044",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_045",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_046",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_047",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_048",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_049",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_050",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_051",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_052",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_053",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_054",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_055",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_056",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_057",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_058",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_059",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_060",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_061",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_062",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_063",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_064",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_065",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_066",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_067",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_068",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_069",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    },
+    {
+      "name": "notebook_070",
+      "errors": [],
+      "image_dimensions_wh": [
+        1500,
+        1125
+      ],
+      "masks_structural_pass": true,
+      "masks_proposed_structural_pass": true
+    }
+  ]
+}

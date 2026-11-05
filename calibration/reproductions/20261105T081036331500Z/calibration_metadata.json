@@ -1,0 +1,355 @@
+{
+  "generated_at_utc": "2026-11-05T08:10:54.523544+00:00",
+  "opencv_version": "5.0.0",
+  "numpy_version": "2.5.4",
+  "input_directory": "images",
+  "input_image_count": 24,
+  "detected_image_count": 24,
+  "failed_images": [],
+  "source_image_sizes_px": {
+    "1500x1125": 9,
+    "1500x2000": 15
+  },
+  "checkerboard": {
+    "internal_corners": [
+      7,
+      9
+    ],
+    "tested_pattern_sizes_columns_rows": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "object_point_order": "row-major for the chosen (columns, rows) pattern size",
+    "square_size": 1.0,
+    "square_size_units": "unit square; arbitrary scale",
+    "physical_square_size_measured_or_verified": false,
+    "corner_refinement": {
+      "method": "cv2.cornerSubPix",
+      "window": [
+        11,
+        11
+      ],
+      "zero_zone": [
+        -1,
+        -1
+      ],
+      "criteria_max_iterations": 30,
+      "criteria_epsilon": 0.001
+    }
+  },
+  "overall_pooled_rms_reprojection_error_px": 1.2236737074615143,
+  "overall_rms_note": "Pooled over all detected corners after fitting separate camera models for each source resolution; it is not one shared model.",
+  "calibrations_by_resolution": [
+    {
+      "image_size_px": {
+        "width": 1500,
+        "height": 1125
+      },
+      "image_count": 9,
+      "corner_count_per_image": 63,
+      "rms_reprojection_error_px": 0.3189961432546932,
+      "mean_individual_reprojection_error_px": 0.31714950336350334,
+      "max_individual_reprojection_error_px": 0.3707316219806671,
+      "camera_matrix": [
+        [
+          1250.0509193231148,
+          0.0,
+          754.4639758405484
+        ],
+        [
+          0.0,
+          1248.7865215929098,
+          560.7975923981153
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_coefficients": [
+        0.19434471944852488,
+        -0.9565686019384105,
+        0.0009569021098111939,
+        -0.0010728131535323255,
+        1.1591364419004568
+      ],
+      "parameters_file": "reproductions\\20261105T081036331500Z\\camera_parameters_1500x1125.npz",
+      "undistortion_comparison_file": "reproductions\\20261105T081036331500Z\\undistortion_comparison_1500x1125.jpg",
+      "individual_image_errors": [
+        {
+          "image": "checkerboard_001.jpg",
+          "reprojection_error_px": 0.2603558301925659,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_009.jpg",
+          "reprojection_error_px": 0.3364305794239044,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_011.jpg",
+          "reprojection_error_px": 0.3707316219806671,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_014.jpg",
+          "reprojection_error_px": 0.2885129451751709,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_016.jpg",
+          "reprojection_error_px": 0.31623560190200806,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_017.jpg",
+          "reprojection_error_px": 0.3183702230453491,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_022.jpg",
+          "reprojection_error_px": 0.2849941849708557,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_023.jpg",
+          "reprojection_error_px": 0.36450648307800293,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_024.jpg",
+          "reprojection_error_px": 0.314208060503006,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "image_size_px": {
+        "width": 1500,
+        "height": 2000
+      },
+      "image_count": 15,
+      "corner_count_per_image": 63,
+      "rms_reprojection_error_px": 1.5279877265042783,
+      "mean_individual_reprojection_error_px": 0.8676764150460561,
+      "max_individual_reprojection_error_px": 5.566934585571289,
+      "camera_matrix": [
+        [
+          1661.3358318819462,
+          0.0,
+          745.2319409874771
+        ],
+        [
+          0.0,
+          1663.9210592735226,
+          997.0567242392932
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_coefficients": [
+        0.1844895610426603,
+        -0.8691019243182864,
+        0.001132243923491171,
+        -0.0013373921031392577,
+        0.9398058053874051
+      ],
+      "parameters_file": "reproductions\\20261105T081036331500Z\\camera_parameters_1500x2000.npz",
+      "undistortion_comparison_file": "reproductions\\20261105T081036331500Z\\undistortion_comparison_1500x2000.jpg",
+      "individual_image_errors": [
+        {
+          "image": "checkerboard_002.jpg",
+          "reprojection_error_px": 5.566934585571289,
+          "corner_detector": "classic",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_003.jpg",
+          "reprojection_error_px": 0.5996449589729309,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_004.jpg",
+          "reprojection_error_px": 0.6379384398460388,
+          "corner_detector": "classic",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_005.jpg",
+          "reprojection_error_px": 0.46611452102661133,
+          "corner_detector": "classic",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_006.jpg",
+          "reprojection_error_px": 0.5363855361938477,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_007.jpg",
+          "reprojection_error_px": 0.636963427066803,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_008.jpg",
+          "reprojection_error_px": 0.5799000859260559,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_010.jpg",
+          "reprojection_error_px": 0.49381858110427856,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_012.jpg",
+          "reprojection_error_px": 0.48075607419013977,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_013.jpg",
+          "reprojection_error_px": 0.46932899951934814,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_015.jpg",
+          "reprojection_error_px": 0.5908324122428894,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_018.jpg",
+          "reprojection_error_px": 0.5259534120559692,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_019.jpg",
+          "reprojection_error_px": 0.4857267439365387,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_020.jpg",
+          "reprojection_error_px": 0.5551395416259766,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        },
+        {
+          "image": "checkerboard_021.jpg",
+          "reprojection_error_px": 0.38970890641212463,
+          "corner_detector": "SB",
+          "pattern_size_columns_rows": [
+            7,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "quality_assessment": {
+    "resolution": "The supplied files are 1500x1125 or 1500x2000 pixels and each successful image contributes 63 corners. Resolution supports detection, but alone does not guarantee precise calibration.",
+    "observed_quality": "Corner detection succeeded for the listed inputs. The 1500x2000 cohort has a larger RMS and checkerboard_002.jpg has a high per-image reprojection error; inspect its saved corner overlay before relying on that cohort for precision.",
+    "source_limitations": "These are the supplied JPG photographs of a checkerboard shown on a laptop display. Visible screen pixel structure, moire, display brightness variation, glare, focus blur, and perspective can shift corner locations. If the JPGs were extracted from PDFs, prior resizing, resampling, cropping, and JPEG compression may further limit geometric accuracy; the extraction history cannot be independently established from these files.",
+    "metric_scale": "Unit-square coordinates calibrate intrinsics only up to the chosen arbitrary pattern scale. They do not establish physical square size or metric object dimensions."
+  },
+  "outputs": {
+    "metadata": "calibration_metadata.json",
+    "per_image_errors": "per_image_reprojection_errors.csv",
+    "detected_corner_images": "detected_corners/"
+  }
+}

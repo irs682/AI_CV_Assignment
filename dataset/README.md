@@ -22,6 +22,9 @@ This directory contains the dataset for the xis.ai *Measure It — Segmentation 
 
 1. **PDF Extraction:** All photographs were extracted from a user-uploaded PDF document. The original full-resolution Android RAW/JPEG files have not been verified. Prior resampling, downscaling, or compression cannot be ruled out.
 2. **Camera Calibration:** Camera parameters fitted in Stage 1 were derived from PDF checkerboard views without physical scale ground truth. In accordance with task requirements, no camera calibration undistortion has been applied to dataset images.
-3. **Reproducibility:** Splits were generated using Python random seed `224`, with resolution stratification and zero train-test leakage across similar photo bursts.
+3. **Reproducibility:** Splits were generated using Python random seed `224`, with resolution stratification and an intended grouping of similar photo bursts. The current audit confirms unchanged split membership and no exact duplicate photographs; it does not independently establish zero near-duplicate leakage.
 
 For the complete verification audit and per-image defect catalog, see [`docs/dataset_verification_report.md`](../docs/dataset_verification_report.md).
+
+
+Current non-mutating audits: `.venv\Scripts\python.exe dataset\audit_dataset.py` and `.venv\Scripts\python.exe dataset\audit_stage3.py`. The historical `verify_and_prepare_dataset.py` rebuilds image copies and split lists; do not run it against the finalized submission dataset. There are 70 separate automatic proposals and 1 saved human-approved mask (notebook_003), with 69 pending reviews as of the submission readiness audit.
